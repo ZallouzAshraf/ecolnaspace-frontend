@@ -1,0 +1,1645 @@
+{
+  "common": {
+    "appName": "EcolnaSpace",
+    "loading": "جاري التحميل…",
+    "save": "حفظ",
+    "cancel": "إلغاء",
+    "retry": "إعادة المحاولة",
+    "search": "بحث",
+    "actions": "إجراءات",
+    "close": "إغلاق",
+    "back": "رجوع",
+    "next": "التالي",
+    "previous": "السابق",
+    "noResults": "لا توجد نتائج",
+    "errorGeneric": "حدث خطأ ما. يرجى المحاولة مرة أخرى.",
+    "yes": "نعم",
+    "no": "لا"
+  },
+  "nav": {
+    "dashboard": "لوحة التحكم",
+    "organization": "المؤسسة",
+    "campuses": "الفروع",
+    "users": "المستخدمون",
+    "documents": "المستندات",
+    "settings": "الإعدادات",
+    "students": "الطلاب",
+    "parents": "أولياء الأمور",
+    "teachers": "المعلمون",
+    "staff": "الموظفون",
+    "classes": "الفصول",
+    "academic": "الشؤون الدراسية",
+    "academicYears": "السنوات الدراسية",
+    "subjects": "المواد",
+    "schedules": "الجداول",
+    "attendance": "الحضور",
+    "homework": "الواجبات",
+    "exams": "الامتحانات",
+    "grades": "الدرجات",
+    "reportCards": "كشوف الدرجات",
+    "finance": "المالية",
+    "invoices": "الفواتير",
+    "payments": "المدفوعات",
+    "communication": "التواصل",
+    "announcements": "الإعلانات",
+    "messages": "الرسائل",
+    "notifications": "الإشعارات",
+    "children": "الأطفال",
+    "daycare": "الحضانة",
+    "meals": "الوجبات",
+    "naps": "القيلولة",
+    "activities": "الأنشطة",
+    "pickups": "الاستلام",
+    "billing": "الفوترة",
+    "collapseSidebar": "طي الشريط الجانبي",
+    "expandSidebar": "توسيع الشريط الجانبي",
+    "openMenu": "فتح القائمة"
+  },
+  "auth": {
+    "loginTitle": "تسجيل الدخول",
+    "loginSubtitle": "ادخل إلى مساحة عمل مؤسستك.",
+    "email": "البريد الإلكتروني",
+    "password": "كلمة المرور",
+    "signIn": "تسجيل الدخول",
+    "signingIn": "جاري الدخول…",
+    "forgotPassword": "نسيت كلمة المرور؟",
+    "noAccount": "مؤسسة جديدة؟",
+    "createOrganization": "إنشاء منظمة",
+    "registerTitle": "إنشاء منظمتك",
+    "registerSubtitle": "بضع معلومات للبدء. الباقي يُضبط بعد التسجيل.",
+    "organizationName": "اسم المؤسسة",
+    "organizationSlug": "معرّف الرابط",
+    "firstName": "الاسم الأول",
+    "lastName": "اسم العائلة",
+    "createAccount": "إنشاء حسابي",
+    "creatingAccount": "جاري الإنشاء…",
+    "haveAccount": "لديك حساب بالفعل؟",
+    "backToLogin": "العودة لتسجيل الدخول",
+    "forgotTitle": "نسيت كلمة المرور",
+    "forgotSubtitle": "أدخل بريدك. سنرسل رابطاً إذا وُجد حساب.",
+    "sendResetLink": "إرسال الرابط",
+    "sending": "جاري الإرسال…",
+    "logout": "تسجيل الخروج",
+    "invalidCredentials": "البريد أو كلمة المرور غير صحيحة.",
+    "sessionExpired": "انتهت جلستك. يرجى تسجيل الدخول مجدداً.",
+    "resetTitle": "كلمة مرور جديدة",
+    "resetSubtitle": "اختر كلمة مرور قوية لتأمين حسابك.",
+    "resetToken": "رمز إعادة التعيين",
+    "newPassword": "كلمة المرور الجديدة",
+    "confirmPassword": "تأكيد كلمة المرور",
+    "resetSubmit": "تحديث كلمة المرور",
+    "resetting": "جاري التحديث…",
+    "resetSuccess": "تم تحديث كلمة المرور. يمكنك تسجيل الدخول.",
+    "verifyTitle": "تأكيد البريد الإلكتروني",
+    "verifySubtitle": "جاري تأكيد بريدك الإلكتروني…",
+    "verifying": "جاري التحقق…",
+    "verifySuccess": "تم التحقق من البريد بنجاح.",
+    "verifyError": "فشل التحقق.",
+    "verifyMissingToken": "رمز التحقق مفقود.",
+    "language": "اللغة",
+    "showPassword": "إظهار كلمة المرور",
+    "hidePassword": "إخفاء كلمة المرور",
+    "rateLimited": "محاولات كثيرة جداً. أعد المحاولة بعد بضع دقائق.",
+    "registerFailed": "تعذر إنشاء الحساب. تحقق من البيانات وحاول مجدداً.",
+    "resetFailed": "تعذر تحديث كلمة المرور. حاول مجدداً.",
+    "forgotSent": "إذا وُجد حساب لهذا البريد، فقد أرسلنا رابط إعادة التعيين.",
+    "resetInvalidToken": "رابط إعادة التعيين غير صالح أو منتهٍ. اطلب رابطاً جديداً.",
+    "requestNewReset": "طلب رابط جديد",
+    "organizationType": "نوع المؤسسة",
+    "organizationSlugHint": "معرّف الرابط: {slug}",
+    "acceptTerms": "أوافق على <privacy>سياسة الخصوصية</privacy> و<terms>شروط الاستخدام</terms>.",
+    "brandPanel": {
+      "headline": "إدارة هادئة لمؤسستك التعليمية.",
+      "body": "الطلاب والحضور والدرجات والمدفوعات — منصة واحدة للمؤسسات الخاصة.",
+      "previewLabel": "معاينة EcolnaSpace",
+      "footer": "أمان متعدد المستأجرين · وصول حسب الدور · بيانات معزولة",
+      "trust": {
+        "isolated": "بيانات معزولة لكل منظمة",
+        "roles": "وصول مضبوط حسب الدور",
+        "realtime": "حضور ومدفوعات مباشرة"
+      },
+      "mock": {
+        "orgName": "مدرسة أطلس",
+        "today": "اليوم",
+        "live": "مباشر",
+        "attendanceTitle": "الحضور — 3 أ",
+        "paymentLabel": "آخر دفعة",
+        "paymentValue": "فاتورة #1042 · 450 درهم",
+        "paid": "مدفوع",
+        "nav": {
+          "dashboard": "لوحة التحكم",
+          "students": "الطلاب",
+          "attendance": "الحضور",
+          "payments": "المدفوعات"
+        },
+        "metrics": {
+          "attendance": "الحضور",
+          "students": "الطلاب",
+          "invoices": "الفواتير"
+        },
+        "status": {
+          "present": "حاضر",
+          "late": "متأخر",
+          "absent": "غائب"
+        }
+      }
+    },
+    "passwordRules": {
+      "title": "متطلبات كلمة المرور",
+      "minLength": "8+ أحرف",
+      "hasLetter": "حرف واحد",
+      "hasNumber": "رقم واحد"
+    },
+    "errors": {
+      "email": "أدخل بريداً إلكترونياً صالحاً.",
+      "passwordRequired": "أدخل كلمة المرور.",
+      "passwordWeak": "كلمة المرور لا تستوفي المتطلبات.",
+      "passwordMismatch": "كلمتا المرور غير متطابقتين.",
+      "organizationName": "أدخل اسم مؤسستك.",
+      "organizationSlug": "استخدم أحرفاً صغيرة وأرقاماً وشرطات فقط.",
+      "firstName": "أدخل الاسم الأول.",
+      "lastName": "أدخل اسم العائلة.",
+      "acceptTerms": "يرجى قبول الشروط للمتابعة."
+    },
+    "orgTypes": {
+      "NURSERY": "حضانة",
+      "KINDERGARTEN": "روضة",
+      "PRIMARY_SCHOOL": "مدرسة ابتدائية",
+      "MIDDLE_SCHOOL": "إعدادية",
+      "HIGH_SCHOOL": "ثانوية",
+      "TUTORING_CENTER": "مركز دعم",
+      "TRAINING_CENTER": "مركز تدريب"
+    }
+  },
+  "dashboard": {
+    "title": "لوحة التحكم",
+    "welcome": "مرحباً، {name}",
+    "welcomeGeneric": "مرحباً بك في EcolnaSpace",
+    "subtitle": "إليك ما يحدث في مؤسستك اليوم.",
+    "onboardingTitle": "البدء",
+    "onboardingSubtitle": "أكمل هذه الخطوات لتفعيل EcolnaSpace لفريقك.",
+    "stepCampus": "إنشاء فرع",
+    "stepTeacher": "دعوة معلم",
+    "stepStudent": "إضافة أول طالب",
+    "emptyHint": "ستمتلئ لوحة التحكم بالبيانات بعد إضافة الطلاب والفصول.",
+    "readyHint": "مؤسستك جاهزة. افتح وحدة من الشريط الجانبي للمتابعة."
+  },
+  "locale": {
+    "label": "اللغة",
+    "fr": "Français",
+    "en": "English",
+    "ar": "العربية"
+  },
+  "command": {
+    "title": "لوحة الأوامر",
+    "description": "ابحث في الصفحات ونفّذ إجراءات سريعة",
+    "placeholder": "ابحث أو انتقل إلى…",
+    "navigation": "التنقل",
+    "actions": "إجراءات سريعة",
+    "addStudent": "إضافة طالب",
+    "inviteTeacher": "دعوة معلم",
+    "createCampus": "إنشاء فرع"
+  },
+  "students": {
+    "title": "الطلاب",
+    "subtitle": "إدارة الطلاب عبر فروع مؤسستك.",
+    "add": "إضافة طالب",
+    "searchPlaceholder": "البحث عن الطلاب…",
+    "emptyTitle": "لا يوجد طلاب بعد",
+    "emptyDescription": "أضف أول طالب لبدء إدارة التسجيلات والحضور.",
+    "createTitle": "إضافة طالب",
+    "createSubtitle": "إنشاء ملف طالب لمؤسستك.",
+    "editTitle": "تعديل الطالب",
+    "editSubtitle": "تحديث بيانات الطالب.",
+    "deleteTitle": "حذف الطالب؟",
+    "deleteDescription": "سيتم أرشفة {name} من القوائم النشطة. قد يؤثر ذلك على السجلات المرتبطة.",
+    "notFound": "الطالب غير موجود.",
+    "ageYears": "{count} سنة",
+    "pagination": "صفحة {page} من {totalPages} · {total} طالب",
+    "columns": {
+      "name": "الاسم",
+      "birth": "تاريخ الميلاد",
+      "campus": "الفرع",
+      "status": "الحالة"
+    },
+    "filters": {
+      "status": "الحالة",
+      "campus": "الفرع",
+      "allStatuses": "كل الحالات",
+      "allCampuses": "كل الفروع"
+    },
+    "actions": {
+      "view": "عرض الملف",
+      "edit": "تعديل",
+      "delete": "حذف",
+      "enroll": "تسجيل"
+    },
+    "tabs": {
+      "overview": "نظرة عامة",
+      "enrollments": "التسجيلات",
+      "pickups": "الاستلام",
+      "medical": "طبي",
+      "documents": "المستندات",
+      "reportCard": "كشف الدرجات"
+    },
+    "form": {
+      "identity": "الهوية",
+      "contact": "التواصل",
+      "address": "العنوان",
+      "emergency": "جهة اتصال طارئة",
+      "medical": "طبي"
+    },
+    "fields": {
+      "firstName": "الاسم الأول",
+      "lastName": "اسم العائلة",
+      "preferredName": "الاسم المفضل",
+      "dateOfBirth": "تاريخ الميلاد",
+      "gender": "الجنس",
+      "status": "الحالة",
+      "email": "البريد الإلكتروني",
+      "phone": "الهاتف",
+      "campus": "الفرع",
+      "campusPlaceholder": "اختر فرعاً",
+      "campusNone": "بدون فرع",
+      "addressLine1": "العنوان 1",
+      "addressLine2": "العنوان 2",
+      "city": "المدينة",
+      "postalCode": "الرمز البريدي",
+      "country": "الدولة (ISO)",
+      "emergencyName": "جهة اتصال طارئة",
+      "emergencyPhone": "هاتف الطوارئ",
+      "allergiesNote": "الحساسية / ملاحظات",
+      "photoConsent": "الموافقة على الصور",
+      "externalRef": "مرجع خارجي",
+      "pickupName": "الاسم الكامل",
+      "relationship": "صلة القرابة",
+      "class": "الفصل",
+      "classPlaceholder": "اختر فصلاً"
+    },
+    "errors": {
+      "firstName": "يرجى إدخال الاسم الأول.",
+      "lastName": "يرجى إدخال اسم العائلة.",
+      "dateOfBirth": "يرجى إدخال تاريخ ميلاد صالح."
+    },
+    "status": {
+      "ACTIVE": "نشط",
+      "INACTIVE": "غير نشط",
+      "GRADUATED": "متخرج",
+      "WITHDRAWN": "منسحب",
+      "ARCHIVED": "مؤرشف"
+    },
+    "toasts": {
+      "created": "تم إنشاء الطالب.",
+      "updated": "تم تحديث الطالب.",
+      "deleted": "تم حذف الطالب.",
+      "pickupAdded": "تمت إضافة شخص الاستلام.",
+      "enrolled": "تم تسجيل الطالب في الفصل."
+    },
+    "enrollTitle": "التسجيل في فصل",
+    "enrollSubtitle": "أضف هذا الطالب إلى فصل للسنة الدراسية الحالية.",
+    "enrollmentsEmptyTitle": "لا توجد تسجيلات",
+    "enrollmentsEmptyDescription": "هذا الطالب غير مسجل في أي فصل بعد.",
+    "enrollmentsUnavailableTitle": "التسجيلات غير متاحة",
+    "enrollmentsUnavailableDescription": "قد تكون الوحدة الدراسية معطّلة لهذه المؤسسة.",
+    "pickupsEmptyTitle": "لا يوجد أشخاص مخوّلون بالاستلام",
+    "pickupsEmptyDescription": "أضف بالغين موثوقين يمكنهم استلام هذا الطالب.",
+    "pickupAddTitle": "إضافة شخص استلام",
+    "pickupAddSubtitle": "البالغون المخوّلون لاستلام الطالب.",
+    "pickupAdd": "إضافة",
+    "pickupActive": "نشط",
+    "pickupInactive": "غير نشط",
+    "medicalRestrictedTitle": "المعلومات الطبية مقيدة",
+    "medicalRestrictedDescription": "ليست لديك صلاحية عرض المعلومات الطبية لهذا الطالب."
+  },
+  "teachers": {
+    "title": "المعلمون",
+    "subtitle": "دعوة وإدارة أعضاء هيئة التدريس.",
+    "add": "دعوة معلم",
+    "searchPlaceholder": "البحث عن المعلمين…",
+    "emptyTitle": "لا يوجد معلمون بعد",
+    "emptyDescription": "ادعُ أول معلم لبناء فريقك.",
+    "createTitle": "دعوة معلم",
+    "createSubtitle": "ينشئ حساباً ويرسل كلمة مرور مؤقتة بالبريد.",
+    "editTitle": "تعديل المعلم",
+    "editSubtitle": "تحديث بيانات ملف المعلم.",
+    "notFound": "المعلم غير موجود.",
+    "inviteHint": "سيتم إرسال بريد دعوة يتضمن كلمة مرور مؤقتة.",
+    "campusesHint": "عيّن الفروع التي يعمل بها هذا المعلم.",
+    "noCampuses": "لا توجد فروع متاحة بعد.",
+    "noCampusesAssigned": "لا توجد فروع معيّنة",
+    "noCampusesAssignedDescription": "عدّل المعلم لتعيين فرع أو أكثر.",
+    "pagination": "صفحة {page} من {totalPages} · {total} معلم",
+    "columns": {
+      "name": "الاسم",
+      "email": "البريد الإلكتروني",
+      "campuses": "الفروع",
+      "employeeCode": "الرقم الوظيفي"
+    },
+    "actions": {
+      "view": "عرض الملف",
+      "edit": "تعديل"
+    },
+    "form": {
+      "identity": "الملف",
+      "campuses": "الفروع"
+    },
+    "fields": {
+      "email": "البريد الإلكتروني",
+      "firstName": "الاسم الأول",
+      "lastName": "اسم العائلة",
+      "phone": "الهاتف",
+      "employeeCode": "الرقم الوظيفي",
+      "bio": "نبذة",
+      "createdAt": "تاريخ الإنشاء"
+    },
+    "errors": {
+      "email": "يرجى إدخال بريد إلكتروني صالح.",
+      "firstName": "يرجى إدخال الاسم الأول.",
+      "lastName": "يرجى إدخال اسم العائلة."
+    },
+    "toasts": {
+      "created": "تمت دعوة المعلم.",
+      "updated": "تم تحديث المعلم."
+    }
+  },
+  "campuses": {
+    "title": "الفروع",
+    "subtitle": "إدارة مواقع مؤسستك.",
+    "add": "إضافة فرع",
+    "searchPlaceholder": "البحث في الفروع…",
+    "emptyTitle": "لا توجد فروع بعد",
+    "emptyDescription": "أنشئ أول فرع لتنظيم الطلاب والموظفين.",
+    "createTitle": "إضافة فرع",
+    "createSubtitle": "إنشاء موقع جديد لمؤسستك.",
+    "editTitle": "تعديل الفرع",
+    "editSubtitle": "تحديث بيانات الفرع.",
+    "deleteTitle": "حذف الفرع؟",
+    "deleteDescription": "حذف {name} سيحذف أيضاً الفصول وروابط المعلمين المرتبطة. سيحتفظ الطلاب بملفاتهم دون هذا الفرع.",
+    "columns": {
+      "name": "الاسم",
+      "code": "الرمز",
+      "city": "المدينة",
+      "status": "الحالة"
+    },
+    "actions": {
+      "edit": "تعديل",
+      "delete": "حذف"
+    },
+    "fields": {
+      "name": "الاسم",
+      "code": "الرمز",
+      "email": "البريد الإلكتروني",
+      "phone": "الهاتف",
+      "addressLine1": "العنوان",
+      "city": "المدينة",
+      "postalCode": "الرمز البريدي",
+      "country": "الدولة (ISO)",
+      "isActive": "الفرع نشط"
+    },
+    "errors": {
+      "name": "يرجى إدخال اسم الفرع."
+    },
+    "status": {
+      "active": "نشط",
+      "inactive": "غير نشط"
+    },
+    "toasts": {
+      "created": "تم إنشاء الفرع.",
+      "updated": "تم تحديث الفرع.",
+      "deleted": "تم حذف الفرع."
+    }
+  },
+  "parents": {
+    "title": "أولياء الأمور",
+    "subtitle": "دعوة أولياء الأمور وربطهم بالطلاب.",
+    "add": "دعوة ولي أمر",
+    "searchPlaceholder": "البحث عن أولياء الأمور…",
+    "emptyTitle": "لا يوجد أولياء أمور بعد",
+    "emptyDescription": "ادعُ ولي أمر لمنحه صلاحية الوصول إلى أبنائه.",
+    "createTitle": "دعوة ولي أمر",
+    "createSubtitle": "ينشئ حساباً ويرسل كلمة مرور مؤقتة بالبريد.",
+    "inviteSubmit": "إرسال الدعوة",
+    "inviteHint": "سيتم إرسال بريد دعوة يتضمن كلمة مرور مؤقتة.",
+    "notFound": "ولي الأمر غير موجود.",
+    "profileTitle": "الملف",
+    "inviteStatusTitle": "الدعوة",
+    "inviteStatusDescription": "يُنشأ أولياء الأمور الجدد بحالة مدعو. يجب تفعيل العضوية قبل تسجيل الدخول.",
+    "linkTitle": "الربط بطالب",
+    "linkSubtitle": "اربط ولي الأمر هذا كوصي على طالب.",
+    "linkSubmit": "ربط الطالب",
+    "childrenTitle": "روابط حديثة",
+    "childrenDescription": "واجهة البرمجة لا تعرض بعد كل أبناء ولي الأمر. تظهر الروابط المُنشأة في هذه الجلسة أدناه.",
+    "childrenEmptyTitle": "لا توجد روابط في هذه الجلسة",
+    "childrenEmptyDescription": "اربط طالباً أعلاه، أو افتح ملف طالب لإدارة الأوصياء.",
+    "pagination": "صفحة {page} من {totalPages} · {total} ولي أمر",
+    "columns": {
+      "name": "الاسم",
+      "email": "البريد الإلكتروني",
+      "phone": "الهاتف"
+    },
+    "actions": {
+      "view": "عرض الملف"
+    },
+    "fields": {
+      "email": "البريد الإلكتروني",
+      "firstName": "الاسم الأول",
+      "lastName": "اسم العائلة",
+      "phone": "الهاتف",
+      "createdAt": "تاريخ الإنشاء",
+      "student": "الطالب",
+      "studentPlaceholder": "اختر طالباً",
+      "relationship": "صلة القرابة",
+      "relationshipPlaceholder": "مثال: أم، أب، وصي",
+      "isPrimary": "جهة اتصال أساسية",
+      "isEmergency": "جهة اتصال طارئة",
+      "canPickup": "مخوّل بالاستلام"
+    },
+    "errors": {
+      "email": "يرجى إدخال بريد إلكتروني صالح.",
+      "firstName": "يرجى إدخال الاسم الأول.",
+      "lastName": "يرجى إدخال اسم العائلة."
+    },
+    "toasts": {
+      "created": "تمت دعوة ولي الأمر.",
+      "linked": "تم ربط ولي الأمر بالطالب."
+    }
+  },
+  "classes": {
+    "title": "الفصول",
+    "subtitle": "نظّم المجموعات حسب الفرع والسنة الدراسية.",
+    "add": "إضافة فصل",
+    "searchPlaceholder": "البحث عن الفصول…",
+    "emptyTitle": "لا توجد فصول بعد",
+    "emptyDescription": "أنشئ فصلاً لتسجيل الطلاب فيه.",
+    "createTitle": "إضافة فصل",
+    "createSubtitle": "حدد الفرع والسنة والمستوى.",
+    "editTitle": "تعديل الفصل",
+    "editSubtitle": "حدّث الاسم أو المستوى أو السعة.",
+    "deleteTitle": "حذف هذا الفصل؟",
+    "deleteDescription": "سيؤدي حذف {name} أيضاً إلى حذف تسجيلاته. لا يمكن التراجع عن هذا الإجراء.",
+    "notFound": "الفصل غير موجود.",
+    "currentYear": "الحالية",
+    "enrolledActive": "طلاب نشطون",
+    "enrollmentsTitle": "التسجيلات",
+    "enrollmentsSubtitle": "الطلاب المسجلون في هذا الفصل.",
+    "enrollmentsEmptyTitle": "لا يوجد طلاب مسجلون",
+    "enrollmentsEmptyDescription": "سجّل طالباً أدناه، أو من ملف الطالب.",
+    "enrollmentsUnavailableTitle": "التسجيلات غير متاحة",
+    "enrollmentsUnavailableDescription": "تعذر تحميل قائمة التسجيلات لهذا الفصل.",
+    "enrollmentStatus": {
+      "ACTIVE": "نشط",
+      "COMPLETED": "مكتمل",
+      "WITHDRAWN": "منسحب",
+      "TRANSFERRED": "منقول"
+    },
+    "filters": {
+      "campus": "الفرع",
+      "year": "السنة الدراسية",
+      "allCampuses": "كل الفروع",
+      "allYears": "كل السنوات"
+    },
+    "columns": {
+      "name": "الاسم",
+      "campus": "الفرع",
+      "year": "السنة",
+      "gradeLevel": "المستوى",
+      "capacity": "السعة",
+      "student": "الطالب",
+      "status": "الحالة",
+      "enrolledOn": "تاريخ التسجيل"
+    },
+    "actions": {
+      "view": "عرض",
+      "edit": "تعديل",
+      "delete": "حذف",
+      "enroll": "تسجيل"
+    },
+    "fields": {
+      "campus": "الفرع",
+      "campusPlaceholder": "اختر فرعاً",
+      "academicYear": "السنة الدراسية",
+      "yearPlaceholder": "اختر سنة",
+      "name": "اسم الفصل",
+      "gradeLevel": "المستوى",
+      "capacity": "السعة",
+      "student": "الطالب",
+      "studentPlaceholder": "اختر طالباً"
+    },
+    "errors": {
+      "campus": "يرجى اختيار فرع.",
+      "year": "يرجى اختيار سنة دراسية.",
+      "name": "يرجى إدخال اسم الفصل."
+    },
+    "toasts": {
+      "created": "تم إنشاء الفصل.",
+      "updated": "تم تحديث الفصل.",
+      "deleted": "تم حذف الفصل.",
+      "enrolled": "تم تسجيل الطالب.",
+      "statusUpdated": "تم تحديث حالة التسجيل."
+    }
+  },
+  "academicYears": {
+    "title": "السنوات الدراسية",
+    "subtitle": "حدد السنوات الدراسية وعيّن السنة الحالية.",
+    "add": "إضافة سنة دراسية",
+    "searchPlaceholder": "البحث عن السنوات…",
+    "emptyTitle": "لا توجد سنوات دراسية بعد",
+    "emptyDescription": "أنشئ سنة دراسية لتنظيم الفصول والتسجيلات.",
+    "createTitle": "إضافة سنة دراسية",
+    "createSubtitle": "حدد الاسم ونطاق التواريخ والسنة الحالية.",
+    "editTitle": "تعديل السنة الدراسية",
+    "editSubtitle": "تحديث تفاصيل السنة.",
+    "deleteTitle": "حذف هذه السنة؟",
+    "deleteDescription": "قد يؤثر حذف {name} على الفصول المرتبطة. لا يمكن التراجع.",
+    "columns": {
+      "name": "الاسم",
+      "startsOn": "البداية",
+      "endsOn": "النهاية",
+      "status": "الحالة"
+    },
+    "actions": {
+      "edit": "تعديل",
+      "delete": "حذف"
+    },
+    "fields": {
+      "name": "الاسم",
+      "startsOn": "تاريخ البداية",
+      "endsOn": "تاريخ النهاية",
+      "isCurrent": "السنة الحالية"
+    },
+    "errors": {
+      "name": "يرجى إدخال اسم.",
+      "dates": "يرجى تحديد تاريخي البداية والنهاية."
+    },
+    "status": {
+      "current": "حالية",
+      "inactive": "غير نشطة"
+    },
+    "toasts": {
+      "created": "تم إنشاء السنة الدراسية.",
+      "updated": "تم تحديث السنة الدراسية.",
+      "deleted": "تم حذف السنة الدراسية."
+    }
+  },
+  "subjects": {
+    "title": "المواد",
+    "subtitle": "إدارة المواد الدراسية في مدرستك.",
+    "add": "إضافة مادة",
+    "searchPlaceholder": "البحث عن المواد…",
+    "emptyTitle": "لا توجد مواد بعد",
+    "emptyDescription": "أنشئ مواداً للجداول والواجبات والدرجات.",
+    "createTitle": "إضافة مادة",
+    "createSubtitle": "حدد اسم المادة ورمزاً اختيارياً.",
+    "editTitle": "تعديل المادة",
+    "editSubtitle": "تحديث تفاصيل المادة.",
+    "deleteTitle": "حذف هذه المادة؟",
+    "deleteDescription": "قد يؤثر حذف {name} على السجلات المرتبطة. لا يمكن التراجع.",
+    "columns": {
+      "name": "الاسم",
+      "code": "الرمز"
+    },
+    "actions": {
+      "edit": "تعديل",
+      "delete": "حذف"
+    },
+    "fields": {
+      "name": "الاسم",
+      "code": "الرمز"
+    },
+    "errors": {
+      "name": "يرجى إدخال اسم المادة."
+    },
+    "toasts": {
+      "created": "تم إنشاء المادة.",
+      "updated": "تم تحديث المادة.",
+      "deleted": "تم حذف المادة."
+    }
+  },
+  "schedules": {
+    "title": "الجداول",
+    "subtitle": "إنشاء الجداول الأسبوعية لكل فصل.",
+    "add": "إضافة حصة",
+    "emptyTitle": "لا توجد حصص",
+    "emptyDescription": "أضف حصصاً لهذا الفصل.",
+    "emptySelectTitle": "اختر فصلاً",
+    "emptySelectDescription": "اختر فصلاً لعرض جدوله أو تعديله.",
+    "createTitle": "إضافة حصة",
+    "createSubtitle": "حدد اليوم والوقت والمادة أو المعلم اختيارياً.",
+    "deleteTitle": "حذف هذه الحصة؟",
+    "deleteDescription": "إزالة {day} {time} من الجدول؟",
+    "columns": {
+      "day": "اليوم",
+      "startTime": "البداية",
+      "endTime": "النهاية",
+      "subject": "المادة",
+      "teacher": "المعلم"
+    },
+    "actions": {
+      "delete": "حذف"
+    },
+    "fields": {
+      "class": "الفصل",
+      "classPlaceholder": "اختر فصلاً",
+      "dayOfWeek": "يوم الأسبوع",
+      "startTime": "وقت البداية",
+      "endTime": "وقت النهاية",
+      "subject": "المادة",
+      "subjectOptional": "بدون مادة",
+      "teacher": "المعلم",
+      "teacherOptional": "بدون معلم"
+    },
+    "errors": {
+      "class": "يرجى اختيار فصل.",
+      "times": "يرجى تحديد وقتي البداية والنهاية."
+    },
+    "days": {
+      "1": "الإثنين",
+      "2": "الثلاثاء",
+      "3": "الأربعاء",
+      "4": "الخميس",
+      "5": "الجمعة",
+      "6": "السبت",
+      "7": "الأحد"
+    },
+    "toasts": {
+      "created": "تمت إضافة الحصة.",
+      "deleted": "تم حذف الحصة."
+    }
+  },
+  "homework": {
+    "title": "الواجبات",
+    "subtitle": "تعيين ومتابعة الواجبات حسب الفصل.",
+    "add": "إضافة واجب",
+    "emptyTitle": "لا توجد واجبات بعد",
+    "emptyDescription": "أنشئ واجبات لفصولك.",
+    "createTitle": "إضافة واجب",
+    "createSubtitle": "حدد الفصل والعنوان وتاريخ الاستحقاق.",
+    "editTitle": "تعديل الواجب",
+    "editSubtitle": "تحديث تفاصيل الواجب.",
+    "deleteTitle": "حذف هذا الواجب؟",
+    "deleteDescription": "حذف «{name}»؟ لا يمكن التراجع.",
+    "filters": {
+      "class": "الفصل",
+      "allClasses": "كل الفصول"
+    },
+    "columns": {
+      "title": "العنوان",
+      "class": "الفصل",
+      "subject": "المادة",
+      "dueDate": "تاريخ الاستحقاق"
+    },
+    "actions": {
+      "edit": "تعديل",
+      "delete": "حذف"
+    },
+    "fields": {
+      "class": "الفصل",
+      "classPlaceholder": "اختر فصلاً",
+      "title": "العنوان",
+      "subject": "المادة",
+      "subjectOptional": "بدون مادة",
+      "dueDate": "تاريخ الاستحقاق",
+      "description": "الوصف"
+    },
+    "errors": {
+      "class": "يرجى اختيار فصل.",
+      "title": "يرجى إدخال عنوان."
+    },
+    "toasts": {
+      "created": "تم إنشاء الواجب.",
+      "updated": "تم تحديث الواجب.",
+      "deleted": "تم حذف الواجب."
+    }
+  },
+  "exams": {
+    "title": "الامتحانات",
+    "subtitle": "تخطيط وإدارة امتحانات الفصول.",
+    "add": "إضافة امتحان",
+    "emptyTitle": "لا توجد امتحانات بعد",
+    "emptyDescription": "جدول امتحانات لفصولك.",
+    "createTitle": "إضافة امتحان",
+    "createSubtitle": "حدد الفصل والمادة وتاريخ الامتحان.",
+    "editTitle": "تعديل الامتحان",
+    "editSubtitle": "تحديث تفاصيل الامتحان.",
+    "deleteTitle": "حذف هذا الامتحان؟",
+    "deleteDescription": "حذف «{name}»؟ لا يمكن التراجع.",
+    "filters": {
+      "class": "الفصل",
+      "allClasses": "كل الفصول"
+    },
+    "columns": {
+      "title": "العنوان",
+      "class": "الفصل",
+      "subject": "المادة",
+      "examDate": "التاريخ",
+      "status": "الحالة"
+    },
+    "actions": {
+      "edit": "تعديل",
+      "delete": "حذف"
+    },
+    "fields": {
+      "class": "الفصل",
+      "classPlaceholder": "اختر فصلاً",
+      "subject": "المادة",
+      "subjectPlaceholder": "اختر مادة",
+      "title": "العنوان",
+      "examDate": "تاريخ الامتحان",
+      "durationMin": "المدة (دقائق)",
+      "status": "الحالة"
+    },
+    "status": {
+      "SCHEDULED": "مجدول",
+      "COMPLETED": "مكتمل",
+      "CANCELLED": "ملغى"
+    },
+    "errors": {
+      "class": "يرجى اختيار فصل.",
+      "subject": "يرجى اختيار مادة.",
+      "title": "يرجى إدخال عنوان.",
+      "examDate": "يرجى تحديد تاريخ الامتحان."
+    },
+    "toasts": {
+      "created": "تم إنشاء الامتحان.",
+      "updated": "تم تحديث الامتحان.",
+      "deleted": "تم حذف الامتحان."
+    }
+  },
+  "grades": {
+    "title": "الدرجات",
+    "subtitle": "تسجيل درجات الطلاب حسب المادة والتقييم.",
+    "add": "إضافة درجة",
+    "emptyTitle": "لا توجد درجات بعد",
+    "emptyDescription": "سجّل درجات الطلاب والمواد.",
+    "createTitle": "إضافة درجة",
+    "createSubtitle": "أدخل الدرجة وتفاصيل التقييم.",
+    "deleteTitle": "حذف هذه الدرجة؟",
+    "deleteDescription": "حذف الدرجة «{name}»؟ لا يمكن التراجع.",
+    "filters": {
+      "subject": "المادة",
+      "allSubjects": "كل المواد"
+    },
+    "columns": {
+      "student": "الطالب",
+      "subject": "المادة",
+      "assessment": "التقييم",
+      "score": "الدرجة",
+      "gradedOn": "تاريخ التقييم"
+    },
+    "actions": {
+      "delete": "حذف"
+    },
+    "fields": {
+      "student": "الطالب",
+      "studentPlaceholder": "اختر طالباً",
+      "subject": "المادة",
+      "subjectPlaceholder": "اختر مادة",
+      "exam": "الامتحان",
+      "examOptional": "بدون امتحان",
+      "assessment": "التقييم",
+      "assessmentPlaceholder": "مثال: اختبار نصف الفصل",
+      "score": "الدرجة",
+      "maxScore": "الدرجة القصوى",
+      "gradedOn": "تاريخ التقييم"
+    },
+    "errors": {
+      "student": "يرجى اختيار طالب.",
+      "subject": "يرجى اختيار مادة.",
+      "assessment": "يرجى إدخال اسم التقييم.",
+      "score": "يرجى إدخال الدرجة والدرجة القصوى.",
+      "gradedOn": "يرجى تحديد تاريخ."
+    },
+    "toasts": {
+      "created": "تم تسجيل الدرجة.",
+      "deleted": "تم حذف الدرجة."
+    }
+  },
+  "attendance": {
+    "title": "الحضور",
+    "subtitle": "تتبع الحضور اليومي حسب الفصل.",
+    "add": "تسجيل حضور",
+    "emptyTitle": "لا توجد سجلات حضور",
+    "emptyDescription": "سجّل الحضور لهذا التاريخ للبدء.",
+    "createTitle": "تسجيل حضور",
+    "createSubtitle": "حدّد حالة الطالب: حاضر، غائب، متأخر أو معذور.",
+    "editTitle": "تعديل الحضور",
+    "editSubtitle": "غيّر الحالة أو الملاحظات.",
+    "filters": {
+      "date": "التاريخ",
+      "class": "الفصل",
+      "allClasses": "كل الفصول"
+    },
+    "columns": {
+      "student": "الطالب",
+      "class": "الفصل",
+      "status": "الحالة",
+      "notes": "ملاحظات"
+    },
+    "actions": {
+      "edit": "تعديل"
+    },
+    "fields": {
+      "student": "الطالب",
+      "studentPlaceholder": "اختر طالباً",
+      "date": "التاريخ",
+      "status": "الحالة",
+      "class": "الفصل",
+      "classPlaceholder": "فصل اختياري",
+      "noClass": "بدون فصل",
+      "notes": "ملاحظات"
+    },
+    "status": {
+      "PRESENT": "حاضر",
+      "ABSENT": "غائب",
+      "LATE": "متأخر",
+      "EXCUSED": "معذور"
+    },
+    "errors": {
+      "required": "الطالب والتاريخ مطلوبان."
+    },
+    "toasts": {
+      "recorded": "تم تسجيل الحضور.",
+      "updated": "تم تحديث الحضور."
+    }
+  },
+  "invoices": {
+    "title": "الفواتير",
+    "subtitle": "أنشئ مسودات وأصدر الفواتير وتتبع المدفوعات.",
+    "add": "فاتورة مسودة جديدة",
+    "emptyTitle": "لا توجد فواتير",
+    "emptyDescription": "أنشئ فاتورة مسودة للبدء.",
+    "createTitle": "إنشاء فاتورة مسودة",
+    "createSubtitle": "أضف بنوداً؛ يمكنك الإصدار لاحقاً.",
+    "draftLabel": "مسودة",
+    "notFound": "الفاتورة غير موجودة.",
+    "itemsTitle": "البنود",
+    "itemsEmpty": "لا توجد بنود",
+    "paymentsTitle": "المدفوعات",
+    "paymentsEmpty": "لا توجد مدفوعات",
+    "paymentTitle": "تسجيل دفعة",
+    "paymentSubtitle": "أضف دفعة لهذه الفاتورة.",
+    "pagination": "صفحة {page} من {totalPages} · {total} فاتورة",
+    "filters": {
+      "status": "الحالة",
+      "allStatuses": "كل الحالات"
+    },
+    "columns": {
+      "number": "الفاتورة",
+      "student": "الطالب",
+      "status": "الحالة",
+      "total": "الإجمالي",
+      "paid": "المدفوع",
+      "remaining": "المتبقي",
+      "lineTotal": "إجمالي البند",
+      "paidAt": "تاريخ الدفع",
+      "amount": "المبلغ"
+    },
+    "actions": {
+      "view": "عرض",
+      "addItem": "إضافة بند",
+      "removeItem": "إزالة",
+      "createDraft": "إنشاء مسودة",
+      "issue": "إصدار الفاتورة",
+      "addPayment": "إضافة دفعة",
+      "recordPayment": "تسجيل الدفعة"
+    },
+    "fields": {
+      "student": "الطالب",
+      "studentPlaceholder": "طالب اختياري",
+      "noStudent": "بدون طالب",
+      "items": "البنود",
+      "description": "الوصف",
+      "quantity": "الكمية",
+      "unitPrice": "سعر الوحدة",
+      "notes": "ملاحظات",
+      "amount": "المبلغ",
+      "method": "الطريقة",
+      "reference": "المرجع"
+    },
+    "status": {
+      "DRAFT": "مسودة",
+      "ISSUED": "صادرة",
+      "PARTIALLY_PAID": "مدفوعة جزئياً",
+      "PAID": "مدفوعة",
+      "OVERDUE": "متأخرة",
+      "CANCELLED": "ملغاة"
+    },
+    "methods": {
+      "CASH": "نقداً",
+      "CARD": "بطاقة",
+      "BANK_TRANSFER": "تحويل بنكي",
+      "CHECK": "شيك",
+      "OTHER": "أخرى"
+    },
+    "errors": {
+      "items": "أضف بنداً صالحاً واحداً على الأقل.",
+      "amount": "أدخل مبلغاً صالحاً."
+    },
+    "toasts": {
+      "created": "تم إنشاء المسودة.",
+      "issued": "تم إصدار الفاتورة.",
+      "paymentAdded": "تم تسجيل الدفعة."
+    }
+  },
+  "payments": {
+    "title": "المدفوعات",
+    "subtitle": "سجّل الدفعات على الفواتير الصادرة أو المتأخرة.",
+    "emptyTitle": "لا توجد فواتير قابلة للدفع",
+    "emptyDescription": "ستظهر هنا الفواتير الصادرة أو المدفوعة جزئياً أو المتأخرة.",
+    "paymentTitle": "تسجيل دفعة",
+    "paymentSubtitle": "دفعة للفاتورة {number}.",
+    "columns": {
+      "invoice": "الفاتورة",
+      "student": "الطالب",
+      "status": "الحالة",
+      "due": "المبلغ المستحق"
+    },
+    "actions": {
+      "record": "تسجيل دفعة"
+    },
+    "fields": {
+      "amount": "المبلغ",
+      "method": "الطريقة",
+      "reference": "المرجع"
+    },
+    "errors": {
+      "amount": "أدخل مبلغاً صالحاً."
+    },
+    "toasts": {
+      "recorded": "تم تسجيل الدفعة."
+    }
+  },
+  "announcements": {
+    "title": "الإعلانات",
+    "subtitle": "انشر التحديثات لمؤسستك.",
+    "add": "إعلان جديد",
+    "emptyTitle": "لا توجد إعلانات",
+    "emptyDescription": "ستظهر الإعلانات المنشورة هنا.",
+    "createTitle": "إنشاء إعلان",
+    "createSubtitle": "اكتب عنواناً ومحتوى. يمكن النشر فوراً.",
+    "status": {
+      "published": "منشور"
+    },
+    "actions": {
+      "unpublish": "إلغاء النشر"
+    },
+    "fields": {
+      "title": "العنوان",
+      "body": "المحتوى",
+      "publishNow": "نشر الآن"
+    },
+    "errors": {
+      "required": "العنوان والمحتوى مطلوبان."
+    },
+    "toasts": {
+      "created": "تم إنشاء الإعلان.",
+      "unpublished": "تم إلغاء نشر الإعلان."
+    }
+  },
+  "messages": {
+    "title": "الرسائل",
+    "subtitle": "رسائل داخلية بين الموظفين والمعلمين.",
+    "compose": "رسالة جديدة",
+    "composeTitle": "رسالة جديدة",
+    "composeSubtitle": "أرسل رسالة إلى مستخدم في مؤسستك.",
+    "emptyTitle": "لا توجد رسائل",
+    "emptyDescription": "ستظهر رسائل الوارد والمرسل هنا.",
+    "tabs": {
+      "inbox": "الوارد",
+      "sent": "المرسل"
+    },
+    "unread": "غير مقروء",
+    "noSubject": "(بدون موضوع)",
+    "actions": {
+      "send": "إرسال"
+    },
+    "fields": {
+      "recipient": "المستلم",
+      "recipientPlaceholder": "اختر شخصاً",
+      "manualRecipient": "أو معرف المستخدم",
+      "manualRecipientPlaceholder": "الصق UUID للمستخدم",
+      "subject": "الموضوع",
+      "body": "الرسالة"
+    },
+    "errors": {
+      "required": "المستلم ونص الرسالة مطلوبان."
+    },
+    "toasts": {
+      "sent": "تم إرسال الرسالة."
+    }
+  },
+  "notifications": {
+    "title": "الإشعارات",
+    "subtitle": "تنبيهات وإشعارات النظام.",
+    "emptyTitle": "لا توجد إشعارات",
+    "emptyDescription": "أنت على اطلاع بكل شيء.",
+    "unread": "غير مقروء",
+    "actions": {
+      "markRead": "وضع كمقروء"
+    }
+  },
+  "meals": {
+    "title": "الوجبات",
+    "subtitle": "سجّل وجبات الحضانة حسب التاريخ.",
+    "add": "تسجيل وجبة",
+    "emptyTitle": "لا توجد وجبات",
+    "emptyDescription": "سجّل الوجبات لهذا التاريخ.",
+    "createTitle": "تسجيل وجبة",
+    "createSubtitle": "اختر طالباً ونوع الوجبة.",
+    "filters": {
+      "date": "التاريخ"
+    },
+    "columns": {
+      "student": "الطالب",
+      "mealType": "الوجبة",
+      "consumed": "تم التناول",
+      "notes": "ملاحظات"
+    },
+    "fields": {
+      "student": "الطالب",
+      "studentPlaceholder": "اختر طالباً",
+      "mealType": "نوع الوجبة",
+      "consumed": "تم التناول",
+      "notes": "ملاحظات"
+    },
+    "mealTypes": {
+      "BREAKFAST": "فطور",
+      "LUNCH": "غداء",
+      "SNACK": "وجبة خفيفة",
+      "DINNER": "عشاء"
+    },
+    "errors": {
+      "student": "يرجى اختيار طالب."
+    },
+    "toasts": {
+      "created": "تم تسجيل الوجبة."
+    }
+  },
+  "naps": {
+    "title": "القيلولة",
+    "subtitle": "تتبع أوقات قيلولة الأطفال.",
+    "add": "تسجيل قيلولة",
+    "emptyTitle": "لا توجد قيلولات",
+    "emptyDescription": "سجّل القيلولات لهذا التاريخ.",
+    "createTitle": "تسجيل قيلولة",
+    "createSubtitle": "حدد وقت البدء ونهاية اختيارية.",
+    "filters": {
+      "date": "التاريخ"
+    },
+    "columns": {
+      "student": "الطالب",
+      "startedAt": "البداية",
+      "endedAt": "النهاية",
+      "notes": "ملاحظات"
+    },
+    "fields": {
+      "student": "الطالب",
+      "studentPlaceholder": "اختر طالباً",
+      "startedAt": "بدأت في",
+      "endedAt": "انتهت في",
+      "notes": "ملاحظات"
+    },
+    "errors": {
+      "required": "الطالب ووقت البدء مطلوبان."
+    },
+    "toasts": {
+      "created": "تم تسجيل القيلولة."
+    }
+  },
+  "activities": {
+    "title": "الأنشطة",
+    "subtitle": "سجّل أنشطة الحضانة والمشاركين.",
+    "add": "تسجيل نشاط",
+    "emptyTitle": "لا توجد أنشطة",
+    "emptyDescription": "سجّل نشاطاً لهذا التاريخ.",
+    "createTitle": "تسجيل نشاط",
+    "createSubtitle": "سمِّ النشاط واختر الطلاب.",
+    "filters": {
+      "date": "التاريخ"
+    },
+    "columns": {
+      "title": "النشاط",
+      "students": "الطلاب",
+      "notes": "ملاحظات"
+    },
+    "fields": {
+      "title": "العنوان",
+      "students": "الطلاب",
+      "notes": "ملاحظات"
+    },
+    "errors": {
+      "required": "العنوان وطالب واحد على الأقل مطلوبان."
+    },
+    "toasts": {
+      "created": "تم تسجيل النشاط."
+    }
+  },
+  "pickups": {
+    "title": "الاستلام",
+    "subtitle": "سجّل من استلم كل طفل.",
+    "add": "تسجيل استلام",
+    "emptyTitle": "لا توجد عمليات استلام",
+    "emptyDescription": "سجّل الاستلام لهذا التاريخ.",
+    "createTitle": "تسجيل استلام",
+    "createSubtitle": "أدخل اسم الشخص الذي استلم الطالب.",
+    "filters": {
+      "date": "التاريخ"
+    },
+    "columns": {
+      "student": "الطالب",
+      "person": "المستلم",
+      "verified": "تم التحقق",
+      "arrivedAt": "الوصول"
+    },
+    "fields": {
+      "student": "الطالب",
+      "studentPlaceholder": "اختر طالباً",
+      "person": "اسم المستلم",
+      "verified": "تم التحقق",
+      "notes": "ملاحظات"
+    },
+    "errors": {
+      "required": "الطالب واسم المستلم مطلوبان."
+    },
+    "toasts": {
+      "created": "تم تسجيل الاستلام."
+    }
+  },
+  "staff": {
+    "title": "الموظفون",
+    "subtitle": "إدارة الموظفين غير التدريسيين.",
+    "add": "إضافة موظف",
+    "searchPlaceholder": "بحث عن موظفين…",
+    "emptyTitle": "لا يوجد موظفون",
+    "emptyDescription": "أضف موظفاً للبدء.",
+    "createTitle": "إضافة موظف",
+    "createSubtitle": "ينشئ حساباً لهذا الموظف.",
+    "editTitle": "تعديل موظف",
+    "editSubtitle": "حدّث بيانات الملف.",
+    "pagination": "صفحة {page} من {totalPages} · {total} موظف",
+    "columns": {
+      "name": "الاسم",
+      "email": "البريد",
+      "jobTitle": "المسمى",
+      "department": "القسم"
+    },
+    "actions": {
+      "edit": "تعديل"
+    },
+    "fields": {
+      "email": "البريد",
+      "firstName": "الاسم الأول",
+      "lastName": "اسم العائلة",
+      "phone": "الهاتف",
+      "jobTitle": "المسمى الوظيفي",
+      "department": "القسم"
+    },
+    "errors": {
+      "required": "الاسم الأول واسم العائلة مطلوبان.",
+      "email": "يرجى إدخال بريد صالح."
+    },
+    "toasts": {
+      "created": "تم إنشاء الموظف.",
+      "updated": "تم تحديث الموظف."
+    }
+  },
+  "settings": {
+    "title": "الإعدادات",
+    "subtitle": "ملف المؤسسة وميزات النظام.",
+    "notFound": "المؤسسة غير موجودة.",
+    "orgTitle": "ملف المؤسسة",
+    "featuresTitle": "الميزات",
+    "featuresSubtitle": "تفعيل أو تعطيل الوحدات لمؤسستك.",
+    "featuresEmpty": "لا توجد ميزات مُعدّة.",
+    "features": {
+      "enabled": "مفعّلة",
+      "disabled": "معطّلة"
+    },
+    "fields": {
+      "email": "البريد",
+      "phone": "الهاتف",
+      "website": "الموقع",
+      "addressLine1": "العنوان سطر 1",
+      "addressLine2": "العنوان سطر 2",
+      "city": "المدينة",
+      "postalCode": "الرمز البريدي",
+      "country": "البلد",
+      "timezone": "المنطقة الزمنية",
+      "locale": "اللغة"
+    },
+    "toasts": {
+      "updated": "تم تحديث المؤسسة.",
+      "featureUpdated": "تم تحديث الميزة."
+    }
+  },
+  "landing": {
+    "nav": {
+      "primary": "التنقل الرئيسي",
+      "product": "المنتج",
+      "pricing": "الأسعار",
+      "contact": "تواصل",
+      "language": "اللغة",
+      "signIn": "تسجيل الدخول",
+      "cta": "ابدأ الآن",
+      "openMenu": "فتح القائمة",
+      "closeMenu": "إغلاق القائمة"
+    },
+    "hero": {
+      "headline": "منصة واحدة <accent>لإدارة مؤسستك التعليمية بهدوء</accent>",
+      "badge": "منصة المؤسسات التعليمية الخاصة",
+      "builtFor": "مصمّمة لـ",
+      "subhead": "استبدل الجداول والمتابعات الورقية والرسائل المتفرقة. تابع الطلاب والحضور والدرجات والمدفوعات — مصمّمة للحضانات والمدارس ومراكز الدعم.",
+      "ctaPrimary": "إنشاء منظمتك",
+      "ctaSecondary": "تواصل معنا",
+      "note": "لا حاجة لبطاقة بنكية للبدء.",
+      "highlights": {
+        "multiCampus": "عدة فروع ضمن منظمة واحدة",
+        "roleAccess": "صلاحيات منفصلة للإدارة والمعلمين وأولياء الأمور",
+        "daycare": "سجلات حضانة للوجبات والقيلولة والاستلام"
+      }
+    },
+    "preview": {
+      "title": "اليوم بنظرة سريعة",
+      "subtitle": "الفرع · مدرسة ابتدائية",
+      "students": "الطلاب",
+      "attendance": "الحضور",
+      "invoices": "الفواتير",
+      "present": "حاضر",
+      "late": "متأخر",
+      "paid": "مدفوع",
+      "chips": {
+        "attendance": "الحاضرون اليوم",
+        "payment": "تم استلام الدفعة",
+        "paymentMeta": "الفاتورة #1042 · الآن",
+        "announce": "تم إرسال الإعلان",
+        "announceMeta": "تم إشعار 142 أسرة"
+      }
+    },
+    "problem": {
+      "eyebrow": "الواقع",
+      "headline": "معظم المؤسسات ما زالت تعتمد على خمس أدوات منفصلة",
+      "body": "الحضور في مكان، والدرجات في آخر، والمدفوعات عبر الرسائل، والاستلام عبر الهاتف. هذا يعمل — إلى أن يتوقف عن العمل. تجمع EcolnaSpace هذه المهام اليومية في مساحة مشتركة واحدة.",
+      "before": "قبل",
+      "after": "بعد",
+      "flowLabel": "يوم مجزّأ",
+      "flowTo": "مساحة واحدة",
+      "result": "الطلاب والحضور والدرجات والفواتير والتواصل — في مكان واحد.",
+      "beforeLead": "أدوات متعددة دون نظرة موحّدة — كل فريق يعمل في زاويته.",
+      "beforeTitle": "أدوات متفرقة",
+      "afterLead": "يوم المؤسسة منظّم في وحدات مترابطة.",
+      "beforeSummary": "التكلفة الخفية: وقت ضائع ومعلومات تتشتت.",
+      "tools": {
+        "excel": {
+          "title": "جداول",
+          "body": "حضور وقوائم ودرجات متفرقة بين ملفات عدة."
+        },
+        "whatsapp": {
+          "title": "رسائل",
+          "body": "مدفوعات ومعلومات وطوارئ تائهة في المحادثات."
+        },
+        "paper": {
+          "title": "ورق",
+          "body": "ملفات ورقية يصعب إيجادها ومشاركتها."
+        },
+        "calls": {
+          "title": "مكالمات",
+          "body": "استلام وتأكيدات عبر الهاتف دون أثر واضح."
+        }
+      },
+      "risks": {
+        "one": {
+          "title": "وقت ضائع",
+          "body": "نسخ وبحث عن المعلومات كل يوم."
+        },
+        "two": {
+          "title": "أخطاء",
+          "body": "نسخ مختلفة حسب الشخص."
+        },
+        "three": {
+          "title": "رؤية ضعيفة",
+          "body": "صعوبة الإدارة دون بيانات موثوقة."
+        }
+      },
+      "outcomes": {
+        "one": {
+          "title": "مصدر واحد",
+          "body": "يعمل الفريق على نفس البيانات المحدّثة."
+        },
+        "two": {
+          "title": "احتكاك أقل",
+          "body": "لا مزيد من التنقل بين الجداول والرسائل."
+        },
+        "three": {
+          "title": "وضوح للإدارة",
+          "body": "رؤية واضحة لعمليات المؤسسة اليومية."
+        }
+      },
+      "modules": {
+        "students": {
+          "title": "الطلاب والتسجيل",
+          "body": "الملفات والفصول والفروع في سجل واحد."
+        },
+        "academic": {
+          "title": "الحضور والدرجات",
+          "body": "متابعة دراسية حيث يعمل المعلمون."
+        },
+        "billing": {
+          "title": "الفواتير والمدفوعات",
+          "body": "إصدار ومتابعة دون جدول منفصل."
+        },
+        "comms": {
+          "title": "التواصل",
+          "body": "إعلانات ورسائل للأسر في السياق المناسب."
+        }
+      }
+    },
+    "solution": {
+      "eyebrow": "المنتج",
+      "headline": "مكان واحد بدل خمس أدوات",
+      "subhead": "أساسيات العمل اليومي للإدارة والفرق — دون تحويل الصفحة إلى قائمة ميزات طويلة.",
+      "pillars": {
+        "students": {
+          "title": "الطلاب والتسجيل",
+          "body": "حدّث ملفات الطلاب والفصول والتسجيلات عبر كل الفروع.",
+          "points": {
+            "one": "ملفات مركزية",
+            "two": "فصول متعددة الفروع",
+            "three": "تسجيلات متابَعة"
+          }
+        },
+        "academic": {
+          "title": "الحضور والدرجات",
+          "body": "سجّل الحضور والواجبات والامتحانات والدرجات حيث يعمل المعلمون.",
+          "points": {
+            "one": "حضور يومي",
+            "two": "واجبات وامتحانات",
+            "three": "درجات موحّدة"
+          }
+        },
+        "billing": {
+          "title": "الفواتير والمدفوعات",
+          "body": "أصدر الفواتير وتابع المدفوعات دون جدول منفصل.",
+          "points": {
+            "one": "فواتير صادرة",
+            "two": "مدفوعات متابَعة",
+            "three": "تذكيرات بسيطة"
+          }
+        },
+        "comms": {
+          "title": "التواصل",
+          "body": "شارك الإعلانات والرسائل مع الموظفين والأسر في السياق المناسب.",
+          "points": {
+            "one": "إعلانات موجّهة",
+            "two": "رسائل للأسر",
+            "three": "سياق حسب الدور"
+          }
+        }
+      }
+    },
+    "deep": {
+      "campuses": {
+        "headline": "عدة فروع دون أنظمة منفصلة",
+        "body": "أدِر عدة مواقع ضمن منظمة واحدة. قيّد صلاحيات الموظفين حسب الفرع عند الحاجة، مع إبقاء رؤية واضحة للإدارة.",
+        "caption": "المنظمة والفروع والصلاحيات في واجهة إدارية واحدة.",
+        "points": {
+          "one": "رؤية موحّدة للإدارة",
+          "two": "صلاحيات حسب الفرع",
+          "three": "تقليل التكرار بين المواقع"
+        },
+        "mock": {
+          "org": "مجموعة الأمل",
+          "campuses": "3 فروع نشطة",
+          "active": "نشط",
+          "staff": "موظفون",
+          "students": "طلاب",
+          "campusA": "الفرع المركزي",
+          "campusB": "الفرع الشمالي",
+          "campusC": "فرع الحدائق"
+        }
+      },
+      "roles": {
+        "headline": "لوحات تناسب كل دور",
+        "body": "الإدارة ترى العمليات. المعلمون يرون صفوفهم. أولياء الأمور يرون ما يخص أبناءهم. الصلاحيات تتبع الدور — لا كلمة مرور مشتركة.",
+        "caption": "تنقّل حسب الدور وتفعيل مضبوط للعضويات.",
+        "points": {
+          "one": "صلاحيات مرتبطة بالدور لا بحساب مشترك",
+          "two": "دعوة ثم تفعيل قبل تسجيل الدخول",
+          "three": "كل ملف يرى ما يخصه فقط"
+        },
+        "mock": {
+          "title": "الوصول حسب الدور",
+          "admin": "إدارة",
+          "teacher": "معلم",
+          "parent": "ولي أمر",
+          "adminDesc": "الفروع والفواتير والفريق",
+          "teacherDesc": "الفصول والحضور والدرجات",
+          "parentDesc": "الأبناء والإعلانات والمدفوعات",
+          "active": "الوصول مفعّل"
+        }
+      },
+      "daycare": {
+        "headline": "روتين الحضانة كما يعيشه الأهل",
+        "body": "الوجبات والقيلولة والأنشطة واستلام الأطفال الموثّق — حتى تُسجَّل قصة اليوم بدل إعادة بنائها من الذاكرة.",
+        "caption": "سجلات رعاية مصمّمة للحضانات ومرحلة الطفولة المبكرة.",
+        "points": {
+          "one": "متابعة الوجبات والقيلولة خلال اليوم",
+          "two": "استلام موثّق وقابل للتتبع",
+          "three": "رواية يومية واضحة للأسر"
+        },
+        "mock": {
+          "title": "سجل اليوم",
+          "date": "الأربعاء 23 سبتمبر",
+          "meals": "وجبات",
+          "naps": "قيلولة",
+          "pickups": "استلام",
+          "lunch": "غداء",
+          "consumed": "تم",
+          "napDone": "13:10 – 14:40",
+          "verified": "موثّق",
+          "childA": "لينا م.",
+          "childB": "آدم ر.",
+          "childC": "نورا س."
+        }
+      }
+    },
+    "audience": {
+      "eyebrow": "لمن",
+      "headline": "مبنية للمؤسسات التعليمية الخاصة",
+      "subhead": "من الطفولة المبكرة إلى الثانوي ومراكز الدعم — عائلة منتج واحدة وأسس مشتركة.",
+      "items": {
+        "nursery": {
+          "title": "حضانات",
+          "body": "الوجبات والقيلولة والأنشطة والاستلام — يوم موثّق للأسر."
+        },
+        "school": {
+          "title": "ابتدائي وإعدادي",
+          "body": "التسجيل والحضور والدرجات وتواصل الأهل في مسار واحد."
+        },
+        "high": {
+          "title": "ثانوي",
+          "body": "متابعة أكاديمية وفوترة وتنسيق الفريق دون أدوات متفرقة."
+        },
+        "tutoring": {
+          "title": "مراكز دعم",
+          "body": "المجموعات والجداول والمدفوعات لتبقى مركزاً على التدريس."
+        }
+      }
+    },
+    "trust": {
+      "eyebrow": "الأمان والخصوصية",
+      "headline": "الثقة تبدأ بعزل البيانات",
+      "body": "EcolnaSpace متعددة المستأجرين منذ التصميم. تعمل كل منظمة ضمن حدودها، مع صلاحيات حسب الدور للموظفين والأسر.",
+      "titles": {
+        "isolation": "عزل متعدد المستأجرين",
+        "roles": "وصول حسب الدور",
+        "privacy": "الخصوصية"
+      },
+      "points": {
+        "isolation": "تبقى بيانات المؤسسة داخل منظمتها — دون اختلاط مع عملاء آخرين.",
+        "roles": "يُمنح الوصول حسب العضوية والصلاحيات، بما في ذلك الحسابات المدعوة التي يجب تفعيلها قبل تسجيل الدخول.",
+        "privacy": "لا نبيع بيانات الطلاب لأطراف ثالثة. تتوفر أدوات تصدير ومحو لملفات الطلاب عند الحاجة."
+      }
+    },
+    "pricing": {
+      "eyebrow": "الأسعار",
+      "headline": "تسعير يناسب مؤسستك",
+      "body": "تعتمد الباقات على الحجم وعدد الفروع والوحدات. ابدأ بإنشاء منظمتك مجاناً، ثم تحدث معنا عن الباقة المناسبة.",
+      "perks": {
+        "setup": "إنشاء منظمة مجاناً",
+        "modules": "وحدات حسب احتياجك",
+        "support": "مرافقة بشرية"
+      },
+      "ctaPrimary": "ابدأ مجاناً",
+      "ctaSecondary": "اطلب عرض سعر"
+    },
+    "final": {
+      "headline": "اجمع عمليات مؤسستك في مساحة عمل هادئة",
+      "body": "أنشئ منظمتك في دقائق، ادعُ فريقك، وفعّل الصلاحيات عندما تكون جاهزاً.",
+      "cta": "إنشاء منظمتك",
+      "email": "أو راسلنا"
+    },
+    "footer": {
+      "blurb": "منصة SaaS متعددة المستأجرين للمؤسسات التعليمية الخاصة — حضانات ومدارس ومراكز دعم.",
+      "product": "المنتج",
+      "legal": "قانوني",
+      "privacy": "سياسة الخصوصية",
+      "terms": "شروط الاستخدام",
+      "rights": "جميع الحقوق محفوظة."
+    },
+    "meta": {
+      "title": "EcolnaSpace — إدارة مؤسستك التعليمية في منصة واحدة",
+      "description": "استبدل الجداول والرسائل والورق بمنصة للطلاب والحضور والدرجات والمدفوعات وروتين الحضانة."
+    }
+  },
+  "memberships": {
+    "title": "المستخدمون والعضويات",
+    "subtitle": "إدارة الأدوار والفروع وصلاحيات الوصول لأعضاء مؤسستك.",
+    "searchPlaceholder": "البحث بالاسم أو البريد…",
+    "emptyTitle": "لا توجد عضويات",
+    "emptyDescription": "جرّب تعديل الفلاتر، أو أضف مستخدمين عبر الموظفين والمعلمين.",
+    "forbiddenTitle": "الوصول مقيد",
+    "forbiddenDescription": "تحتاج صلاحية إدارة العضويات لعرض هذه الصفحة.",
+    "campusNone": "على مستوى المؤسسة",
+    "removeTitle": "إزالة العضوية؟",
+    "removeDescription": "سيؤدي هذا إلى إزالة {name} من المؤسسة.",
+    "pagination": "صفحة {page} من {totalPages} · {total} أعضاء",
+    "filters": {
+      "status": "الحالة",
+      "role": "الدور",
+      "allStatuses": "كل الحالات",
+      "allRoles": "كل الأدوار"
+    },
+    "columns": {
+      "user": "المستخدم",
+      "role": "الدور",
+      "campus": "الفرع",
+      "status": "الحالة"
+    },
+    "actions": {
+      "activate": "تفعيل",
+      "suspend": "تعليق",
+      "remove": "إزالة"
+    },
+    "status": {
+      "ACTIVE": "نشط",
+      "INVITED": "مدعو",
+      "SUSPENDED": "معلّق",
+      "REMOVED": "مُزال"
+    },
+    "roles": {
+      "ORGANIZATION_ADMIN": "مسؤول المؤسسة",
+      "CAMPUS_ADMIN": "مسؤول الفرع",
+      "TEACHER": "معلم",
+      "STAFF": "موظف",
+      "PARENT": "ولي أمر",
+      "ACCOUNTANT": "محاسب"
+    },
+    "toasts": {
+      "updated": "تم تحديث العضوية."
+    }
+  },
+  "documents": {
+    "title": "المستندات",
+    "subtitle": "رفع وتنزيل وإدارة مستندات الطلاب.",
+    "upload": "رفع ملف",
+    "uploading": "جاري الرفع…",
+    "uploadHint": "الحد الأقصى 10 ميغابايت. يمكنك التصفية حسب الطالب أولاً.",
+    "emptyTitle": "لا توجد مستندات بعد",
+    "emptyDescription": "ارفع ملفاً لربطه بطالب أو بالمؤسسة.",
+    "forbiddenTitle": "الوصول مقيد",
+    "forbiddenDescription": "تحتاج صلاحية قراءة المستندات لعرض هذه الصفحة.",
+    "deleteTitle": "حذف المستند؟",
+    "deleteDescription": "سيؤدي هذا إلى إزالة {name} من المستندات النشطة.",
+    "pagination": "صفحة {page} من {totalPages} · {total} مستندات",
+    "filters": {
+      "student": "الطالب",
+      "studentPlaceholder": "تصفية حسب الطالب",
+      "allStudents": "كل الطلاب"
+    },
+    "columns": {
+      "fileName": "الملف",
+      "size": "الحجم",
+      "uploadedAt": "تاريخ الرفع"
+    },
+    "actions": {
+      "download": "تنزيل",
+      "delete": "حذف"
+    },
+    "errors": {
+      "studentRequired": "اختر طالباً قبل الرفع."
+    },
+    "toasts": {
+      "uploaded": "تم رفع المستند.",
+      "deleted": "تم حذف المستند."
+    }
+  },
+  "reportCards": {
+    "title": "كشف الدرجات",
+    "academicYear": "السنة الدراسية",
+    "academicYearPlaceholder": "اختر السنة الدراسية",
+    "current": "الحالية",
+    "print": "طباعة",
+    "generatedAt": "تم الإنشاء في {date}",
+    "enrollments": "التسجيلات",
+    "grades": "المواد والدرجات",
+    "noEnrollments": "لا توجد تسجيلات لهذه السنة.",
+    "noGrades": "لا توجد درجات مسجلة بعد.",
+    "emptyTitle": "لا يوجد كشف درجات",
+    "emptyDescription": "اختر سنة دراسية لإنشاء كشف الدرجات.",
+    "unavailableTitle": "كشف الدرجات غير متاح",
+    "unavailableDescription": "قد تكون الوحدة الدراسية معطّلة، أو توجد بيانات ناقصة.",
+    "columns": {
+      "subject": "المادة",
+      "assessment": "التقييم",
+      "score": "الدرجة",
+      "gradedOn": "تاريخ التقييم"
+    }
+  },
+  "legal": {
+    "privacyTitle": "سياسة الخصوصية",
+    "privacyBody": "تلخّص هذه الصفحة كيفية تعامل EcolnaSpace مع بيانات المنظمات والطلاب. سيُنشر النص القانوني الكامل قبل الإطلاق الإنتاجي. لطلبات الخصوصية: contact@ecolnaspace.com.",
+    "termsTitle": "شروط الاستخدام",
+    "termsBody": "بإنشاء منظمة على EcolnaSpace فإنك توافق على استخدام الخدمة بشكل قانوني وحماية بيانات دخول فريقك. ستُنشر الشروط الكاملة قبل الإطلاق الإنتاجي.",
+    "back": "العودة إلى الصفحة الرئيسية"
+  }
+}

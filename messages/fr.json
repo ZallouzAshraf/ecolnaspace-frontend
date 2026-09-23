@@ -1,0 +1,1645 @@
+{
+  "common": {
+    "appName": "EcolnaSpace",
+    "loading": "Chargement…",
+    "save": "Enregistrer",
+    "cancel": "Annuler",
+    "retry": "Réessayer",
+    "search": "Rechercher",
+    "actions": "Actions",
+    "close": "Fermer",
+    "back": "Retour",
+    "next": "Suivant",
+    "previous": "Précédent",
+    "noResults": "Aucun résultat",
+    "errorGeneric": "Une erreur est survenue. Veuillez réessayer.",
+    "yes": "Oui",
+    "no": "Non"
+  },
+  "nav": {
+    "dashboard": "Tableau de bord",
+    "organization": "Organisation",
+    "campuses": "Campus",
+    "users": "Utilisateurs",
+    "documents": "Documents",
+    "settings": "Paramètres",
+    "students": "Élèves",
+    "parents": "Parents",
+    "teachers": "Enseignants",
+    "staff": "Personnel",
+    "classes": "Classes",
+    "academic": "Scolarité",
+    "academicYears": "Années scolaires",
+    "subjects": "Matières",
+    "schedules": "Emplois du temps",
+    "attendance": "Présences",
+    "homework": "Devoirs",
+    "exams": "Examens",
+    "grades": "Notes",
+    "reportCards": "Bulletins",
+    "finance": "Finance",
+    "invoices": "Factures",
+    "payments": "Paiements",
+    "communication": "Communication",
+    "announcements": "Annonces",
+    "messages": "Messages",
+    "notifications": "Notifications",
+    "children": "Enfants",
+    "daycare": "Garderie",
+    "meals": "Repas",
+    "naps": "Siestes",
+    "activities": "Activités",
+    "pickups": "Récupérations",
+    "billing": "Facturation",
+    "collapseSidebar": "Réduire le menu",
+    "expandSidebar": "Agrandir le menu",
+    "openMenu": "Ouvrir le menu"
+  },
+  "auth": {
+    "loginTitle": "Connexion",
+    "loginSubtitle": "Accédez à l'espace de votre établissement.",
+    "email": "E-mail",
+    "password": "Mot de passe",
+    "signIn": "Se connecter",
+    "signingIn": "Connexion…",
+    "forgotPassword": "Mot de passe oublié ?",
+    "noAccount": "Nouvel établissement ?",
+    "createOrganization": "Créer une organisation",
+    "registerTitle": "Créer votre organisation",
+    "registerSubtitle": "Quelques informations pour démarrer. Le reste se configure ensuite.",
+    "organizationName": "Nom de l'organisation",
+    "organizationSlug": "Identifiant URL",
+    "firstName": "Prénom",
+    "lastName": "Nom",
+    "createAccount": "Créer mon compte",
+    "creatingAccount": "Création…",
+    "haveAccount": "Vous avez déjà un compte ?",
+    "backToLogin": "Retour à la connexion",
+    "forgotTitle": "Mot de passe oublié",
+    "forgotSubtitle": "Indiquez votre e-mail. Nous enverrons un lien si un compte existe.",
+    "sendResetLink": "Envoyer le lien",
+    "sending": "Envoi…",
+    "logout": "Se déconnecter",
+    "invalidCredentials": "E-mail ou mot de passe incorrect.",
+    "sessionExpired": "Votre session a expiré. Veuillez vous reconnecter.",
+    "resetTitle": "Nouveau mot de passe",
+    "resetSubtitle": "Choisissez un mot de passe robuste pour sécuriser votre compte.",
+    "resetToken": "Jeton de réinitialisation",
+    "newPassword": "Nouveau mot de passe",
+    "confirmPassword": "Confirmer le mot de passe",
+    "resetSubmit": "Mettre à jour",
+    "resetting": "Mise à jour…",
+    "resetSuccess": "Mot de passe mis à jour. Vous pouvez vous connecter.",
+    "verifyTitle": "Vérifier votre e-mail",
+    "verifySubtitle": "Confirmation de votre adresse e-mail…",
+    "verifying": "Vérification…",
+    "verifySuccess": "E-mail vérifié avec succès.",
+    "verifyError": "Échec de la vérification.",
+    "verifyMissingToken": "Jeton de vérification manquant.",
+    "language": "Langue",
+    "showPassword": "Afficher le mot de passe",
+    "hidePassword": "Masquer le mot de passe",
+    "rateLimited": "Trop de tentatives. Réessayez dans quelques minutes.",
+    "registerFailed": "Impossible de créer le compte. Vérifiez les informations et réessayez.",
+    "resetFailed": "Impossible de mettre à jour le mot de passe. Réessayez.",
+    "forgotSent": "Si un compte existe pour cet e-mail, nous avons envoyé un lien de réinitialisation.",
+    "resetInvalidToken": "Ce lien de réinitialisation est invalide ou a expiré. Demandez-en un nouveau.",
+    "requestNewReset": "Demander un nouveau lien",
+    "organizationType": "Type d'établissement",
+    "organizationSlugHint": "Identifiant : {slug}",
+    "acceptTerms": "J'accepte la <privacy>politique de confidentialité</privacy> et les <terms>conditions d'utilisation</terms>.",
+    "brandPanel": {
+      "headline": "La gestion de votre établissement, au calme.",
+      "body": "Élèves, présences, notes et paiements — une plateforme conçue pour les établissements privés.",
+      "previewLabel": "Aperçu EcolnaSpace",
+      "footer": "Sécurité multi-tenant · Accès par rôle · Données isolées",
+      "trust": {
+        "isolated": "Données isolées par organisation",
+        "roles": "Accès contrôlés par rôle",
+        "realtime": "Présences & paiements en direct"
+      },
+      "mock": {
+        "orgName": "École Atlas",
+        "today": "Aujourd'hui",
+        "live": "En direct",
+        "attendanceTitle": "Présences — 3e A",
+        "paymentLabel": "Dernier paiement",
+        "paymentValue": "Facture #1042 · 450 DH",
+        "paid": "Payé",
+        "nav": {
+          "dashboard": "Tableau de bord",
+          "students": "Élèves",
+          "attendance": "Présences",
+          "payments": "Paiements"
+        },
+        "metrics": {
+          "attendance": "Présence",
+          "students": "Élèves",
+          "invoices": "Factures"
+        },
+        "status": {
+          "present": "Présent",
+          "late": "Retard",
+          "absent": "Absent"
+        }
+      }
+    },
+    "passwordRules": {
+      "title": "Exigences du mot de passe",
+      "minLength": "8+ caractères",
+      "hasLetter": "1 lettre",
+      "hasNumber": "1 chiffre"
+    },
+    "errors": {
+      "email": "Saisissez une adresse e-mail valide.",
+      "passwordRequired": "Saisissez votre mot de passe.",
+      "passwordWeak": "Le mot de passe ne respecte pas les exigences.",
+      "passwordMismatch": "Les mots de passe ne correspondent pas.",
+      "organizationName": "Saisissez le nom de votre établissement.",
+      "organizationSlug": "Utilisez uniquement des lettres minuscules, chiffres et tirets.",
+      "firstName": "Saisissez votre prénom.",
+      "lastName": "Saisissez votre nom.",
+      "acceptTerms": "Veuillez accepter les conditions pour continuer."
+    },
+    "orgTypes": {
+      "NURSERY": "Crèche",
+      "KINDERGARTEN": "Jardin d'enfants",
+      "PRIMARY_SCHOOL": "École primaire",
+      "MIDDLE_SCHOOL": "Collège",
+      "HIGH_SCHOOL": "Lycée",
+      "TUTORING_CENTER": "Centre de soutien",
+      "TRAINING_CENTER": "Centre de formation"
+    }
+  },
+  "dashboard": {
+    "title": "Tableau de bord",
+    "welcome": "Bonjour, {name}",
+    "welcomeGeneric": "Bienvenue sur EcolnaSpace",
+    "subtitle": "Voici l'activité de votre organisation aujourd'hui.",
+    "onboardingTitle": "Premiers pas",
+    "onboardingSubtitle": "Complétez ces étapes pour démarrer avec EcolnaSpace.",
+    "stepCampus": "Créer un campus",
+    "stepTeacher": "Inviter un enseignant",
+    "stepStudent": "Ajouter votre premier élève",
+    "emptyHint": "Votre tableau de bord se remplira dès que vous ajouterez des élèves et des classes.",
+    "readyHint": "Votre organisation est prête. Ouvrez un module depuis le menu pour continuer."
+  },
+  "locale": {
+    "label": "Langue",
+    "fr": "Français",
+    "en": "English",
+    "ar": "العربية"
+  },
+  "command": {
+    "title": "Palette de commandes",
+    "description": "Rechercher des pages et lancer des actions",
+    "placeholder": "Rechercher ou aller à…",
+    "navigation": "Navigation",
+    "actions": "Actions rapides",
+    "addStudent": "Ajouter un élève",
+    "inviteTeacher": "Inviter un enseignant",
+    "createCampus": "Créer un campus"
+  },
+  "students": {
+    "title": "Élèves",
+    "subtitle": "Gérez les élèves de vos campus.",
+    "add": "Ajouter un élève",
+    "searchPlaceholder": "Rechercher des élèves…",
+    "emptyTitle": "Aucun élève pour le moment",
+    "emptyDescription": "Ajoutez votre premier élève pour démarrer les inscriptions et les présences.",
+    "createTitle": "Ajouter un élève",
+    "createSubtitle": "Créer un profil élève pour votre organisation.",
+    "editTitle": "Modifier l'élève",
+    "editSubtitle": "Mettre à jour les informations de l'élève.",
+    "deleteTitle": "Supprimer cet élève ?",
+    "deleteDescription": "{name} sera retiré des listes actives. Cela peut impacter les dossiers liés.",
+    "notFound": "Élève introuvable.",
+    "ageYears": "{count} ans",
+    "pagination": "Page {page} sur {totalPages} · {total} élèves",
+    "columns": {
+      "name": "Nom",
+      "birth": "Date de naissance",
+      "campus": "Campus",
+      "status": "Statut"
+    },
+    "filters": {
+      "status": "Statut",
+      "campus": "Campus",
+      "allStatuses": "Tous les statuts",
+      "allCampuses": "Tous les campus"
+    },
+    "actions": {
+      "view": "Voir le profil",
+      "edit": "Modifier",
+      "delete": "Supprimer",
+      "enroll": "Inscrire"
+    },
+    "tabs": {
+      "overview": "Aperçu",
+      "enrollments": "Inscriptions",
+      "pickups": "Récupérations",
+      "medical": "Médical",
+      "documents": "Documents",
+      "reportCard": "Bulletin"
+    },
+    "form": {
+      "identity": "Identité",
+      "contact": "Contact",
+      "address": "Adresse",
+      "emergency": "Contact d'urgence",
+      "medical": "Médical"
+    },
+    "fields": {
+      "firstName": "Prénom",
+      "lastName": "Nom",
+      "preferredName": "Prénom usuel",
+      "dateOfBirth": "Date de naissance",
+      "gender": "Genre",
+      "status": "Statut",
+      "email": "E-mail",
+      "phone": "Téléphone",
+      "campus": "Campus",
+      "campusPlaceholder": "Choisir un campus",
+      "campusNone": "Aucun campus",
+      "addressLine1": "Adresse ligne 1",
+      "addressLine2": "Adresse ligne 2",
+      "city": "Ville",
+      "postalCode": "Code postal",
+      "country": "Pays (ISO)",
+      "emergencyName": "Contact d'urgence",
+      "emergencyPhone": "Téléphone d'urgence",
+      "allergiesNote": "Allergies / notes",
+      "photoConsent": "Consentement photo accordé",
+      "externalRef": "Référence externe",
+      "pickupName": "Nom complet",
+      "relationship": "Lien",
+      "class": "Classe",
+      "classPlaceholder": "Choisir une classe"
+    },
+    "errors": {
+      "firstName": "Veuillez saisir un prénom.",
+      "lastName": "Veuillez saisir un nom.",
+      "dateOfBirth": "Veuillez saisir une date de naissance valide."
+    },
+    "status": {
+      "ACTIVE": "Actif",
+      "INACTIVE": "Inactif",
+      "GRADUATED": "Diplômé",
+      "WITHDRAWN": "Retiré",
+      "ARCHIVED": "Archivé"
+    },
+    "toasts": {
+      "created": "Élève créé.",
+      "updated": "Élève mis à jour.",
+      "deleted": "Élève supprimé.",
+      "pickupAdded": "Personne autorisée ajoutée.",
+      "enrolled": "Élève inscrit dans la classe."
+    },
+    "enrollTitle": "Inscrire dans une classe",
+    "enrollSubtitle": "Ajouter cet élève à une classe pour l'année en cours.",
+    "enrollmentsEmptyTitle": "Aucune inscription",
+    "enrollmentsEmptyDescription": "Cet élève n'est inscrit dans aucune classe.",
+    "enrollmentsUnavailableTitle": "Inscriptions indisponibles",
+    "enrollmentsUnavailableDescription": "Le module scolaire est peut-être désactivé pour cette organisation.",
+    "pickupsEmptyTitle": "Aucune personne autorisée",
+    "pickupsEmptyDescription": "Ajoutez des adultes de confiance pouvant récupérer cet élève.",
+    "pickupAddTitle": "Ajouter une personne",
+    "pickupAddSubtitle": "Adultes autorisés pour la récupération.",
+    "pickupAdd": "Ajouter",
+    "pickupActive": "Actif",
+    "pickupInactive": "Inactif",
+    "medicalRestrictedTitle": "Informations médicales restreintes",
+    "medicalRestrictedDescription": "Vous n'avez pas la permission de consulter les informations médicales."
+  },
+  "teachers": {
+    "title": "Enseignants",
+    "subtitle": "Invitez et gérez votre équipe pédagogique.",
+    "add": "Inviter un enseignant",
+    "searchPlaceholder": "Rechercher des enseignants…",
+    "emptyTitle": "Aucun enseignant pour le moment",
+    "emptyDescription": "Invitez votre premier enseignant pour constituer l'équipe.",
+    "createTitle": "Inviter un enseignant",
+    "createSubtitle": "Crée un compte et envoie un mot de passe temporaire par e-mail.",
+    "editTitle": "Modifier l'enseignant",
+    "editSubtitle": "Mettre à jour le profil de l'enseignant.",
+    "notFound": "Enseignant introuvable.",
+    "inviteHint": "Un e-mail d'invitation avec un mot de passe temporaire sera envoyé.",
+    "campusesHint": "Assignez les campus où cet enseignant intervient.",
+    "noCampuses": "Aucun campus disponible pour le moment.",
+    "noCampusesAssigned": "Aucun campus assigné",
+    "noCampusesAssignedDescription": "Modifiez l'enseignant pour assigner un ou plusieurs campus.",
+    "pagination": "Page {page} sur {totalPages} · {total} enseignants",
+    "columns": {
+      "name": "Nom",
+      "email": "E-mail",
+      "campuses": "Campus",
+      "employeeCode": "Matricule"
+    },
+    "actions": {
+      "view": "Voir le profil",
+      "edit": "Modifier"
+    },
+    "form": {
+      "identity": "Profil",
+      "campuses": "Campus"
+    },
+    "fields": {
+      "email": "E-mail",
+      "firstName": "Prénom",
+      "lastName": "Nom",
+      "phone": "Téléphone",
+      "employeeCode": "Matricule",
+      "bio": "Bio",
+      "createdAt": "Créé le"
+    },
+    "errors": {
+      "email": "Veuillez saisir une adresse e-mail valide.",
+      "firstName": "Veuillez saisir un prénom.",
+      "lastName": "Veuillez saisir un nom."
+    },
+    "toasts": {
+      "created": "Enseignant invité.",
+      "updated": "Enseignant mis à jour."
+    }
+  },
+  "campuses": {
+    "title": "Campus",
+    "subtitle": "Gérez les sites de votre organisation.",
+    "add": "Ajouter un campus",
+    "searchPlaceholder": "Rechercher des campus…",
+    "emptyTitle": "Aucun campus pour le moment",
+    "emptyDescription": "Créez votre premier campus pour organiser élèves et personnel.",
+    "createTitle": "Ajouter un campus",
+    "createSubtitle": "Créer un nouveau site pour votre organisation.",
+    "editTitle": "Modifier le campus",
+    "editSubtitle": "Mettre à jour les informations du campus.",
+    "deleteTitle": "Supprimer ce campus ?",
+    "deleteDescription": "Supprimer {name} entraînera aussi la suppression de ses classes et des liaisons enseignants. Les élèves conserveront leur profil sans ce campus.",
+    "columns": {
+      "name": "Nom",
+      "code": "Code",
+      "city": "Ville",
+      "status": "Statut"
+    },
+    "actions": {
+      "edit": "Modifier",
+      "delete": "Supprimer"
+    },
+    "fields": {
+      "name": "Nom",
+      "code": "Code",
+      "email": "E-mail",
+      "phone": "Téléphone",
+      "addressLine1": "Adresse",
+      "city": "Ville",
+      "postalCode": "Code postal",
+      "country": "Pays (ISO)",
+      "isActive": "Campus actif"
+    },
+    "errors": {
+      "name": "Veuillez saisir un nom de campus."
+    },
+    "status": {
+      "active": "Actif",
+      "inactive": "Inactif"
+    },
+    "toasts": {
+      "created": "Campus créé.",
+      "updated": "Campus mis à jour.",
+      "deleted": "Campus supprimé."
+    }
+  },
+  "parents": {
+    "title": "Parents",
+    "subtitle": "Invitez les responsables et liez-les aux élèves.",
+    "add": "Inviter un parent",
+    "searchPlaceholder": "Rechercher des parents…",
+    "emptyTitle": "Aucun parent pour le moment",
+    "emptyDescription": "Invitez un parent pour lui donner accès à ses enfants.",
+    "createTitle": "Inviter un parent",
+    "createSubtitle": "Crée un compte et envoie un mot de passe temporaire par e-mail.",
+    "inviteSubmit": "Envoyer l'invitation",
+    "inviteHint": "Un e-mail d'invitation avec un mot de passe temporaire sera envoyé.",
+    "notFound": "Parent introuvable.",
+    "profileTitle": "Profil",
+    "inviteStatusTitle": "Invitation",
+    "inviteStatusDescription": "Les nouveaux parents sont créés en statut invité. Leur adhésion doit être active avant la connexion.",
+    "linkTitle": "Lier à un élève",
+    "linkSubtitle": "Associer ce parent comme responsable d'un élève.",
+    "linkSubmit": "Lier l'élève",
+    "childrenTitle": "Liens récents",
+    "childrenDescription": "L'API ne liste pas encore tous les enfants d'un parent. Les liens créés dans cette session apparaissent ici.",
+    "childrenEmptyTitle": "Aucun lien dans cette session",
+    "childrenEmptyDescription": "Liez un élève ci-dessus, ou ouvrez un profil élève pour gérer les responsables.",
+    "pagination": "Page {page} sur {totalPages} · {total} parents",
+    "columns": {
+      "name": "Nom",
+      "email": "E-mail",
+      "phone": "Téléphone"
+    },
+    "actions": {
+      "view": "Voir le profil"
+    },
+    "fields": {
+      "email": "E-mail",
+      "firstName": "Prénom",
+      "lastName": "Nom",
+      "phone": "Téléphone",
+      "createdAt": "Créé le",
+      "student": "Élève",
+      "studentPlaceholder": "Choisir un élève",
+      "relationship": "Lien",
+      "relationshipPlaceholder": "ex. Mère, Père, Tuteur",
+      "isPrimary": "Contact principal",
+      "isEmergency": "Contact d'urgence",
+      "canPickup": "Autorisé à récupérer"
+    },
+    "errors": {
+      "email": "Veuillez saisir une adresse e-mail valide.",
+      "firstName": "Veuillez saisir un prénom.",
+      "lastName": "Veuillez saisir un nom."
+    },
+    "toasts": {
+      "created": "Parent invité.",
+      "linked": "Parent lié à l'élève."
+    }
+  },
+  "classes": {
+    "title": "Classes",
+    "subtitle": "Organisez les groupes par campus et année scolaire.",
+    "add": "Ajouter une classe",
+    "searchPlaceholder": "Rechercher des classes…",
+    "emptyTitle": "Aucune classe pour le moment",
+    "emptyDescription": "Créez une classe pour y inscrire des élèves.",
+    "createTitle": "Ajouter une classe",
+    "createSubtitle": "Définir le campus, l'année et le niveau.",
+    "editTitle": "Modifier la classe",
+    "editSubtitle": "Mettre à jour le nom, le niveau ou la capacité.",
+    "deleteTitle": "Supprimer cette classe ?",
+    "deleteDescription": "Supprimer {name} entraînera aussi la suppression de ses inscriptions. Cette action est irréversible.",
+    "notFound": "Classe introuvable.",
+    "currentYear": "en cours",
+    "enrolledActive": "Élèves actifs",
+    "enrollmentsTitle": "Inscriptions",
+    "enrollmentsSubtitle": "Élèves inscrits dans cette classe.",
+    "enrollmentsEmptyTitle": "Aucun élève inscrit",
+    "enrollmentsEmptyDescription": "Inscrivez un élève ci-dessous, ou depuis le profil élève.",
+    "enrollmentsUnavailableTitle": "Inscriptions indisponibles",
+    "enrollmentsUnavailableDescription": "Impossible de charger la liste des inscriptions pour cette classe.",
+    "enrollmentStatus": {
+      "ACTIVE": "Actif",
+      "COMPLETED": "Terminé",
+      "WITHDRAWN": "Retiré",
+      "TRANSFERRED": "Transféré"
+    },
+    "filters": {
+      "campus": "Campus",
+      "year": "Année scolaire",
+      "allCampuses": "Tous les campus",
+      "allYears": "Toutes les années"
+    },
+    "columns": {
+      "name": "Nom",
+      "campus": "Campus",
+      "year": "Année",
+      "gradeLevel": "Niveau",
+      "capacity": "Capacité",
+      "student": "Élève",
+      "status": "Statut",
+      "enrolledOn": "Inscrit le"
+    },
+    "actions": {
+      "view": "Voir",
+      "edit": "Modifier",
+      "delete": "Supprimer",
+      "enroll": "Inscrire"
+    },
+    "fields": {
+      "campus": "Campus",
+      "campusPlaceholder": "Choisir un campus",
+      "academicYear": "Année scolaire",
+      "yearPlaceholder": "Choisir une année",
+      "name": "Nom de la classe",
+      "gradeLevel": "Niveau",
+      "capacity": "Capacité",
+      "student": "Élève",
+      "studentPlaceholder": "Choisir un élève"
+    },
+    "errors": {
+      "campus": "Veuillez choisir un campus.",
+      "year": "Veuillez choisir une année scolaire.",
+      "name": "Veuillez saisir un nom de classe."
+    },
+    "toasts": {
+      "created": "Classe créée.",
+      "updated": "Classe mise à jour.",
+      "deleted": "Classe supprimée.",
+      "enrolled": "Élève inscrit.",
+      "statusUpdated": "Statut d'inscription mis à jour."
+    }
+  },
+  "academicYears": {
+    "title": "Années scolaires",
+    "subtitle": "Définissez les années et marquez l'année en cours.",
+    "add": "Ajouter une année",
+    "searchPlaceholder": "Rechercher des années…",
+    "emptyTitle": "Aucune année scolaire",
+    "emptyDescription": "Créez une année scolaire pour organiser classes et inscriptions.",
+    "createTitle": "Ajouter une année scolaire",
+    "createSubtitle": "Définir le nom, les dates et l'année en cours.",
+    "editTitle": "Modifier l'année scolaire",
+    "editSubtitle": "Mettre à jour les informations de l'année.",
+    "deleteTitle": "Supprimer cette année ?",
+    "deleteDescription": "Supprimer {name} peut affecter les classes liées. Cette action est irréversible.",
+    "columns": {
+      "name": "Nom",
+      "startsOn": "Début",
+      "endsOn": "Fin",
+      "status": "Statut"
+    },
+    "actions": {
+      "edit": "Modifier",
+      "delete": "Supprimer"
+    },
+    "fields": {
+      "name": "Nom",
+      "startsOn": "Date de début",
+      "endsOn": "Date de fin",
+      "isCurrent": "Année en cours"
+    },
+    "errors": {
+      "name": "Veuillez saisir un nom.",
+      "dates": "Veuillez indiquer les dates de début et de fin."
+    },
+    "status": {
+      "current": "En cours",
+      "inactive": "Inactive"
+    },
+    "toasts": {
+      "created": "Année scolaire créée.",
+      "updated": "Année scolaire mise à jour.",
+      "deleted": "Année scolaire supprimée."
+    }
+  },
+  "subjects": {
+    "title": "Matières",
+    "subtitle": "Gérez les matières enseignées dans votre établissement.",
+    "add": "Ajouter une matière",
+    "searchPlaceholder": "Rechercher des matières…",
+    "emptyTitle": "Aucune matière pour le moment",
+    "emptyDescription": "Créez des matières pour les emplois du temps, devoirs et notes.",
+    "createTitle": "Ajouter une matière",
+    "createSubtitle": "Définir un nom et un code optionnel.",
+    "editTitle": "Modifier la matière",
+    "editSubtitle": "Mettre à jour les informations de la matière.",
+    "deleteTitle": "Supprimer cette matière ?",
+    "deleteDescription": "Supprimer {name} peut affecter les dossiers liés. Cette action est irréversible.",
+    "columns": {
+      "name": "Nom",
+      "code": "Code"
+    },
+    "actions": {
+      "edit": "Modifier",
+      "delete": "Supprimer"
+    },
+    "fields": {
+      "name": "Nom",
+      "code": "Code"
+    },
+    "errors": {
+      "name": "Veuillez saisir un nom de matière."
+    },
+    "toasts": {
+      "created": "Matière créée.",
+      "updated": "Matière mise à jour.",
+      "deleted": "Matière supprimée."
+    }
+  },
+  "schedules": {
+    "title": "Emplois du temps",
+    "subtitle": "Construisez les grilles horaires par classe.",
+    "add": "Ajouter un créneau",
+    "emptyTitle": "Aucun créneau",
+    "emptyDescription": "Ajoutez des créneaux pour cette classe.",
+    "emptySelectTitle": "Choisir une classe",
+    "emptySelectDescription": "Sélectionnez une classe pour voir ou modifier son emploi du temps.",
+    "createTitle": "Ajouter un créneau",
+    "createSubtitle": "Définir le jour, l'horaire et éventuellement la matière ou l'enseignant.",
+    "deleteTitle": "Supprimer ce créneau ?",
+    "deleteDescription": "Retirer {day} {time} de l'emploi du temps ?",
+    "columns": {
+      "day": "Jour",
+      "startTime": "Début",
+      "endTime": "Fin",
+      "subject": "Matière",
+      "teacher": "Enseignant"
+    },
+    "actions": {
+      "delete": "Supprimer"
+    },
+    "fields": {
+      "class": "Classe",
+      "classPlaceholder": "Choisir une classe",
+      "dayOfWeek": "Jour de la semaine",
+      "startTime": "Heure de début",
+      "endTime": "Heure de fin",
+      "subject": "Matière",
+      "subjectOptional": "Aucune matière",
+      "teacher": "Enseignant",
+      "teacherOptional": "Aucun enseignant"
+    },
+    "errors": {
+      "class": "Veuillez choisir une classe.",
+      "times": "Veuillez indiquer les heures de début et de fin."
+    },
+    "days": {
+      "1": "Lundi",
+      "2": "Mardi",
+      "3": "Mercredi",
+      "4": "Jeudi",
+      "5": "Vendredi",
+      "6": "Samedi",
+      "7": "Dimanche"
+    },
+    "toasts": {
+      "created": "Créneau créé.",
+      "deleted": "Créneau supprimé."
+    }
+  },
+  "homework": {
+    "title": "Devoirs",
+    "subtitle": "Assignez et suivez les devoirs par classe.",
+    "add": "Ajouter un devoir",
+    "emptyTitle": "Aucun devoir pour le moment",
+    "emptyDescription": "Créez des devoirs pour vos classes.",
+    "createTitle": "Ajouter un devoir",
+    "createSubtitle": "Définir la classe, le titre et la date d'échéance.",
+    "editTitle": "Modifier le devoir",
+    "editSubtitle": "Mettre à jour les détails du devoir.",
+    "deleteTitle": "Supprimer ce devoir ?",
+    "deleteDescription": "Supprimer « {name} » ? Cette action est irréversible.",
+    "filters": {
+      "class": "Classe",
+      "allClasses": "Toutes les classes"
+    },
+    "columns": {
+      "title": "Titre",
+      "class": "Classe",
+      "subject": "Matière",
+      "dueDate": "Échéance"
+    },
+    "actions": {
+      "edit": "Modifier",
+      "delete": "Supprimer"
+    },
+    "fields": {
+      "class": "Classe",
+      "classPlaceholder": "Choisir une classe",
+      "title": "Titre",
+      "subject": "Matière",
+      "subjectOptional": "Aucune matière",
+      "dueDate": "Date d'échéance",
+      "description": "Description"
+    },
+    "errors": {
+      "class": "Veuillez choisir une classe.",
+      "title": "Veuillez saisir un titre."
+    },
+    "toasts": {
+      "created": "Devoir créé.",
+      "updated": "Devoir mis à jour.",
+      "deleted": "Devoir supprimé."
+    }
+  },
+  "exams": {
+    "title": "Examens",
+    "subtitle": "Planifiez et gérez les examens des classes.",
+    "add": "Ajouter un examen",
+    "emptyTitle": "Aucun examen pour le moment",
+    "emptyDescription": "Planifiez des examens pour vos classes.",
+    "createTitle": "Ajouter un examen",
+    "createSubtitle": "Définir la classe, la matière et la date.",
+    "editTitle": "Modifier l'examen",
+    "editSubtitle": "Mettre à jour les détails de l'examen.",
+    "deleteTitle": "Supprimer cet examen ?",
+    "deleteDescription": "Supprimer « {name} » ? Cette action est irréversible.",
+    "filters": {
+      "class": "Classe",
+      "allClasses": "Toutes les classes"
+    },
+    "columns": {
+      "title": "Titre",
+      "class": "Classe",
+      "subject": "Matière",
+      "examDate": "Date",
+      "status": "Statut"
+    },
+    "actions": {
+      "edit": "Modifier",
+      "delete": "Supprimer"
+    },
+    "fields": {
+      "class": "Classe",
+      "classPlaceholder": "Choisir une classe",
+      "subject": "Matière",
+      "subjectPlaceholder": "Choisir une matière",
+      "title": "Titre",
+      "examDate": "Date de l'examen",
+      "durationMin": "Durée (minutes)",
+      "status": "Statut"
+    },
+    "status": {
+      "SCHEDULED": "Planifié",
+      "COMPLETED": "Terminé",
+      "CANCELLED": "Annulé"
+    },
+    "errors": {
+      "class": "Veuillez choisir une classe.",
+      "subject": "Veuillez choisir une matière.",
+      "title": "Veuillez saisir un titre.",
+      "examDate": "Veuillez indiquer une date."
+    },
+    "toasts": {
+      "created": "Examen créé.",
+      "updated": "Examen mis à jour.",
+      "deleted": "Examen supprimé."
+    }
+  },
+  "grades": {
+    "title": "Notes",
+    "subtitle": "Enregistrez les notes par élève, matière et évaluation.",
+    "add": "Ajouter une note",
+    "emptyTitle": "Aucune note pour le moment",
+    "emptyDescription": "Enregistrez des notes pour les élèves et les matières.",
+    "createTitle": "Ajouter une note",
+    "createSubtitle": "Saisir le score et les détails de l'évaluation.",
+    "deleteTitle": "Supprimer cette note ?",
+    "deleteDescription": "Supprimer la note « {name} » ? Cette action est irréversible.",
+    "filters": {
+      "subject": "Matière",
+      "allSubjects": "Toutes les matières"
+    },
+    "columns": {
+      "student": "Élève",
+      "subject": "Matière",
+      "assessment": "Évaluation",
+      "score": "Score",
+      "gradedOn": "Noté le"
+    },
+    "actions": {
+      "delete": "Supprimer"
+    },
+    "fields": {
+      "student": "Élève",
+      "studentPlaceholder": "Choisir un élève",
+      "subject": "Matière",
+      "subjectPlaceholder": "Choisir une matière",
+      "exam": "Examen",
+      "examOptional": "Aucun examen",
+      "assessment": "Évaluation",
+      "assessmentPlaceholder": "ex. Contrôle, Quiz 1",
+      "score": "Score",
+      "maxScore": "Score max",
+      "gradedOn": "Date de notation"
+    },
+    "errors": {
+      "student": "Veuillez choisir un élève.",
+      "subject": "Veuillez choisir une matière.",
+      "assessment": "Veuillez saisir un nom d'évaluation.",
+      "score": "Veuillez saisir le score et le maximum.",
+      "gradedOn": "Veuillez indiquer une date."
+    },
+    "toasts": {
+      "created": "Note enregistrée.",
+      "deleted": "Note supprimée."
+    }
+  },
+  "attendance": {
+    "title": "Présences",
+    "subtitle": "Suivez la présence quotidienne par classe.",
+    "add": "Enregistrer une présence",
+    "emptyTitle": "Aucune présence",
+    "emptyDescription": "Enregistrez des présences pour cette date.",
+    "createTitle": "Enregistrer une présence",
+    "createSubtitle": "Marquez un élève présent, absent, en retard ou excusé.",
+    "editTitle": "Modifier la présence",
+    "editSubtitle": "Modifiez le statut ou les notes.",
+    "filters": {
+      "date": "Date",
+      "class": "Classe",
+      "allClasses": "Toutes les classes"
+    },
+    "columns": {
+      "student": "Élève",
+      "class": "Classe",
+      "status": "Statut",
+      "notes": "Notes"
+    },
+    "actions": {
+      "edit": "Modifier"
+    },
+    "fields": {
+      "student": "Élève",
+      "studentPlaceholder": "Choisir un élève",
+      "date": "Date",
+      "status": "Statut",
+      "class": "Classe",
+      "classPlaceholder": "Classe optionnelle",
+      "noClass": "Sans classe",
+      "notes": "Notes"
+    },
+    "status": {
+      "PRESENT": "Présent",
+      "ABSENT": "Absent",
+      "LATE": "En retard",
+      "EXCUSED": "Excusé"
+    },
+    "errors": {
+      "required": "Élève et date sont obligatoires."
+    },
+    "toasts": {
+      "recorded": "Présence enregistrée.",
+      "updated": "Présence mise à jour."
+    }
+  },
+  "invoices": {
+    "title": "Factures",
+    "subtitle": "Créez des brouillons, émettez des factures et suivez les paiements.",
+    "add": "Nouvelle facture brouillon",
+    "emptyTitle": "Aucune facture",
+    "emptyDescription": "Créez une facture brouillon pour commencer.",
+    "createTitle": "Créer une facture brouillon",
+    "createSubtitle": "Ajoutez des lignes ; vous pourrez émettre plus tard.",
+    "draftLabel": "Brouillon",
+    "notFound": "Facture introuvable.",
+    "itemsTitle": "Lignes",
+    "itemsEmpty": "Aucune ligne",
+    "paymentsTitle": "Paiements",
+    "paymentsEmpty": "Aucun paiement",
+    "paymentTitle": "Enregistrer un paiement",
+    "paymentSubtitle": "Ajouter un paiement sur cette facture.",
+    "pagination": "Page {page} sur {totalPages} · {total} factures",
+    "filters": {
+      "status": "Statut",
+      "allStatuses": "Tous les statuts"
+    },
+    "columns": {
+      "number": "Facture",
+      "student": "Élève",
+      "status": "Statut",
+      "total": "Total",
+      "paid": "Payé",
+      "remaining": "Reste",
+      "lineTotal": "Total ligne",
+      "paidAt": "Payé le",
+      "amount": "Montant"
+    },
+    "actions": {
+      "view": "Voir",
+      "addItem": "Ajouter une ligne",
+      "removeItem": "Retirer",
+      "createDraft": "Créer le brouillon",
+      "issue": "Émettre",
+      "addPayment": "Ajouter un paiement",
+      "recordPayment": "Enregistrer"
+    },
+    "fields": {
+      "student": "Élève",
+      "studentPlaceholder": "Élève optionnel",
+      "noStudent": "Sans élève",
+      "items": "Lignes",
+      "description": "Description",
+      "quantity": "Quantité",
+      "unitPrice": "Prix unitaire",
+      "notes": "Notes",
+      "amount": "Montant",
+      "method": "Méthode",
+      "reference": "Référence"
+    },
+    "status": {
+      "DRAFT": "Brouillon",
+      "ISSUED": "Émise",
+      "PARTIALLY_PAID": "Partiellement payée",
+      "PAID": "Payée",
+      "OVERDUE": "En retard",
+      "CANCELLED": "Annulée"
+    },
+    "methods": {
+      "CASH": "Espèces",
+      "CARD": "Carte",
+      "BANK_TRANSFER": "Virement",
+      "CHECK": "Chèque",
+      "OTHER": "Autre"
+    },
+    "errors": {
+      "items": "Ajoutez au moins une ligne valide.",
+      "amount": "Montant invalide."
+    },
+    "toasts": {
+      "created": "Brouillon créé.",
+      "issued": "Facture émise.",
+      "paymentAdded": "Paiement enregistré."
+    }
+  },
+  "payments": {
+    "title": "Paiements",
+    "subtitle": "Enregistrez les paiements sur les factures émises ou en retard.",
+    "emptyTitle": "Aucune facture à payer",
+    "emptyDescription": "Les factures émises, partiellement payées ou en retard apparaîtront ici.",
+    "paymentTitle": "Enregistrer un paiement",
+    "paymentSubtitle": "Paiement pour la facture {number}.",
+    "columns": {
+      "invoice": "Facture",
+      "student": "Élève",
+      "status": "Statut",
+      "due": "Reste dû"
+    },
+    "actions": {
+      "record": "Enregistrer"
+    },
+    "fields": {
+      "amount": "Montant",
+      "method": "Méthode",
+      "reference": "Référence"
+    },
+    "errors": {
+      "amount": "Montant invalide."
+    },
+    "toasts": {
+      "recorded": "Paiement enregistré."
+    }
+  },
+  "announcements": {
+    "title": "Annonces",
+    "subtitle": "Publiez des informations pour votre organisation.",
+    "add": "Nouvelle annonce",
+    "emptyTitle": "Aucune annonce",
+    "emptyDescription": "Les annonces publiées apparaîtront ici.",
+    "createTitle": "Créer une annonce",
+    "createSubtitle": "Rédigez un titre et un contenu. Publication optionnelle.",
+    "status": {
+      "published": "Publiée"
+    },
+    "actions": {
+      "unpublish": "Dépublier"
+    },
+    "fields": {
+      "title": "Titre",
+      "body": "Contenu",
+      "publishNow": "Publier maintenant"
+    },
+    "errors": {
+      "required": "Titre et contenu obligatoires."
+    },
+    "toasts": {
+      "created": "Annonce créée.",
+      "unpublished": "Annonce dépubliée."
+    }
+  },
+  "messages": {
+    "title": "Messages",
+    "subtitle": "Messages internes entre le personnel et les enseignants.",
+    "compose": "Écrire",
+    "composeTitle": "Nouveau message",
+    "composeSubtitle": "Envoyez un message à un utilisateur de votre organisation.",
+    "emptyTitle": "Aucun message",
+    "emptyDescription": "Votre boîte de réception et vos messages envoyés apparaîtront ici.",
+    "tabs": {
+      "inbox": "Réception",
+      "sent": "Envoyés"
+    },
+    "unread": "Non lu",
+    "noSubject": "(Sans objet)",
+    "actions": {
+      "send": "Envoyer"
+    },
+    "fields": {
+      "recipient": "Destinataire",
+      "recipientPlaceholder": "Choisir une personne",
+      "manualRecipient": "Ou ID utilisateur",
+      "manualRecipientPlaceholder": "Coller un UUID utilisateur",
+      "subject": "Objet",
+      "body": "Message"
+    },
+    "errors": {
+      "required": "Destinataire et message obligatoires."
+    },
+    "toasts": {
+      "sent": "Message envoyé."
+    }
+  },
+  "notifications": {
+    "title": "Notifications",
+    "subtitle": "Alertes et notifications système.",
+    "emptyTitle": "Aucune notification",
+    "emptyDescription": "Vous êtes à jour.",
+    "unread": "Non lue",
+    "actions": {
+      "markRead": "Marquer comme lue"
+    }
+  },
+  "meals": {
+    "title": "Repas",
+    "subtitle": "Enregistrez les repas de garderie par date.",
+    "add": "Ajouter un repas",
+    "emptyTitle": "Aucun repas",
+    "emptyDescription": "Enregistrez des repas pour cette date.",
+    "createTitle": "Ajouter un repas",
+    "createSubtitle": "Choisissez un élève et un type de repas.",
+    "filters": {
+      "date": "Date"
+    },
+    "columns": {
+      "student": "Élève",
+      "mealType": "Repas",
+      "consumed": "Consommé",
+      "notes": "Notes"
+    },
+    "fields": {
+      "student": "Élève",
+      "studentPlaceholder": "Choisir un élève",
+      "mealType": "Type de repas",
+      "consumed": "Consommé",
+      "notes": "Notes"
+    },
+    "mealTypes": {
+      "BREAKFAST": "Petit-déjeuner",
+      "LUNCH": "Déjeuner",
+      "SNACK": "Goûter",
+      "DINNER": "Dîner"
+    },
+    "errors": {
+      "student": "Veuillez choisir un élève."
+    },
+    "toasts": {
+      "created": "Repas enregistré."
+    }
+  },
+  "naps": {
+    "title": "Siestes",
+    "subtitle": "Suivez les siestes des enfants.",
+    "add": "Ajouter une sieste",
+    "emptyTitle": "Aucune sieste",
+    "emptyDescription": "Enregistrez des siestes pour cette date.",
+    "createTitle": "Ajouter une sieste",
+    "createSubtitle": "Indiquez le début et éventuellement la fin.",
+    "filters": {
+      "date": "Date"
+    },
+    "columns": {
+      "student": "Élève",
+      "startedAt": "Début",
+      "endedAt": "Fin",
+      "notes": "Notes"
+    },
+    "fields": {
+      "student": "Élève",
+      "studentPlaceholder": "Choisir un élève",
+      "startedAt": "Début",
+      "endedAt": "Fin",
+      "notes": "Notes"
+    },
+    "errors": {
+      "required": "Élève et heure de début obligatoires."
+    },
+    "toasts": {
+      "created": "Sieste enregistrée."
+    }
+  },
+  "activities": {
+    "title": "Activités",
+    "subtitle": "Enregistrez les activités et participants.",
+    "add": "Ajouter une activité",
+    "emptyTitle": "Aucune activité",
+    "emptyDescription": "Enregistrez une activité pour cette date.",
+    "createTitle": "Ajouter une activité",
+    "createSubtitle": "Nommez l'activité et sélectionnez les élèves.",
+    "filters": {
+      "date": "Date"
+    },
+    "columns": {
+      "title": "Activité",
+      "students": "Élèves",
+      "notes": "Notes"
+    },
+    "fields": {
+      "title": "Titre",
+      "students": "Élèves",
+      "notes": "Notes"
+    },
+    "errors": {
+      "required": "Titre et au moins un élève obligatoires."
+    },
+    "toasts": {
+      "created": "Activité enregistrée."
+    }
+  },
+  "pickups": {
+    "title": "Récupérations",
+    "subtitle": "Enregistrez qui a récupéré chaque enfant.",
+    "add": "Ajouter une récupération",
+    "emptyTitle": "Aucune récupération",
+    "emptyDescription": "Enregistrez les récupérations pour cette date.",
+    "createTitle": "Ajouter une récupération",
+    "createSubtitle": "Indiquez la personne qui a récupéré l'élève.",
+    "filters": {
+      "date": "Date"
+    },
+    "columns": {
+      "student": "Élève",
+      "person": "Personne",
+      "verified": "Vérifié",
+      "arrivedAt": "Arrivée"
+    },
+    "fields": {
+      "student": "Élève",
+      "studentPlaceholder": "Choisir un élève",
+      "person": "Nom de la personne",
+      "verified": "Vérifié",
+      "notes": "Notes"
+    },
+    "errors": {
+      "required": "Élève et personne obligatoires."
+    },
+    "toasts": {
+      "created": "Récupération enregistrée."
+    }
+  },
+  "staff": {
+    "title": "Personnel",
+    "subtitle": "Gérez le personnel non enseignant.",
+    "add": "Ajouter un membre",
+    "searchPlaceholder": "Rechercher…",
+    "emptyTitle": "Aucun personnel",
+    "emptyDescription": "Ajoutez un membre du personnel pour commencer.",
+    "createTitle": "Ajouter un membre",
+    "createSubtitle": "Crée un compte pour ce membre du personnel.",
+    "editTitle": "Modifier le membre",
+    "editSubtitle": "Mettez à jour le profil.",
+    "pagination": "Page {page} sur {totalPages} · {total} membres",
+    "columns": {
+      "name": "Nom",
+      "email": "Email",
+      "jobTitle": "Poste",
+      "department": "Service"
+    },
+    "actions": {
+      "edit": "Modifier"
+    },
+    "fields": {
+      "email": "Email",
+      "firstName": "Prénom",
+      "lastName": "Nom",
+      "phone": "Téléphone",
+      "jobTitle": "Poste",
+      "department": "Service"
+    },
+    "errors": {
+      "required": "Prénom et nom obligatoires.",
+      "email": "Email invalide."
+    },
+    "toasts": {
+      "created": "Membre créé.",
+      "updated": "Membre mis à jour."
+    }
+  },
+  "settings": {
+    "title": "Paramètres",
+    "subtitle": "Profil de l'organisation et fonctionnalités.",
+    "notFound": "Organisation introuvable.",
+    "orgTitle": "Profil de l'organisation",
+    "featuresTitle": "Fonctionnalités",
+    "featuresSubtitle": "Activez ou désactivez des modules.",
+    "featuresEmpty": "Aucune fonctionnalité configurée.",
+    "features": {
+      "enabled": "Activée",
+      "disabled": "Désactivée"
+    },
+    "fields": {
+      "email": "Email",
+      "phone": "Téléphone",
+      "website": "Site web",
+      "addressLine1": "Adresse ligne 1",
+      "addressLine2": "Adresse ligne 2",
+      "city": "Ville",
+      "postalCode": "Code postal",
+      "country": "Pays",
+      "timezone": "Fuseau horaire",
+      "locale": "Locale"
+    },
+    "toasts": {
+      "updated": "Organisation mise à jour.",
+      "featureUpdated": "Fonctionnalité mise à jour."
+    }
+  },
+  "landing": {
+    "nav": {
+      "primary": "Navigation principale",
+      "product": "Produit",
+      "pricing": "Tarifs",
+      "contact": "Contact",
+      "language": "Langue",
+      "signIn": "Se connecter",
+      "cta": "Commencer",
+      "openMenu": "Ouvrir le menu",
+      "closeMenu": "Fermer le menu"
+    },
+    "hero": {
+      "headline": "Une seule plateforme pour <accent>diriger votre établissement</accent>",
+      "badge": "La plateforme des établissements privés",
+      "builtFor": "Conçu pour",
+      "subhead": "Remplacez les tableurs, les fils de discussion et le papier. Suivez les élèves, les présences, les notes et les paiements — pensé pour les crèches, écoles et centres de soutien.",
+      "ctaPrimary": "Créer mon organisation",
+      "ctaSecondary": "Nous écrire",
+      "note": "Aucune carte bancaire requise pour démarrer.",
+      "highlights": {
+        "multiCampus": "Plusieurs campus sous une même organisation",
+        "roleAccess": "Accès distincts pour direction, enseignants et parents",
+        "daycare": "Journaux de crèche : repas, siestes et récupérations"
+      }
+    },
+    "preview": {
+      "title": "Aujourd'hui en un coup d'œil",
+      "subtitle": "Campus · École primaire",
+      "students": "Élèves",
+      "attendance": "Présences",
+      "invoices": "Factures",
+      "present": "Présent",
+      "late": "En retard",
+      "paid": "Payé",
+      "chips": {
+        "attendance": "Présents aujourd'hui",
+        "payment": "Paiement reçu",
+        "paymentMeta": "Facture #1042 · à l'instant",
+        "announce": "Annonce envoyée",
+        "announceMeta": "142 familles notifiées"
+      }
+    },
+    "problem": {
+      "eyebrow": "Le constat",
+      "headline": "La plupart des établissements jonglent encore avec cinq outils",
+      "body": "Les présences ici, les notes ailleurs, les paiements par message, les récupérations au téléphone. Cela fonctionne — jusqu'au jour où cela ne fonctionne plus. EcolnaSpace réunit ces routines dans un espace partagé.",
+      "before": "Avant",
+      "after": "Après",
+      "flowLabel": "Quotidien fragmenté",
+      "flowTo": "Espace unique",
+      "result": "Tout le quotidien, au même endroit.",
+      "beforeLead": "Plusieurs outils, aucune vue d'ensemble — chacun dans son coin.",
+      "beforeTitle": "Outils dispersés",
+      "afterLead": "Tout le quotidien de l'établissement, organisé en modules liés.",
+      "beforeSummary": "Le coût caché : du temps perdu et des informations qui se dispersent.",
+      "tools": {
+        "excel": {
+          "title": "Tableurs",
+          "body": "Présences, listes et notes éparpillées entre plusieurs fichiers."
+        },
+        "whatsapp": {
+          "title": "Messagerie",
+          "body": "Paiements, infos et urgences perdus dans des fils de discussion."
+        },
+        "paper": {
+          "title": "Papier",
+          "body": "Dossiers physiques difficiles à retrouver et à partager."
+        },
+        "calls": {
+          "title": "Appels",
+          "body": "Récupérations et confirmations gérées au téléphone, sans trace."
+        }
+      },
+      "risks": {
+        "one": {
+          "title": "Temps perdu",
+          "body": "Recopier et chercher les infos chaque jour."
+        },
+        "two": {
+          "title": "Erreurs",
+          "body": "Versions divergentes selon les personnes."
+        },
+        "three": {
+          "title": "Peu de visibilité",
+          "body": "Difficile de piloter sans données fiables."
+        }
+      },
+      "outcomes": {
+        "one": {
+          "title": "Source unique",
+          "body": "L'équipe s'appuie sur les mêmes données à jour."
+        },
+        "two": {
+          "title": "Moins de friction",
+          "body": "Fini les allers-retours entre tableurs et messages."
+        },
+        "three": {
+          "title": "Vision direction",
+          "body": "Une vue claire sur le quotidien de l'établissement."
+        }
+      },
+      "modules": {
+        "students": {
+          "title": "Élèves & inscriptions",
+          "body": "Dossiers, classes et campus dans un seul registre."
+        },
+        "academic": {
+          "title": "Présences & notes",
+          "body": "Suivi scolaire là où les enseignants travaillent."
+        },
+        "billing": {
+          "title": "Factures & paiements",
+          "body": "Émission et suivi sans tableur séparé."
+        },
+        "comms": {
+          "title": "Communication",
+          "body": "Annonces et messages aux familles, au bon endroit."
+        }
+      }
+    },
+    "solution": {
+      "eyebrow": "Produit",
+      "headline": "Un seul endroit à la place de cinq outils",
+      "subhead": "L'essentiel du quotidien pour la direction et les équipes — sans transformer la page en catalogue de fonctionnalités.",
+      "pillars": {
+        "students": {
+          "title": "Élèves et inscriptions",
+          "body": "Tenez à jour les dossiers, les classes et les inscriptions sur tous vos campus.",
+          "points": {
+            "one": "Dossiers centralisés",
+            "two": "Classes multi-campus",
+            "three": "Inscriptions suivies"
+          }
+        },
+        "academic": {
+          "title": "Présences et notes",
+          "body": "Enregistrez présence, devoirs, examens et notes là où les enseignants travaillent déjà.",
+          "points": {
+            "one": "Présences du jour",
+            "two": "Devoirs et examens",
+            "three": "Notes consolidées"
+          }
+        },
+        "billing": {
+          "title": "Factures et paiements",
+          "body": "Émettez des factures et suivez les règlements sans tableur séparé.",
+          "points": {
+            "one": "Factures émises",
+            "two": "Paiements suivis",
+            "three": "Relances simples"
+          }
+        },
+        "comms": {
+          "title": "Communication",
+          "body": "Partagez annonces et messages avec le personnel et les familles, dans le bon contexte.",
+          "points": {
+            "one": "Annonces ciblées",
+            "two": "Messages familles",
+            "three": "Contexte par rôle"
+          }
+        }
+      }
+    },
+    "deep": {
+      "campuses": {
+        "headline": "Plusieurs campus, un seul système",
+        "body": "Pilotez plusieurs sites dans une même organisation. Limitez l'accès du personnel par campus si besoin, tout en gardant une vision cohérente pour la direction.",
+        "caption": "Organisation, campus et accès ciblés dans une même interface.",
+        "points": {
+          "one": "Vue consolidée pour la direction",
+          "two": "Périmètre d'accès par campus",
+          "three": "Moins de doublons entre sites"
+        },
+        "mock": {
+          "org": "Groupe Al Amal",
+          "campuses": "3 campus actifs",
+          "active": "Actif",
+          "staff": "personnel",
+          "students": "élèves",
+          "campusA": "Campus Centre",
+          "campusB": "Campus Nord",
+          "campusC": "Campus Jardins"
+        }
+      },
+      "roles": {
+        "headline": "Des tableaux de bord adaptés à chaque rôle",
+        "body": "La direction voit les opérations. Les enseignants voient leurs classes. Les parents voient ce qui concerne leurs enfants. Les permissions suivent le rôle — pas un mot de passe partagé.",
+        "caption": "Navigation selon le rôle et activation contrôlée des accès.",
+        "points": {
+          "one": "Permissions liées au rôle, pas au compte partagé",
+          "two": "Invitation puis activation avant connexion",
+          "three": "Chaque profil ne voit que ce qui le concerne"
+        },
+        "mock": {
+          "title": "Accès par rôle",
+          "admin": "Direction",
+          "teacher": "Enseignant",
+          "parent": "Parent",
+          "adminDesc": "Campuses, facturation, équipe",
+          "teacherDesc": "Classes, présences, notes",
+          "parentDesc": "Enfants, annonces, paiements",
+          "active": "Accès activé"
+        }
+      },
+      "daycare": {
+        "headline": "Le quotidien de la crèche, documenté",
+        "body": "Repas, siestes, activités et récupérations vérifiées — pour que le récit de la journée soit enregistré, pas reconstitué de mémoire.",
+        "caption": "Journaux de garderie conçus pour la petite enfance.",
+        "points": {
+          "one": "Repas et siestes suivis en temps réel",
+          "two": "Récupérations vérifiées et traçables",
+          "three": "Un récit clair pour les familles"
+        },
+        "mock": {
+          "title": "Journal du jour",
+          "date": "Mercredi 23 sept.",
+          "meals": "Repas",
+          "naps": "Siestes",
+          "pickups": "Récupérations",
+          "lunch": "Déjeuner",
+          "consumed": "Pris",
+          "napDone": "13:10 – 14:40",
+          "verified": "Vérifié",
+          "childA": "Lina M.",
+          "childB": "Adam R.",
+          "childC": "Nora S."
+        }
+      }
+    },
+    "audience": {
+      "eyebrow": "Pour qui",
+      "headline": "Conçu pour les établissements privés",
+      "subhead": "De la petite enfance au secondaire et au soutien scolaire — une même famille de produit, des fondations partagées.",
+      "items": {
+        "nursery": {
+          "title": "Crèches",
+          "body": "Repas, siestes, activités et récupérations — le quotidien documenté pour les familles."
+        },
+        "school": {
+          "title": "Écoles primaires et collèges",
+          "body": "Inscriptions, présences, notes et communication parents dans un seul fil."
+        },
+        "high": {
+          "title": "Lycées",
+          "body": "Suivi académique, facturation et coordination d'équipe sans outils épars."
+        },
+        "tutoring": {
+          "title": "Centres de soutien",
+          "body": "Groupes, planning et paiements pour rester concentrés sur l'accompagnement."
+        }
+      }
+    },
+    "trust": {
+      "eyebrow": "Sécurité & confidentialité",
+      "headline": "La confiance commence par l'isolation des données",
+      "body": "EcolnaSpace est multi-tenant par conception. Chaque organisation travaille dans sa propre frontière, avec des accès selon les rôles pour le personnel et les familles.",
+      "titles": {
+        "isolation": "Isolation multi-tenant",
+        "roles": "Accès par rôle",
+        "privacy": "Confidentialité"
+      },
+      "points": {
+        "isolation": "Les données d'un établissement restent dans son organisation — sans mélange avec d'autres clients.",
+        "roles": "L'accès dépend de l'appartenance et des permissions, y compris les comptes invités qui doivent être activés avant connexion.",
+        "privacy": "Nous ne vendons pas les données des élèves. Des outils d'export et d'effacement existent pour les dossiers élèves lorsque c'est requis."
+      }
+    },
+    "pricing": {
+      "eyebrow": "Tarifs",
+      "headline": "Un tarif adapté à votre établissement",
+      "body": "Les offres dépendent de la taille, du nombre de campus et des modules. Créez d'abord votre organisation, puis parlons ensemble du package adapté.",
+      "perks": {
+        "setup": "Création d'organisation gratuite",
+        "modules": "Modules selon vos besoins",
+        "support": "Accompagnement humain"
+      },
+      "ctaPrimary": "Commencer gratuitement",
+      "ctaSecondary": "Demander un devis"
+    },
+    "final": {
+      "headline": "Réunissez le quotidien de votre établissement dans un espace calme",
+      "body": "Créez votre organisation en quelques minutes, invitez votre équipe, et activez les accès quand vous êtes prêts.",
+      "cta": "Créer mon organisation",
+      "email": "Ou nous écrire"
+    },
+    "footer": {
+      "blurb": "SaaS multi-tenant pour établissements éducatifs privés — crèches, écoles et centres de soutien.",
+      "product": "Produit",
+      "legal": "Légal",
+      "privacy": "Politique de confidentialité",
+      "terms": "Conditions d'utilisation",
+      "rights": "Tous droits réservés."
+    },
+    "meta": {
+      "title": "EcolnaSpace — La gestion de votre établissement en une plateforme",
+      "description": "Remplacez tableurs, messagerie et papier par une plateforme pour les élèves, présences, notes, paiements et routines de garderie."
+    }
+  },
+  "memberships": {
+    "title": "Utilisateurs et appartenances",
+    "subtitle": "Gérez les rôles, campus et accès des membres de votre organisation.",
+    "searchPlaceholder": "Rechercher par nom ou e-mail…",
+    "emptyTitle": "Aucune appartenance trouvée",
+    "emptyDescription": "Ajustez les filtres, ou invitez des utilisateurs via le personnel et les enseignants.",
+    "forbiddenTitle": "Accès restreint",
+    "forbiddenDescription": "Vous avez besoin de la permission de gestion des appartenances.",
+    "campusNone": "Toute l'organisation",
+    "removeTitle": "Retirer l'appartenance ?",
+    "removeDescription": "Cela retirera {name} de l'organisation.",
+    "pagination": "Page {page} sur {totalPages} · {total} membres",
+    "filters": {
+      "status": "Statut",
+      "role": "Rôle",
+      "allStatuses": "Tous les statuts",
+      "allRoles": "Tous les rôles"
+    },
+    "columns": {
+      "user": "Utilisateur",
+      "role": "Rôle",
+      "campus": "Campus",
+      "status": "Statut"
+    },
+    "actions": {
+      "activate": "Activer",
+      "suspend": "Suspendre",
+      "remove": "Retirer"
+    },
+    "status": {
+      "ACTIVE": "Actif",
+      "INVITED": "Invité",
+      "SUSPENDED": "Suspendu",
+      "REMOVED": "Retiré"
+    },
+    "roles": {
+      "ORGANIZATION_ADMIN": "Admin organisation",
+      "CAMPUS_ADMIN": "Admin campus",
+      "TEACHER": "Enseignant",
+      "STAFF": "Personnel",
+      "PARENT": "Parent",
+      "ACCOUNTANT": "Comptable"
+    },
+    "toasts": {
+      "updated": "Appartenance mise à jour."
+    }
+  },
+  "documents": {
+    "title": "Documents",
+    "subtitle": "Téléversez, téléchargez et gérez les documents élèves.",
+    "upload": "Téléverser un fichier",
+    "uploading": "Téléversement…",
+    "uploadHint": "Max 10 Mo. Filtrez éventuellement par élève d'abord.",
+    "emptyTitle": "Aucun document",
+    "emptyDescription": "Téléversez un fichier pour l'associer à un élève ou à l'organisation.",
+    "forbiddenTitle": "Accès restreint",
+    "forbiddenDescription": "Vous avez besoin de la permission de lecture des documents.",
+    "deleteTitle": "Supprimer le document ?",
+    "deleteDescription": "Cela retirera {name} des documents actifs.",
+    "pagination": "Page {page} sur {totalPages} · {total} documents",
+    "filters": {
+      "student": "Élève",
+      "studentPlaceholder": "Filtrer par élève",
+      "allStudents": "Tous les élèves"
+    },
+    "columns": {
+      "fileName": "Fichier",
+      "size": "Taille",
+      "uploadedAt": "Téléversé le"
+    },
+    "actions": {
+      "download": "Télécharger",
+      "delete": "Supprimer"
+    },
+    "errors": {
+      "studentRequired": "Sélectionnez un élève avant de téléverser."
+    },
+    "toasts": {
+      "uploaded": "Document téléversé.",
+      "deleted": "Document supprimé."
+    }
+  },
+  "reportCards": {
+    "title": "Bulletin",
+    "academicYear": "Année scolaire",
+    "academicYearPlaceholder": "Sélectionner une année",
+    "current": "courante",
+    "print": "Imprimer",
+    "generatedAt": "Généré le {date}",
+    "enrollments": "Inscriptions",
+    "grades": "Matières et notes",
+    "noEnrollments": "Aucune inscription pour cette année.",
+    "noGrades": "Aucune note enregistrée.",
+    "emptyTitle": "Aucun bulletin",
+    "emptyDescription": "Sélectionnez une année scolaire pour générer un bulletin.",
+    "unavailableTitle": "Bulletin indisponible",
+    "unavailableDescription": "Le module scolaire peut être désactivé, ou des données manquent.",
+    "columns": {
+      "subject": "Matière",
+      "assessment": "Évaluation",
+      "score": "Note",
+      "gradedOn": "Noté le"
+    }
+  },
+  "legal": {
+    "privacyTitle": "Politique de confidentialité",
+    "privacyBody": "Cette page résume la manière dont EcolnaSpace traite les données des organisations et des élèves. Un texte juridique complet sera publié avant la mise en production. Pour toute demande relative à la vie privée : contact@ecolnaspace.com.",
+    "termsTitle": "Conditions d'utilisation",
+    "termsBody": "En créant une organisation sur EcolnaSpace, vous vous engagez à utiliser le service conformément à la loi et à protéger les accès de votre personnel. Les conditions complètes seront publiées avant la mise en production.",
+    "back": "Retour à l'accueil"
+  }
+}
