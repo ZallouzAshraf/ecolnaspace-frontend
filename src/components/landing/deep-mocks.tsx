@@ -1,5 +1,5 @@
 import { cn } from "@/lib/utils";
-import { Building2, Check, Shield, Utensils, Moon, Users } from "lucide-react";
+import { Building2, Check, ClipboardCheck, Shield, Users } from "lucide-react";
 
 type CampusesMockProps = {
   labels: {
@@ -159,46 +159,37 @@ export function RolesMock({ labels, className }: RolesMockProps) {
   );
 }
 
-type DaycareMockProps = {
+type AttendanceMockProps = {
   labels: {
     title: string;
     date: string;
-    meals: string;
-    naps: string;
-    pickups: string;
-    lunch: string;
-    consumed: string;
-    napDone: string;
-    verified: string;
-    childA: string;
-    childB: string;
-    childC: string;
+    present: string;
+    late: string;
+    absent: string;
+    studentA: string;
+    studentB: string;
+    studentC: string;
+    className: string;
   };
   className?: string;
 };
 
-export function DaycareMock({ labels, className }: DaycareMockProps) {
+export function AttendanceMock({ labels, className }: AttendanceMockProps) {
   const rows = [
     {
-      child: labels.childA,
-      icon: Utensils,
-      event: labels.lunch,
-      status: labels.consumed,
+      student: labels.studentA,
+      status: labels.present,
       tone: "text-emerald-600 bg-emerald-500/10",
     },
     {
-      child: labels.childB,
-      icon: Moon,
-      event: labels.naps,
-      status: labels.napDone,
-      tone: "text-sky-600 bg-sky-500/10",
+      student: labels.studentB,
+      status: labels.late,
+      tone: "text-amber-600 bg-amber-500/10",
     },
     {
-      child: labels.childC,
-      icon: Users,
-      event: labels.pickups,
-      status: labels.verified,
-      tone: "text-primary bg-primary/10",
+      student: labels.studentC,
+      status: labels.absent,
+      tone: "text-rose-600 bg-rose-500/10",
     },
   ];
 
@@ -213,54 +204,40 @@ export function DaycareMock({ labels, className }: DaycareMockProps) {
       aria-label={labels.title}
     >
       <div className="flex items-center justify-between border-b border-slate-200/70 bg-linear-to-b from-slate-50 to-white px-4 py-3.5">
-        <div>
-          <p className="text-sm font-semibold text-foreground">{labels.title}</p>
-          <p className="text-[11px] text-muted-foreground">{labels.date}</p>
-        </div>
-        <div className="hidden gap-1.5 sm:flex">
-          {[labels.meals, labels.naps, labels.pickups].map((tab, i) => (
-            <span
-              key={tab}
-              className={cn(
-                "rounded-md px-2 py-1 text-[10px] font-medium",
-                i === 0
-                  ? "bg-primary text-primary-foreground"
-                  : "bg-background text-muted-foreground",
-              )}
-            >
-              {tab}
-            </span>
-          ))}
+        <div className="flex items-center gap-2">
+          <ClipboardCheck className="size-4 text-primary" aria-hidden />
+          <div>
+            <p className="text-sm font-semibold text-foreground">{labels.title}</p>
+            <p className="text-[11px] text-muted-foreground">
+              {labels.className} · {labels.date}
+            </p>
+          </div>
         </div>
       </div>
       <div className="divide-y divide-border">
-        {rows.map((row) => {
-          const Icon = row.icon;
-          return (
+        {rows.map((row) => (
+          <div
+            key={row.student}
+            className="flex items-center gap-3 px-4 py-3"
+          >
             <div
-              key={row.child + row.event}
-              className="flex items-center gap-3 px-4 py-3"
+              className={cn(
+                "flex size-9 shrink-0 items-center justify-center rounded-lg",
+                row.tone,
+              )}
             >
-              <div
-                className={cn(
-                  "flex size-9 shrink-0 items-center justify-center rounded-lg",
-                  row.tone,
-                )}
-              >
-                <Icon className="size-4" aria-hidden />
-              </div>
-              <div className="min-w-0 flex-1">
-                <p className="truncate text-sm font-medium text-foreground">
-                  {row.child}
-                </p>
-                <p className="text-[11px] text-muted-foreground">{row.event}</p>
-              </div>
-              <span className="shrink-0 rounded-md border border-border bg-background px-2 py-0.5 text-[10px] font-medium text-foreground">
-                {row.status}
-              </span>
+              <Users className="size-4" aria-hidden />
             </div>
-          );
-        })}
+            <div className="min-w-0 flex-1">
+              <p className="truncate text-sm font-medium text-foreground">
+                {row.student}
+              </p>
+            </div>
+            <span className="shrink-0 rounded-md border border-border bg-background px-2 py-0.5 text-[10px] font-medium text-foreground">
+              {row.status}
+            </span>
+          </div>
+        ))}
       </div>
     </div>
   );

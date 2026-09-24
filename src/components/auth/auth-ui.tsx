@@ -9,30 +9,62 @@ export function AuthHeading({
   icon: Icon,
   title,
   subtitle,
+  compact,
 }: {
   icon: LucideIcon;
   title: ReactNode;
   subtitle?: ReactNode;
+  compact?: boolean;
 }) {
   return (
-    <div>
-      <span className="relative flex size-12 items-center justify-center">
+    <div className={compact ? "flex items-start gap-3" : undefined}>
+      <span
+        className={
+          compact
+            ? "relative flex size-9 shrink-0 items-center justify-center"
+            : "relative flex size-10 items-center justify-center sm:size-11"
+        }
+      >
         <span
           aria-hidden
           className="absolute inset-0 rounded-2xl bg-primary/30 blur-lg"
         />
-        <span className="relative flex size-12 items-center justify-center rounded-2xl bg-linear-to-br from-[#7c73ff] via-primary to-[#3b82f6] text-white shadow-[0_10px_24px_-10px_rgba(99,91,255,0.8),inset_0_1px_0_rgba(255,255,255,0.35)]">
-          <Icon className="size-5" strokeWidth={2} aria-hidden />
+        <span
+          className={
+            compact
+              ? "relative flex size-9 items-center justify-center rounded-xl bg-linear-to-br from-[#7c73ff] via-primary to-[#3b82f6] text-white shadow-[0_10px_24px_-10px_rgba(99,91,255,0.8),inset_0_1px_0_rgba(255,255,255,0.35)]"
+              : "relative flex size-10 items-center justify-center rounded-2xl bg-linear-to-br from-[#7c73ff] via-primary to-[#3b82f6] text-white shadow-[0_10px_24px_-10px_rgba(99,91,255,0.8),inset_0_1px_0_rgba(255,255,255,0.35)] sm:size-11"
+          }
+        >
+          <Icon
+            className={compact ? "size-4" : "size-4 sm:size-5"}
+            strokeWidth={2}
+            aria-hidden
+          />
         </span>
       </span>
-      <h1 className="mt-6 text-balance text-[1.75rem] font-semibold leading-tight tracking-[-0.025em] text-slate-950">
-        {title}
-      </h1>
-      {subtitle ? (
-        <p className="mt-2 text-pretty text-sm leading-relaxed text-slate-500">
-          {subtitle}
-        </p>
-      ) : null}
+      <div className={compact ? "min-w-0 pt-0.5" : undefined}>
+        <h1
+          className={
+            compact
+              ? "text-balance text-[1.25rem] font-semibold leading-tight tracking-[-0.025em] text-slate-950"
+              : "mt-4 text-balance text-[1.5rem] font-semibold leading-tight tracking-[-0.025em] text-slate-950 sm:mt-5 sm:text-[1.65rem]"
+          }
+        >
+          {title}
+        </h1>
+        {subtitle ? (
+          <p
+            className={
+              compact
+                ? "mt-0.5 text-pretty text-[12px] leading-snug text-slate-500 line-clamp-1"
+                : "mt-1.5 text-pretty text-[13px] leading-relaxed text-slate-500 sm:text-sm"
+            }
+          >
+            {subtitle}
+          </p>
+        ) : null}
+      </div>
     </div>
   );
 }
@@ -90,7 +122,7 @@ export function AuthSubmit({
     <Button
       type="submit"
       disabled={pending}
-      className="group relative mt-2 h-11 w-full overflow-hidden rounded-xl bg-linear-to-b from-[#7a73ff] to-primary text-[0.95rem] shadow-[0_12px_28px_-12px_rgba(99,91,255,0.9),inset_0_1px_0_rgba(255,255,255,0.3)] transition-[transform,box-shadow] duration-300 ease-[cubic-bezier(0.22,1,0.36,1)] hover:-translate-y-px hover:shadow-[0_18px_36px_-14px_rgba(99,91,255,0.95),inset_0_1px_0_rgba(255,255,255,0.3)]"
+      className="group relative mt-0.5 h-9 w-full overflow-hidden rounded-xl bg-linear-to-b from-[#7a73ff] to-primary text-sm shadow-[0_12px_28px_-12px_rgba(99,91,255,0.9),inset_0_1px_0_rgba(255,255,255,0.3)] transition-[transform,box-shadow] duration-300 ease-[cubic-bezier(0.22,1,0.36,1)] hover:-translate-y-px hover:shadow-[0_18px_36px_-14px_rgba(99,91,255,0.95),inset_0_1px_0_rgba(255,255,255,0.3)] sm:h-10"
     >
       <span
         aria-hidden
@@ -114,11 +146,14 @@ export function AuthSubmit({
   );
 }
 
-export function AuthDivider() {
+export function AuthDivider({ className }: { className?: string }) {
   return (
     <div
       aria-hidden
-      className="my-6 h-px bg-linear-to-r from-transparent via-slate-200 to-transparent"
+      className={cn(
+        "my-4 h-px bg-linear-to-r from-transparent via-slate-200 to-transparent",
+        className,
+      )}
     />
   );
 }

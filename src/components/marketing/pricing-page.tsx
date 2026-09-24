@@ -19,7 +19,6 @@ import { Link } from "@/i18n/navigation";
 import { cn } from "@/lib/utils";
 import {
   ArrowRight,
-  Baby,
   BookOpen,
   Building2,
   Check,
@@ -46,7 +45,6 @@ const FACTORS: Array<{ key: string; icon: LucideIcon; tone: string }> = [
 
 const MODULES: Array<{ key: string; icon: LucideIcon; featured?: boolean }> = [
   { key: "core", icon: Sparkles, featured: true },
-  { key: "earlyYears", icon: Baby },
   { key: "academic", icon: BookOpen },
 ];
 

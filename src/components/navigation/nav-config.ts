@@ -1,6 +1,5 @@
 import type { LucideIcon } from "lucide-react";
 import {
-  Activity,
   Bell,
   BookOpen,
   Building2,
@@ -12,12 +11,10 @@ import {
   GraduationCap,
   LayoutDashboard,
   MessageSquare,
-  Moon,
   School,
   Settings,
   Users,
   UserCog,
-  Utensils,
   Wallet,
 } from "lucide-react";
 
@@ -157,35 +154,6 @@ export const adminNavSections: NavSection[] = [
         key: "notifications",
         href: "/communication/notifications",
         icon: Bell,
-      },
-    ],
-  },
-  {
-    key: "daycare",
-    items: [
-      {
-        key: "meals",
-        href: "/daycare/meals",
-        icon: Utensils,
-        permissions: ["daycare.meals.manage"],
-      },
-      {
-        key: "naps",
-        href: "/daycare/naps",
-        icon: Moon,
-        permissions: ["daycare.naps.manage"],
-      },
-      {
-        key: "activities",
-        href: "/daycare/activities",
-        icon: Activity,
-        permissions: ["daycare.activities.manage"],
-      },
-      {
-        key: "pickups",
-        href: "/daycare/pickups",
-        icon: Users,
-        permissions: ["daycare.pickups.manage"],
       },
     ],
   },

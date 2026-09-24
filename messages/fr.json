@@ -47,11 +47,6 @@
     "messages": "Messages",
     "notifications": "Notifications",
     "children": "Enfants",
-    "daycare": "Garderie",
-    "meals": "Repas",
-    "naps": "Siestes",
-    "activities": "Activités",
-    "pickups": "Récupérations",
     "billing": "Facturation",
     "collapseSidebar": "Réduire le menu",
     "expandSidebar": "Agrandir le menu",
@@ -164,13 +159,15 @@
       "acceptTerms": "Veuillez accepter les conditions pour continuer."
     },
     "orgTypes": {
-      "NURSERY": "Crèche",
-      "KINDERGARTEN": "Jardin d'enfants",
+      "GARDERIE": "Garderie (multi-niveaux)",
       "PRIMARY_SCHOOL": "École primaire",
       "MIDDLE_SCHOOL": "Collège",
       "HIGH_SCHOOL": "Lycée",
       "TUTORING_CENTER": "Centre de soutien",
       "TRAINING_CENTER": "Centre de formation"
+    },
+    "orgTypeHints": {
+      "GARDERIE": "Établissement scolaire accueillant tous les niveaux (primaire, collège et secondaire) — mêmes modules que les autres écoles."
     }
   },
   "dashboard": {
@@ -1040,133 +1037,6 @@
       "markRead": "Marquer comme lue"
     }
   },
-  "meals": {
-    "title": "Repas",
-    "subtitle": "Enregistrez les repas de garderie par date.",
-    "add": "Ajouter un repas",
-    "emptyTitle": "Aucun repas",
-    "emptyDescription": "Enregistrez des repas pour cette date.",
-    "createTitle": "Ajouter un repas",
-    "createSubtitle": "Choisissez un élève et un type de repas.",
-    "filters": {
-      "date": "Date"
-    },
-    "columns": {
-      "student": "Élève",
-      "mealType": "Repas",
-      "consumed": "Consommé",
-      "notes": "Notes"
-    },
-    "fields": {
-      "student": "Élève",
-      "studentPlaceholder": "Choisir un élève",
-      "mealType": "Type de repas",
-      "consumed": "Consommé",
-      "notes": "Notes"
-    },
-    "mealTypes": {
-      "BREAKFAST": "Petit-déjeuner",
-      "LUNCH": "Déjeuner",
-      "SNACK": "Goûter",
-      "DINNER": "Dîner"
-    },
-    "errors": {
-      "student": "Veuillez choisir un élève."
-    },
-    "toasts": {
-      "created": "Repas enregistré."
-    }
-  },
-  "naps": {
-    "title": "Siestes",
-    "subtitle": "Suivez les siestes des enfants.",
-    "add": "Ajouter une sieste",
-    "emptyTitle": "Aucune sieste",
-    "emptyDescription": "Enregistrez des siestes pour cette date.",
-    "createTitle": "Ajouter une sieste",
-    "createSubtitle": "Indiquez le début et éventuellement la fin.",
-    "filters": {
-      "date": "Date"
-    },
-    "columns": {
-      "student": "Élève",
-      "startedAt": "Début",
-      "endedAt": "Fin",
-      "notes": "Notes"
-    },
-    "fields": {
-      "student": "Élève",
-      "studentPlaceholder": "Choisir un élève",
-      "startedAt": "Début",
-      "endedAt": "Fin",
-      "notes": "Notes"
-    },
-    "errors": {
-      "required": "Élève et heure de début obligatoires."
-    },
-    "toasts": {
-      "created": "Sieste enregistrée."
-    }
-  },
-  "activities": {
-    "title": "Activités",
-    "subtitle": "Enregistrez les activités et participants.",
-    "add": "Ajouter une activité",
-    "emptyTitle": "Aucune activité",
-    "emptyDescription": "Enregistrez une activité pour cette date.",
-    "createTitle": "Ajouter une activité",
-    "createSubtitle": "Nommez l'activité et sélectionnez les élèves.",
-    "filters": {
-      "date": "Date"
-    },
-    "columns": {
-      "title": "Activité",
-      "students": "Élèves",
-      "notes": "Notes"
-    },
-    "fields": {
-      "title": "Titre",
-      "students": "Élèves",
-      "notes": "Notes"
-    },
-    "errors": {
-      "required": "Titre et au moins un élève obligatoires."
-    },
-    "toasts": {
-      "created": "Activité enregistrée."
-    }
-  },
-  "pickups": {
-    "title": "Récupérations",
-    "subtitle": "Enregistrez qui a récupéré chaque enfant.",
-    "add": "Ajouter une récupération",
-    "emptyTitle": "Aucune récupération",
-    "emptyDescription": "Enregistrez les récupérations pour cette date.",
-    "createTitle": "Ajouter une récupération",
-    "createSubtitle": "Indiquez la personne qui a récupéré l'élève.",
-    "filters": {
-      "date": "Date"
-    },
-    "columns": {
-      "student": "Élève",
-      "person": "Personne",
-      "verified": "Vérifié",
-      "arrivedAt": "Arrivée"
-    },
-    "fields": {
-      "student": "Élève",
-      "studentPlaceholder": "Choisir un élève",
-      "person": "Nom de la personne",
-      "verified": "Vérifié",
-      "notes": "Notes"
-    },
-    "errors": {
-      "required": "Élève et personne obligatoires."
-    },
-    "toasts": {
-      "created": "Récupération enregistrée."
-    }
-  },
   "staff": {
     "title": "Personnel",
     "subtitle": "Gérez le personnel non enseignant.",
@@ -1250,14 +1120,14 @@
       "headline": "Une seule plateforme pour <accent>diriger votre établissement</accent>",
       "badge": "La plateforme des établissements privés",
       "builtFor": "Conçu pour",
-      "subhead": "Remplacez les tableurs, les fils de discussion et le papier. Suivez les élèves, les présences, les notes et les paiements — pensé pour les crèches, écoles et centres de soutien.",
+      "subhead": "Remplacez les tableurs, les fils de discussion et le papier. Suivez les élèves, les présences, les notes et les paiements — pour les écoles primaires, collèges, lycées, garderies multi-niveaux et centres de soutien.",
       "ctaPrimary": "Créer mon organisation",
       "ctaSecondary": "Parler à un conseiller",
       "note": "Aucune carte bancaire requise pour démarrer.",
       "highlights": {
         "multiCampus": "Plusieurs campus sous une même organisation",
         "roleAccess": "Accès distincts pour direction, enseignants et parents",
-        "daycare": "Journaux de crèche : repas, siestes et récupérations"
+        "allLevels": "Garderie multi-niveaux : primaire à secondaire, mêmes modules"
       }
     },
     "preview": {
@@ -1280,7 +1150,7 @@
     "problem": {
       "eyebrow": "Le constat",
       "headline": "La plupart des établissements jonglent encore avec cinq outils",
-      "body": "Les présences ici, les notes ailleurs, les paiements par message, les récupérations au téléphone. Cela fonctionne — jusqu'au jour où cela ne fonctionne plus. EcolnaSpace réunit ces routines dans un espace partagé.",
+      "body": "Les présences ici, les notes ailleurs, les paiements par message. Cela fonctionne — jusqu'au jour où cela ne fonctionne plus. EcolnaSpace réunit ces routines dans un espace partagé.",
       "before": "Avant",
       "after": "Après",
       "flowLabel": "Quotidien fragmenté",
@@ -1439,47 +1309,48 @@
           "active": "Accès activé"
         }
       },
-      "daycare": {
-        "headline": "Le quotidien de la crèche, documenté",
-        "body": "Repas, siestes, activités et récupérations vérifiées — pour que le récit de la journée soit enregistré, pas reconstitué de mémoire.",
-        "caption": "Journaux de garderie conçus pour la petite enfance.",
+      "attendance": {
+        "headline": "Les présences, claires chaque matin",
+        "body": "Enregistrez présents, retards et absences par classe — avec pointage entrée/sortie quand vous en avez besoin. Les mêmes outils pour tous les types d'établissement.",
+        "caption": "Présences et pointages partagés par toute l'équipe.",
         "points": {
-          "one": "Repas et siestes suivis en temps réel",
-          "two": "Récupérations vérifiées et traçables",
-          "three": "Un récit clair pour les familles"
+          "one": "Appel quotidien par classe",
+          "two": "Check-in / check-out optionnel",
+          "three": "Visibilité pour direction et familles"
         },
         "mock": {
-          "title": "Journal du jour",
-          "date": "Mercredi 23 sept.",
-          "meals": "Repas",
-          "naps": "Siestes",
-          "pickups": "Récupérations",
-          "lunch": "Déjeuner",
-          "consumed": "Pris",
-          "napDone": "13:10 – 14:40",
-          "verified": "Vérifié",
-          "childA": "Lina M.",
-          "childB": "Adam R.",
-          "childC": "Nora S."
+          "title": "Présences du jour",
+          "date": "Mercredi 24 sept.",
+          "present": "Présent",
+          "late": "En retard",
+          "absent": "Absent",
+          "studentA": "Lina M.",
+          "studentB": "Adam R.",
+          "studentC": "Nora S.",
+          "className": "6e A"
         }
       }
     },
     "audience": {
       "eyebrow": "Pour qui",
-      "headline": "Conçu pour les établissements privés",
-      "subhead": "De la petite enfance au secondaire et au soutien scolaire — une même famille de produit, des fondations partagées.",
+      "headline": "Conçu pour les établissements scolaires privés",
+      "subhead": "Cinq types d'établissements, une seule plateforme — mêmes modules scolaires partout.",
       "items": {
-        "nursery": {
-          "title": "Crèches",
-          "body": "Repas, siestes, activités et récupérations — le quotidien documenté pour les familles."
+        "primary": {
+          "title": "Écoles primaires",
+          "body": "Classes du primaire, présences, notes et communication avec les familles."
         },
-        "school": {
-          "title": "Écoles primaires et collèges",
-          "body": "Inscriptions, présences, notes et communication parents dans un seul fil."
+        "middle": {
+          "title": "Collèges",
+          "body": "Inscriptions, emplois du temps, examens et suivi pédagogique au quotidien."
         },
         "high": {
           "title": "Lycées",
           "body": "Suivi académique, facturation et coordination d'équipe sans outils épars."
+        },
+        "garderie": {
+          "title": "Garderies (multi-niveaux)",
+          "body": "Un seul établissement qui accueille primaire, collège et secondaire — avec exactement les mêmes modules que les autres écoles."
         },
         "tutoring": {
           "title": "Centres de soutien",
@@ -1523,7 +1394,7 @@
     },
     "meta": {
       "title": "EcolnaSpace — La gestion de votre établissement en une plateforme",
-      "description": "Remplacez tableurs, messagerie et papier par une plateforme pour les élèves, présences, notes, paiements et routines de garderie."
+      "description": "Remplacez tableurs, messagerie et papier par une plateforme pour les élèves, présences, notes et paiements — écoles et garderies multi-niveaux."
     }
   },
   "memberships": {
@@ -1635,7 +1506,7 @@
   },
   "marketing": {
     "footer": {
-      "blurb": "La plateforme de gestion des crèches, écoles et centres de formation privés : élèves, présences, notes, facturation et communication avec les familles, au même endroit.",
+      "blurb": "La plateforme de gestion des écoles, collèges, lycées, garderies multi-niveaux et centres de formation privés : élèves, présences, notes, facturation et communication avec les familles, au même endroit.",
       "trust": "Hébergé en Tunisie · Données isolées par établissement · Accès selon les rôles",
       "country": "Tunisie",
       "language": "Langue",
@@ -1700,7 +1571,7 @@
       "hero": {
         "eyebrow": "Tarifs",
         "title": "Vous ne payez que ce dont votre établissement a réellement besoin",
-        "lead": "Une crèche de quartier et un groupe scolaire de plusieurs campus n'ont pas les mêmes besoins. Notre tarif dépend donc de la taille de votre établissement, du nombre de sites, des modules activés et de l'accompagnement souhaité — pas d'une grille unique.",
+        "lead": "Une école de quartier et un groupe scolaire multi-campus n'ont pas les mêmes besoins. Notre tarif dépend de la taille, du nombre de sites, des modules activés et de l'accompagnement — pas d'une grille unique.",
         "ctaPrimary": "Demander un devis",
         "ctaSecondary": "Créer mon organisation",
         "note": "Création d'organisation gratuite, sans carte bancaire."
@@ -1713,7 +1584,7 @@
           "size": {
             "title": "La taille de l'établissement",
             "body": "Le nombre d'élèves ou d'enfants inscrits est le premier critère : il reflète l'usage réel de la plateforme.",
-            "example": "D'une crèche de quelques dizaines d'enfants à un réseau de plusieurs centaines d'élèves."
+            "example": "D'une école de quelques dizaines d'élèves à un réseau de plusieurs centaines."
           },
           "campuses": {
             "title": "Le nombre de campus",
@@ -1722,8 +1593,8 @@
           },
           "modules": {
             "title": "Les modules activés",
-            "body": "Vous n'activez que les modules utiles : socle de gestion, petite enfance, suivi scolaire.",
-            "example": "Une crèche n'a pas besoin de bulletins ; un lycée n'a pas besoin du suivi des siestes."
+            "body": "Vous n'activez que les modules utiles : socle de gestion et suivi scolaire.",
+            "example": "Un centre de soutien peut se passer des bulletins ; un lycée activera examens et notes."
           },
           "support": {
             "title": "Le niveau d'accompagnement",
@@ -1752,20 +1623,8 @@
             ],
             "fit": "La base de chaque organisation EcolnaSpace."
           },
-          "earlyYears": {
-            "badge": "Crèches et jardins d'enfants",
-            "title": "Petite enfance",
-            "body": "Le quotidien des tout-petits, documenté et partagé avec les familles.",
-            "features": [
-              "Repas et quantités consommées",
-              "Siestes et temps de repos",
-              "Activités de la journée",
-              "Récupérations vérifiées et personnes autorisées"
-            ],
-            "fit": "Idéal pour les crèches, jardins d'enfants et sections maternelles."
-          },
           "academic": {
-            "badge": "Écoles, collèges, lycées et centres",
+            "badge": "Écoles, collèges, lycées et garderies",
             "title": "Suivi scolaire",
             "body": "Le suivi pédagogique, là où les enseignants travaillent déjà.",
             "features": [
@@ -1774,7 +1633,7 @@
               "Notes consolidées",
               "Bulletins par année scolaire"
             ],
-            "fit": "Pensé pour le primaire, le collège, le lycée, le soutien scolaire et la formation."
+            "fit": "Pensé pour le primaire, le collège, le lycée, la garderie multi-niveaux, le soutien scolaire et la formation."
           }
         }
       },
@@ -1850,7 +1709,7 @@
           },
           "changePlan": {
             "q": "Puis-je changer de formule plus tard ?",
-            "a": "Oui. Les modules s'activent et se désactivent par organisation : vous pouvez ajouter un campus, activer le suivi scolaire ou le module petite enfance au fil de votre développement. Votre conseiller ajuste alors votre offre."
+            "a": "Oui. Les modules s'activent et se désactivent par organisation : vous pouvez ajouter un campus ou activer le suivi scolaire au fil de votre développement. Votre conseiller ajuste alors votre offre."
           },
           "commitment": {
             "q": "Y a-t-il un engagement minimum ?",
@@ -1876,7 +1735,7 @@
     "contact": {
       "meta": {
         "title": "Contact — EcolnaSpace | Parlons de votre établissement",
-        "description": "Demandez une démonstration ou un devis pour votre crèche, école ou centre de formation. Un conseiller EcolnaSpace vous répond personnellement."
+        "description": "Demandez une démonstration ou un devis pour votre école, garderie multi-niveaux ou centre de formation. Un conseiller EcolnaSpace vous répond personnellement."
       },
       "hero": {
         "eyebrow": "Contact",
@@ -1938,12 +1797,11 @@
         "message": "Votre message",
         "messagePlaceholder": "Nombre d'élèves, nombre de campus, modules qui vous intéressent, questions…",
         "types": {
-          "NURSERY": "Crèche",
-          "KINDERGARTEN": "Jardin d'enfants",
+          "GARDERIE": "Garderie (multi-niveaux)",
           "PRIMARY_SCHOOL": "École primaire",
           "MIDDLE_SCHOOL": "Collège",
           "HIGH_SCHOOL": "Lycée",
-          "TUTORING_CENTER": "Centre de soutien scolaire",
+          "TUTORING_CENTER": "Centre de soutien",
           "TRAINING_CENTER": "Centre de formation"
         },
         "prefill": {

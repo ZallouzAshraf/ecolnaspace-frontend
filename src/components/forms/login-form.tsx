@@ -101,7 +101,7 @@ export function LoginForm() {
       )}
 
       <form
-        className="mt-7 flex flex-col gap-4"
+        className="mt-5 flex flex-col gap-3"
         onSubmit={form.handleSubmit(onSubmit)}
         noValidate
       >

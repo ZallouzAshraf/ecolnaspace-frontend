@@ -20,223 +20,341 @@
         "id": "introduction",
         "title": "1. Introduction and scope",
         "blocks": [
-          { "p": "{brand} is an online management platform for private educational establishments: nurseries, kindergartens, primary schools, middle schools, high schools, tutoring centers and training centers. It covers enrollment, attendance, academic tracking, billing, communication with families and, for early-years settings, children's daily routines." },
-          { "p": "This policy applies to:" },
-          { "ul": [
-            "the {brand} public website (product, pricing, contact and legal pages);",
-            "the {appHost} application, used by customer establishments, their staff, parents and, where applicable, students;",
-            "your exchanges with our team (contact, demo or quote requests)."
-          ] },
-          { "p": "The service is published by {legalEntity}, registered under identifier {registrationNumber}, with its registered office at {registeredAddress} (\"{brand}\", \"we\")." }
+          {
+            "p": "{brand} is an online management platform for private educational establishments: primary schools, middle schools, high schools, multi-level schools (garderies), tutoring centers and training centers. It covers enrollment, attendance, academic tracking, billing, communication with families."
+          },
+          {
+            "p": "This policy applies to:"
+          },
+          {
+            "ul": [
+              "the {brand} public website (product, pricing, contact and legal pages);",
+              "the {appHost} application, used by customer establishments, their staff, parents and, where applicable, students;",
+              "your exchanges with our team (contact, demo or quote requests)."
+            ]
+          },
+          {
+            "p": "The service is published by {legalEntity}, registered under identifier {registrationNumber}, with its registered office at {registeredAddress} (\"{brand}\", \"we\")."
+          }
         ]
       },
       {
         "id": "data-collected",
         "title": "2. The data we process",
         "blocks": [
-          { "p": "We only process the data required to run the service. Most of it is entered by the establishment itself; some is entered by parents or staff from their own accounts." },
-          { "h": "Establishment and campuses" },
-          { "ul": [
-            "name, type of establishment, contact details (address, phone, email, website), language and time zone;",
-            "list of campuses and organization settings, including enabled modules."
-          ] },
-          { "h": "Leadership, teachers and staff" },
-          { "ul": [
-            "first and last name, email address, phone (optional), role and assigned campus;",
-            "professional details entered by the establishment: job title, department, employee code, short bio;",
-            "sign-in data: password (stored only as an irreversible hash), last sign-in date, failed sign-in attempts, and the IP address and browser associated with sessions."
-          ] },
-          { "h": "Parents and guardians" },
-          { "ul": [
-            "first and last name, email address and phone;",
-            "relationship to the child: family relationship, primary or emergency contact, authorization to pick the child up;",
-            "messages exchanged with the establishment and notifications received."
-          ] },
-          { "h": "Students and children" },
-          { "ul": [
-            "identity: first and last name, preferred name, date of birth, gender (optional);",
-            "optional contact details and an emergency contact;",
-            "schooling: campus, class, enrollments, school years, attendance and late arrivals;",
-            "academic tracking: homework, exams, grades and report cards;",
-            "early years: the child's meals, naps, activities and pick-ups;",
-            "health: only summary medical flags and an allergy note, when the establishment fills them in;",
-            "photo consent status; photos are only processed if the establishment uploads them as documents;",
-            "documents attached to the student by the establishment, and related invoices and payments."
-          ] },
-          { "h": "People authorized to pick up a child" },
-          { "ul": [
-            "name, relationship to the child, phone and, if the establishment requires it, an identity document reference."
-          ] },
-          { "h": "Visitors to the public website" },
-          { "ul": [
-            "information sent through the contact form: name, email, establishment, type of establishment, phone (optional) and message;",
-            "server logs (IP address, date, requested page), required for security;",
-            "strictly necessary cookies and, with your consent, a language preference cookie (see the [cookie policy](/cookies))."
-          ] }
+          {
+            "p": "We only process the data required to run the service. Most of it is entered by the establishment itself; some is entered by parents or staff from their own accounts."
+          },
+          {
+            "h": "Establishment and campuses"
+          },
+          {
+            "ul": [
+              "name, type of establishment, contact details (address, phone, email, website), language and time zone;",
+              "list of campuses and organization settings, including enabled modules."
+            ]
+          },
+          {
+            "h": "Leadership, teachers and staff"
+          },
+          {
+            "ul": [
+              "first and last name, email address, phone (optional), role and assigned campus;",
+              "professional details entered by the establishment: job title, department, employee code, short bio;",
+              "sign-in data: password (stored only as an irreversible hash), last sign-in date, failed sign-in attempts, and the IP address and browser associated with sessions."
+            ]
+          },
+          {
+            "h": "Parents and guardians"
+          },
+          {
+            "ul": [
+              "first and last name, email address and phone;",
+              "relationship to the child: family relationship, primary or emergency contact, authorization to pick the child up;",
+              "messages exchanged with the establishment and notifications received."
+            ]
+          },
+          {
+            "h": "Students and children"
+          },
+          {
+            "ul": [
+              "identity: first and last name, preferred name, date of birth, gender (optional);",
+              "optional contact details and an emergency contact;",
+              "schooling: campus, class, enrollments, school years, attendance and late arrivals;",
+              "academic tracking: homework, exams, grades and report cards;",
+              "authorized persons who may pick up a minor student;",
+              "health: only summary medical flags and an allergy note, when the establishment fills them in;",
+              "photo consent status; photos are only processed if the establishment uploads them as documents;",
+              "documents attached to the student by the establishment, and related invoices and payments."
+            ]
+          },
+          {
+            "h": "People authorized to pick up a child"
+          },
+          {
+            "ul": [
+              "name, relationship to the child, phone and, if the establishment requires it, an identity document reference."
+            ]
+          },
+          {
+            "h": "Visitors to the public website"
+          },
+          {
+            "ul": [
+              "information sent through the contact form: name, email, establishment, type of establishment, phone (optional) and message;",
+              "server logs (IP address, date, requested page), required for security;",
+              "strictly necessary cookies and, with your consent, a language preference cookie (see the [cookie policy](/cookies))."
+            ]
+          }
         ]
       },
       {
         "id": "roles",
         "title": "3. Data controller and processor",
         "blocks": [
-          { "p": "Organic Law No. 2004-63 distinguishes the data controller, who decides why and how data is processed, from the processor, who processes it on the controller's behalf." },
-          { "ul": [
-            "For the data of an establishment's students, parents and staff, **the establishment is the data controller**. It decides what information is recorded, who can access it and how long it is kept.",
-            "For that same data, {brand} acts as a **processor**: we host and process it solely to provide the service, on the establishment's instructions, and never for our own purposes.",
-            "{brand} is, however, the data controller for the data it processes for itself: customer administrator accounts for managing the commercial relationship, contact requests, billing of its customers and platform security."
-          ] },
-          { "note": "If you are a parent or a staff member, please address questions about your data to your establishment first: it is best placed to answer them. We will help it handle your request." },
-          { "p": "Prior formalities with the INPDP (declaration or authorization request, depending on the nature of the data) are the responsibility of each data controller: the establishment for its school community's data, and {brand} for the processing it carries out for its own purposes." }
+          {
+            "p": "Organic Law No. 2004-63 distinguishes the data controller, who decides why and how data is processed, from the processor, who processes it on the controller's behalf."
+          },
+          {
+            "ul": [
+              "For the data of an establishment's students, parents and staff, **the establishment is the data controller**. It decides what information is recorded, who can access it and how long it is kept.",
+              "For that same data, {brand} acts as a **processor**: we host and process it solely to provide the service, on the establishment's instructions, and never for our own purposes.",
+              "{brand} is, however, the data controller for the data it processes for itself: customer administrator accounts for managing the commercial relationship, contact requests, billing of its customers and platform security."
+            ]
+          },
+          {
+            "note": "If you are a parent or a staff member, please address questions about your data to your establishment first: it is best placed to answer them. We will help it handle your request."
+          },
+          {
+            "p": "Prior formalities with the INPDP (declaration or authorization request, depending on the nature of the data) are the responsibility of each data controller: the establishment for its school community's data, and {brand} for the processing it carries out for its own purposes."
+          }
         ]
       },
       {
         "id": "legal-basis",
         "title": "4. Legal bases for processing",
         "blocks": [
-          { "p": "In accordance with Organic Law No. 2004-63, data is processed on one of the following bases:" },
-          { "ul": [
-            "**consent** of the data subject or, for a child, of their legal guardian, collected by the establishment where the law requires it;",
-            "**performance of the contract** between the establishment and {brand}, and of the enrollment relationship between the establishment and families;",
-            "**compliance with legal obligations**, such as keeping accounting records;",
-            "**legitimate interest** of the establishment or of {brand}, where it does not override people's rights: service security, abuse prevention, platform improvement."
-          ] },
-          { "p": "Some categories of data, such as health information, receive enhanced protection under the law. Recording them is the establishment's decision and responsibility, and it ensures the applicable conditions are met." }
+          {
+            "p": "In accordance with Organic Law No. 2004-63, data is processed on one of the following bases:"
+          },
+          {
+            "ul": [
+              "**consent** of the data subject or, for a child, of their legal guardian, collected by the establishment where the law requires it;",
+              "**performance of the contract** between the establishment and {brand}, and of the enrollment relationship between the establishment and families;",
+              "**compliance with legal obligations**, such as keeping accounting records;",
+              "**legitimate interest** of the establishment or of {brand}, where it does not override people's rights: service security, abuse prevention, platform improvement."
+            ]
+          },
+          {
+            "p": "Some categories of data, such as health information, receive enhanced protection under the law. Recording them is the establishment's decision and responsibility, and it ensures the applicable conditions are met."
+          }
         ]
       },
       {
         "id": "use",
         "title": "5. How data is used",
         "blocks": [
-          { "p": "Data is used exclusively to:" },
-          { "ul": [
-            "provide the platform's features to the establishment and its users;",
-            "send service notifications and emails: invitations, account activation, password resets, announcements and messages from the establishment;",
-            "manage billing between the establishment and families, and the commercial relationship between {brand} and its customers;",
-            "keep the service secure: authentication, prevention of fraudulent access, logging of sensitive actions;",
-            "respond to contact, demo and quote requests."
-          ] },
-          { "note": "We do not sell, rent or trade any personal data. We show no advertising and never use student or family data for commercial or advertising profiling." }
+          {
+            "p": "Data is used exclusively to:"
+          },
+          {
+            "ul": [
+              "provide the platform's features to the establishment and its users;",
+              "send service notifications and emails: invitations, account activation, password resets, announcements and messages from the establishment;",
+              "manage billing between the establishment and families, and the commercial relationship between {brand} and its customers;",
+              "keep the service secure: authentication, prevention of fraudulent access, logging of sensitive actions;",
+              "respond to contact, demo and quote requests."
+            ]
+          },
+          {
+            "note": "We do not sell, rent or trade any personal data. We show no advertising and never use student or family data for commercial or advertising profiling."
+          }
         ]
       },
       {
         "id": "sharing",
         "title": "6. Data sharing",
         "blocks": [
-          { "p": "Within an establishment, access depends on each person's role: leadership sees the whole organization, a campus administrator their campus, a teacher their classes, and a parent only information about their own children." },
-          { "p": "Outside the establishment, data is only shared with the technical providers strictly required to run the service, bound by confidentiality and security commitments:" },
-          { "ul": [
-            "**Hosting** of servers and the database, in Tunisia: {hostingProvider};",
-            "**Sending** transactional emails (invitations, resets, notifications): {emailProvider}."
-          ] },
-          { "p": "{brand} does not integrate any payment provider: families pay the establishment directly, and the establishment records those payments on the platform. No analytics or advertising tools are used." },
-          { "p": "Finally, data may be disclosed to public authorities where Tunisian law requires it, strictly within the limits of that obligation." }
+          {
+            "p": "Within an establishment, access depends on each person's role: leadership sees the whole organization, a campus administrator their campus, a teacher their classes, and a parent only information about their own children."
+          },
+          {
+            "p": "Outside the establishment, data is only shared with the technical providers strictly required to run the service, bound by confidentiality and security commitments:"
+          },
+          {
+            "ul": [
+              "**Hosting** of servers and the database, in Tunisia: {hostingProvider};",
+              "**Sending** transactional emails (invitations, resets, notifications): {emailProvider}."
+            ]
+          },
+          {
+            "p": "{brand} does not integrate any payment provider: families pay the establishment directly, and the establishment records those payments on the platform. No analytics or advertising tools are used."
+          },
+          {
+            "p": "Finally, data may be disclosed to public authorities where Tunisian law requires it, strictly within the limits of that obligation."
+          }
         ]
       },
       {
         "id": "children",
         "title": "7. Children's and students' data",
         "blocks": [
-          { "p": "Much of the data processed on {brand} concerns minors. We apply specific rules to it, on top of the general principles of this policy." },
-          { "h": "Consent of the legal guardian" },
-          { "p": "Organic Law No. 2004-63 makes the processing of a child's data subject to the consent of their legal guardian and, under the conditions it sets out, to the authorization of the family judge. As data controller, the establishment collects this consent, usually at enrollment, and keeps proof of it. The platform notably lets the establishment record each student's photo consent." },
-          { "h": "Data minimization" },
-          { "ul": [
-            "Health fields are limited to summary flags and an allergy note: they are not meant to hold a medical record.",
-            "Most fields in a student record are optional: the establishment only records what it needs to care for the child.",
-            "Information about people authorized to pick up a child is only used to verify their identity at pick-up."
-          ] },
-          { "h": "Restricted access" },
-          { "ul": [
-            "Medical information is only visible to roles holding a specific permission.",
-            "A parent can only access their own children's data and can request an export of it.",
-            "Exports and erasures of student data are recorded in an audit log."
-          ] },
-          { "h": "After a student leaves" },
-          { "p": "When a student leaves the establishment, their record can be archived. The establishment decides how long it is kept, in line with its legal obligations. At the establishment's request, the student's personal data can be anonymized: their identity, contact details, health information and documents are erased, while financial records are kept in anonymized form to meet accounting obligations." }
+          {
+            "p": "Much of the data processed on {brand} concerns minors. We apply specific rules to it, on top of the general principles of this policy."
+          },
+          {
+            "h": "Consent of the legal guardian"
+          },
+          {
+            "p": "Organic Law No. 2004-63 makes the processing of a child's data subject to the consent of their legal guardian and, under the conditions it sets out, to the authorization of the family judge. As data controller, the establishment collects this consent, usually at enrollment, and keeps proof of it. The platform notably lets the establishment record each student's photo consent."
+          },
+          {
+            "h": "Data minimization"
+          },
+          {
+            "ul": [
+              "Health fields are limited to summary flags and an allergy note: they are not meant to hold a medical record.",
+              "Most fields in a student record are optional: the establishment only records what it needs to care for the child.",
+              "Information about people authorized to pick up a child is only used to verify their identity at pick-up."
+            ]
+          },
+          {
+            "h": "Restricted access"
+          },
+          {
+            "ul": [
+              "Medical information is only visible to roles holding a specific permission.",
+              "A parent can only access their own children's data and can request an export of it.",
+              "Exports and erasures of student data are recorded in an audit log."
+            ]
+          },
+          {
+            "h": "After a student leaves"
+          },
+          {
+            "p": "When a student leaves the establishment, their record can be archived. The establishment decides how long it is kept, in line with its legal obligations. At the establishment's request, the student's personal data can be anonymized: their identity, contact details, health information and documents are erased, while financial records are kept in anonymized form to meet accounting obligations."
+          }
         ]
       },
       {
         "id": "security",
         "title": "8. Data security",
         "blocks": [
-          { "p": "We apply technical and organizational measures suited to the sensitivity of the data, including:" },
-          { "ul": [
-            "**per-establishment isolation**: every request is scoped to the user's organization, so no customer can access another customer's data;",
-            "**role- and campus-based access control**, with specific permissions for sensitive data;",
-            "**invited accounts must be activated**: an account created by the establishment must be activated by its holder before any sign-in;",
-            "**password protection** with a strong hashing algorithm: passwords are never stored in plain text;",
-            "**secure sessions**: short-lived access tokens and a session cookie that browser scripts cannot read;",
-            "**attack protection**: temporary lockout after repeated failed sign-ins, and request rate limiting;",
-            "**encrypted traffic** between your browser and our servers (HTTPS);",
-            "**audit log** of sensitive actions, such as data exports and erasures."
-          ] },
-          { "p": "No system is infallible. If a data breach is likely to affect an establishment, we commit to notifying it as soon as possible so it can take the necessary measures and, where applicable, inform the people concerned and the authorities." }
+          {
+            "p": "We apply technical and organizational measures suited to the sensitivity of the data, including:"
+          },
+          {
+            "ul": [
+              "**per-establishment isolation**: every request is scoped to the user's organization, so no customer can access another customer's data;",
+              "**role- and campus-based access control**, with specific permissions for sensitive data;",
+              "**invited accounts must be activated**: an account created by the establishment must be activated by its holder before any sign-in;",
+              "**password protection** with a strong hashing algorithm: passwords are never stored in plain text;",
+              "**secure sessions**: short-lived access tokens and a session cookie that browser scripts cannot read;",
+              "**attack protection**: temporary lockout after repeated failed sign-ins, and request rate limiting;",
+              "**encrypted traffic** between your browser and our servers (HTTPS);",
+              "**audit log** of sensitive actions, such as data exports and erasures."
+            ]
+          },
+          {
+            "p": "No system is infallible. If a data breach is likely to affect an establishment, we commit to notifying it as soon as possible so it can take the necessary measures and, where applicable, inform the people concerned and the authorities."
+          }
         ]
       },
       {
         "id": "transfers",
         "title": "9. Hosting and transfers outside Tunisia",
         "blocks": [
-          { "p": "{brand}'s servers and database are hosted in Tunisia." },
-          { "p": "Organic Law No. 2004-63 strictly regulates transfers of personal data abroad. Should a technical provider located outside Tunisia be involved, for example for sending emails, the transfer would be limited to what is strictly necessary and carried out in compliance with the conditions set by law, including the INPDP's prior authorization where required. This policy would then be updated to inform establishments." }
+          {
+            "p": "{brand}'s servers and database are hosted in Tunisia."
+          },
+          {
+            "p": "Organic Law No. 2004-63 strictly regulates transfers of personal data abroad. Should a technical provider located outside Tunisia be involved, for example for sending emails, the transfer would be limited to what is strictly necessary and carried out in compliance with the conditions set by law, including the INPDP's prior authorization where required. This policy would then be updated to inform establishments."
+          }
         ]
       },
       {
         "id": "retention",
         "title": "10. Retention periods",
         "blocks": [
-          { "p": "Data is only kept for as long as needed for the purposes for which it is processed:" },
-          { "ul": [
-            "**Establishment data** (students, families, staff, schooling): for the whole term of the contract, according to the retention rules set by the establishment.",
-            "**End of contract**: the establishment has {exportWindowDays} days to export its data; it is then deleted from our production systems within {deletionDays} days, and from backups after {backupRetentionDays} days.",
-            "**Financial records** (invoices and payments): for the period required by applicable accounting and tax obligations, in anonymized form where relevant.",
-            "**Sessions**: sign-in tokens expire automatically after 7 days of inactivity and are revoked on sign-out.",
-            "**Security and audit logs**: for as long as needed to secure the service and evidence the actions performed.",
-            "**Contact requests** that do not lead to a contract: {contactRetentionMonths} months from the last exchange."
-          ] }
+          {
+            "p": "Data is only kept for as long as needed for the purposes for which it is processed:"
+          },
+          {
+            "ul": [
+              "**Establishment data** (students, families, staff, schooling): for the whole term of the contract, according to the retention rules set by the establishment.",
+              "**End of contract**: the establishment has {exportWindowDays} days to export its data; it is then deleted from our production systems within {deletionDays} days, and from backups after {backupRetentionDays} days.",
+              "**Financial records** (invoices and payments): for the period required by applicable accounting and tax obligations, in anonymized form where relevant.",
+              "**Sessions**: sign-in tokens expire automatically after 7 days of inactivity and are revoked on sign-out.",
+              "**Security and audit logs**: for as long as needed to secure the service and evidence the actions performed.",
+              "**Contact requests** that do not lead to a contract: {contactRetentionMonths} months from the last exchange."
+            ]
+          }
         ]
       },
       {
         "id": "rights",
         "title": "11. Your rights",
         "blocks": [
-          { "p": "Organic Law No. 2004-63 grants you, in particular, the following rights over your data:" },
-          { "ul": [
-            "**right of access**: to know whether data about you is processed and to obtain a copy of it;",
-            "**right of rectification**: to have inaccurate, incomplete or ambiguous data corrected, completed, updated or deleted;",
-            "**right to object**: to object to the processing of your data on legitimate grounds, unless the processing is required by law or necessary to perform a contract;",
-            "**right to withdraw consent** where processing is based on it."
-          ] },
-          { "p": "Parents or legal guardians exercise these rights on behalf of their minor child. In addition, the platform can export a student's data and, at the establishment's request, anonymize it." },
-          { "h": "How to exercise your rights" },
-          { "ul": [
-            "For data managed by your establishment (students, parents, staff), contact the establishment first, as the data controller.",
-            "For data {brand} processes for its own purposes, or if you cannot reach your establishment, write to us at {privacyEmail}."
-          ] },
-          { "p": "We respond within the time limits set by law. We may ask for proof of identity to protect your data against fraudulent requests." },
-          { "p": "If you believe your rights are not being respected, you can file a complaint with the National Authority for the Protection of Personal Data (INPDP), Tunisia's supervisory authority in this field." }
+          {
+            "p": "Organic Law No. 2004-63 grants you, in particular, the following rights over your data:"
+          },
+          {
+            "ul": [
+              "**right of access**: to know whether data about you is processed and to obtain a copy of it;",
+              "**right of rectification**: to have inaccurate, incomplete or ambiguous data corrected, completed, updated or deleted;",
+              "**right to object**: to object to the processing of your data on legitimate grounds, unless the processing is required by law or necessary to perform a contract;",
+              "**right to withdraw consent** where processing is based on it."
+            ]
+          },
+          {
+            "p": "Parents or legal guardians exercise these rights on behalf of their minor child. In addition, the platform can export a student's data and, at the establishment's request, anonymize it."
+          },
+          {
+            "h": "How to exercise your rights"
+          },
+          {
+            "ul": [
+              "For data managed by your establishment (students, parents, staff), contact the establishment first, as the data controller.",
+              "For data {brand} processes for its own purposes, or if you cannot reach your establishment, write to us at {privacyEmail}."
+            ]
+          },
+          {
+            "p": "We respond within the time limits set by law. We may ask for proof of identity to protect your data against fraudulent requests."
+          },
+          {
+            "p": "If you believe your rights are not being respected, you can file a complaint with the National Authority for the Protection of Personal Data (INPDP), Tunisia's supervisory authority in this field."
+          }
         ]
       },
       {
         "id": "cookies",
         "title": "12. Cookies",
         "blocks": [
-          { "p": "{brand} only uses strictly necessary cookies and, with your consent, one cookie that remembers your language. No advertising or analytics cookies are set. Full details are in our [cookie policy](/cookies)." }
+          {
+            "p": "{brand} only uses strictly necessary cookies and, with your consent, one cookie that remembers your language. No advertising or analytics cookies are set. Full details are in our [cookie policy](/cookies)."
+          }
         ]
       },
       {
         "id": "changes",
         "title": "13. Changes to this policy",
         "blocks": [
-          { "p": "We may update this policy, for example to reflect a new feature, a new provider or a change in the law. The date of the last update is shown at the top of the page. For significant changes, administrators of customer establishments are notified by email or in the app before the changes take effect." }
+          {
+            "p": "We may update this policy, for example to reflect a new feature, a new provider or a change in the law. The date of the last update is shown at the top of the page. For significant changes, administrators of customer establishments are notified by email or in the app before the changes take effect."
+          }
         ]
       },
       {
         "id": "contact",
         "title": "14. Contact us",
         "blocks": [
-          { "p": "For any question about this policy or the protection of your data: {privacyEmail}." },
-          { "p": "For any other request: {contactEmail} or our [contact page](/contact)." }
+          {
+            "p": "For any question about this policy or the protection of your data: {privacyEmail}."
+          },
+          {
+            "p": "For any other request: {contactEmail} or our [contact page](/contact)."
+          }
         ]
       }
     ]
@@ -262,164 +380,226 @@
         "id": "acceptance",
         "title": "1. Purpose and acceptance",
         "blocks": [
-          { "p": "These terms of service (the \"Terms\") govern access to and use of the {brand} service. They are entered into between {legalEntity} (\"{brand}\") and the establishment that creates an organization on the platform (the \"Customer\")." },
-          { "p": "The person creating the organization confirms they are authorized to bind the establishment. By creating the organization and then using the service, the Customer accepts these Terms. Where a specific quote or contract has been signed, its provisions prevail over these Terms in the event of conflict." },
-          { "p": "Staff, parents and students invited by the Customer (the \"Users\") use the service under the Customer's responsibility and agree to follow the usage rules described below." }
+          {
+            "p": "These terms of service (the \"Terms\") govern access to and use of the {brand} service. They are entered into between {legalEntity} (\"{brand}\") and the establishment that creates an organization on the platform (the \"Customer\")."
+          },
+          {
+            "p": "The person creating the organization confirms they are authorized to bind the establishment. By creating the organization and then using the service, the Customer accepts these Terms. Where a specific quote or contract has been signed, its provisions prevail over these Terms in the event of conflict."
+          },
+          {
+            "p": "Staff, parents and students invited by the Customer (the \"Users\") use the service under the Customer's responsibility and agree to follow the usage rules described below."
+          }
         ]
       },
       {
         "id": "definitions",
         "title": "2. Definitions",
         "blocks": [
-          { "ul": [
-            "**Service**: the {brand} platform available online, its features and its updates.",
-            "**Organization**: the Customer's space on the platform, grouping one or more campuses.",
-            "**User**: anyone with an account attached to the Organization (leadership, teacher, staff, accountant, parent, student).",
-            "**Customer Data**: all information entered or uploaded to the Organization by the Customer or its Users, including the personal data of students, families and staff."
-          ] }
+          {
+            "ul": [
+              "**Service**: the {brand} platform available online, its features and its updates.",
+              "**Organization**: the Customer's space on the platform, grouping one or more campuses.",
+              "**User**: anyone with an account attached to the Organization (leadership, teacher, staff, accountant, parent, student).",
+              "**Customer Data**: all information entered or uploaded to the Organization by the Customer or its Users, including the personal data of students, families and staff."
+            ]
+          }
         ]
       },
       {
         "id": "service",
         "title": "3. Description of the service",
         "blocks": [
-          { "p": "{brand} is online management software for educational establishments. Depending on the modules enabled, it lets the Customer manage students and enrollment, campuses and classes, attendance, homework, exams, grades and report cards, early-years routines, billing to families, documents and communication with families." },
-          { "p": "{brand} is a tool serving the establishment. It does not replace the establishment's legal and regulatory obligations towards its students, their families and the authorities, particularly regarding teaching, child safety, accounting or data protection. Educational, administrative and financial decisions remain the establishment's." }
+          {
+            "p": "{brand} is online management software for educational establishments. Depending on the modules enabled, it lets the Customer manage students and enrollment, campuses and classes, attendance, homework, exams, grades and report cards, school operations, billing to families, documents and communication with families."
+          },
+          {
+            "p": "{brand} is a tool serving the establishment. It does not replace the establishment's legal and regulatory obligations towards its students, their families and the authorities, particularly regarding teaching, child safety, accounting or data protection. Educational, administrative and financial decisions remain the establishment's."
+          }
         ]
       },
       {
         "id": "accounts",
         "title": "4. Accounts and access",
         "blocks": [
-          { "ul": [
-            "The Customer provides accurate information when creating the Organization and keeps it up to date.",
-            "The Customer creates its Users' accounts and assigns each a role and, where relevant, a campus. It is responsible for the access it grants and removes access when someone leaves the establishment.",
-            "Each account is personal. Credentials must not be shared; every User protects their password and promptly reports any unauthorized use.",
-            "An account created by the Customer must be activated by its holder before the first sign-in.",
-            "{brand} may suspend an account where there is a proven risk to the security of the service or data, informing the Customer as soon as possible."
-          ] }
+          {
+            "ul": [
+              "The Customer provides accurate information when creating the Organization and keeps it up to date.",
+              "The Customer creates its Users' accounts and assigns each a role and, where relevant, a campus. It is responsible for the access it grants and removes access when someone leaves the establishment.",
+              "Each account is personal. Credentials must not be shared; every User protects their password and promptly reports any unauthorized use.",
+              "An account created by the Customer must be activated by its holder before the first sign-in.",
+              "{brand} may suspend an account where there is a proven risk to the security of the service or data, informing the Customer as soon as possible."
+            ]
+          }
         ]
       },
       {
         "id": "client-obligations",
         "title": "5. Customer obligations regarding data",
         "blocks": [
-          { "p": "As the data controller for Customer Data, the establishment undertakes in particular to:" },
-          { "ul": [
-            "only record data needed for its activities, with a legal basis for each;",
-            "collect, where the law requires it, the consent of legal guardians to process their children's data, including the use of their image;",
-            "complete the formalities that fall to it with the National Authority for the Protection of Personal Data (INPDP);",
-            "inform families and staff about the processing of their data and respond to their requests to exercise their rights, with {brand}'s assistance where needed."
-          ] }
+          {
+            "p": "As the data controller for Customer Data, the establishment undertakes in particular to:"
+          },
+          {
+            "ul": [
+              "only record data needed for its activities, with a legal basis for each;",
+              "collect, where the law requires it, the consent of legal guardians to process their children's data, including the use of their image;",
+              "complete the formalities that fall to it with the National Authority for the Protection of Personal Data (INPDP);",
+              "inform families and staff about the processing of their data and respond to their requests to exercise their rights, with {brand}'s assistance where needed."
+            ]
+          }
         ]
       },
       {
         "id": "acceptable-use",
         "title": "6. Acceptable use",
         "blocks": [
-          { "p": "The Customer and Users must not:" },
-          { "ul": [
-            "access or attempt to access another organization's data, or data their role does not grant access to;",
-            "use student or family data for purposes unrelated to the life of the establishment, particularly commercial or advertising purposes;",
-            "upload content that is unlawful, defamatory, invades privacy or infringes third-party rights, or that contains malware;",
-            "disrupt the service, bypass its security measures, deliberately overload it or extract its data by automated means without authorization;",
-            "resell, sublicense or make the service available to third parties outside the establishment without {brand}'s written consent."
-          ] },
-          { "p": "In the event of a serious breach, {brand} may suspend the access concerned after informing the Customer, except in a security emergency." }
+          {
+            "p": "The Customer and Users must not:"
+          },
+          {
+            "ul": [
+              "access or attempt to access another organization's data, or data their role does not grant access to;",
+              "use student or family data for purposes unrelated to the life of the establishment, particularly commercial or advertising purposes;",
+              "upload content that is unlawful, defamatory, invades privacy or infringes third-party rights, or that contains malware;",
+              "disrupt the service, bypass its security measures, deliberately overload it or extract its data by automated means without authorization;",
+              "resell, sublicense or make the service available to third parties outside the establishment without {brand}'s written consent."
+            ]
+          },
+          {
+            "p": "In the event of a serious breach, {brand} may suspend the access concerned after informing the Customer, except in a security emergency."
+          }
         ]
       },
       {
         "id": "billing",
         "title": "7. Commercial terms and billing",
         "blocks": [
-          { "p": "Creating an Organization is free and requires no payment method. Using the service under a commercial offer is subject to a written quote, based on the size of the establishment, the number of campuses, the modules enabled and the level of support chosen." },
-          { "ul": [
-            "The accepted quote specifies the price, billing frequency, any minimum term and payment terms.",
-            "No fee, including setup or onboarding fees, is charged unless it was first stated in the quote.",
-            "If a payment is late, {brand} sends the Customer a reminder. If the situation is not resolved within the stated period, access to the service may be suspended after notice. Suspension does not delete Customer Data.",
-            "Any change to the offer (adding a campus or a module, for example) results in an updated quote, accepted by the Customer."
-          ] }
+          {
+            "p": "Creating an Organization is free and requires no payment method. Using the service under a commercial offer is subject to a written quote, based on the size of the establishment, the number of campuses, the modules enabled and the level of support chosen."
+          },
+          {
+            "ul": [
+              "The accepted quote specifies the price, billing frequency, any minimum term and payment terms.",
+              "No fee, including setup or onboarding fees, is charged unless it was first stated in the quote.",
+              "If a payment is late, {brand} sends the Customer a reminder. If the situation is not resolved within the stated period, access to the service may be suspended after notice. Suspension does not delete Customer Data.",
+              "Any change to the offer (adding a campus or a module, for example) results in an updated quote, accepted by the Customer."
+            ]
+          }
         ]
       },
       {
         "id": "data-ownership",
         "title": "8. Data ownership and protection",
         "blocks": [
-          { "p": "The Customer remains the sole owner of Customer Data. {brand} claims no rights over it and only uses it to provide the service, on the Customer's instructions, as a processor within the meaning of Organic Law No. 2004-63." },
-          { "p": "{brand} undertakes to apply appropriate security measures, to ensure its staff and providers keep the data confidential, and to assist the Customer in meeting its obligations. Details are set out in our [privacy policy](/privacy)." }
+          {
+            "p": "The Customer remains the sole owner of Customer Data. {brand} claims no rights over it and only uses it to provide the service, on the Customer's instructions, as a processor within the meaning of Organic Law No. 2004-63."
+          },
+          {
+            "p": "{brand} undertakes to apply appropriate security measures, to ensure its staff and providers keep the data confidential, and to assist the Customer in meeting its obligations. Details are set out in our [privacy policy](/privacy)."
+          }
         ]
       },
       {
         "id": "availability",
         "title": "9. Availability, maintenance and support",
         "blocks": [
-          { "p": "{brand} makes every effort to keep the service continuously available. The service may, however, be briefly interrupted for maintenance, updates or in the event of an incident. Planned maintenance is carried out outside school hours where possible and announced in advance." },
-          { "p": "Unless a specific service level is set out in the quote, {brand} is bound by a best-efforts obligation regarding service availability. Support is available by email at {contactEmail}." }
+          {
+            "p": "{brand} makes every effort to keep the service continuously available. The service may, however, be briefly interrupted for maintenance, updates or in the event of an incident. Planned maintenance is carried out outside school hours where possible and announced in advance."
+          },
+          {
+            "p": "Unless a specific service level is set out in the quote, {brand} is bound by a best-efforts obligation regarding service availability. Support is available by email at {contactEmail}."
+          }
         ]
       },
       {
         "id": "ip",
         "title": "10. Intellectual property",
         "blocks": [
-          { "p": "The platform, its code, interface, brand and content are the exclusive property of {brand}. For the term of the contract, the Customer receives a personal, non-exclusive and non-transferable right to use the service for its establishment's needs." },
-          { "p": "The Customer's content and Customer Data remain the Customer's property. The Customer grants {brand} only the right to host, copy and process them to the extent needed to provide the service." }
+          {
+            "p": "The platform, its code, interface, brand and content are the exclusive property of {brand}. For the term of the contract, the Customer receives a personal, non-exclusive and non-transferable right to use the service for its establishment's needs."
+          },
+          {
+            "p": "The Customer's content and Customer Data remain the Customer's property. The Customer grants {brand} only the right to host, copy and process them to the extent needed to provide the service."
+          }
         ]
       },
       {
         "id": "confidentiality",
         "title": "11. Confidentiality",
         "blocks": [
-          { "p": "Each party undertakes to keep confidential any non-public information about the other party that it learns in connection with the contract, and to use it only to perform the contract. This obligation continues after the contract ends." }
+          {
+            "p": "Each party undertakes to keep confidential any non-public information about the other party that it learns in connection with the contract, and to use it only to perform the contract. This obligation continues after the contract ends."
+          }
         ]
       },
       {
         "id": "liability",
         "title": "12. Liability",
         "blocks": [
-          { "p": "{brand} is responsible for properly delivering the service in accordance with these Terms. It cannot be held liable for misuse of the service by the Customer or its Users, for inaccurate data they enter, for decisions the establishment takes based on the information recorded, or for force majeure events." },
-          { "p": "To the extent permitted by law, {brand}'s liability under the contract is limited to direct and foreseeable damage and capped at the amount paid by the Customer in the twelve months preceding the event giving rise to the claim. This limitation does not apply to gross negligence or wilful misconduct, nor to breaches of {brand}'s obligations regarding the security and confidentiality of personal data." }
+          {
+            "p": "{brand} is responsible for properly delivering the service in accordance with these Terms. It cannot be held liable for misuse of the service by the Customer or its Users, for inaccurate data they enter, for decisions the establishment takes based on the information recorded, or for force majeure events."
+          },
+          {
+            "p": "To the extent permitted by law, {brand}'s liability under the contract is limited to direct and foreseeable damage and capped at the amount paid by the Customer in the twelve months preceding the event giving rise to the claim. This limitation does not apply to gross negligence or wilful misconduct, nor to breaches of {brand}'s obligations regarding the security and confidentiality of personal data."
+          }
         ]
       },
       {
         "id": "termination",
         "title": "13. Term, termination and return of data",
         "blocks": [
-          { "p": "The contract is entered into for the term set out in the quote. Otherwise, either party may terminate it at any time, in writing, with effect at the end of the current billing period." },
-          { "p": "Either party may also terminate the contract in the event of a serious breach by the other party that is not remedied within thirty days of written notice." },
-          { "h": "Reversibility" },
-          { "ul": [
-            "At the end of the contract, the Customer has {exportWindowDays} days to export its data.",
-            "After that period, Customer Data is deleted from production systems within {deletionDays} days, and from backups after {backupRetentionDays} days, unless the law requires it to be kept.",
-            "On request, {brand} confirms in writing that the data has been deleted."
-          ] }
+          {
+            "p": "The contract is entered into for the term set out in the quote. Otherwise, either party may terminate it at any time, in writing, with effect at the end of the current billing period."
+          },
+          {
+            "p": "Either party may also terminate the contract in the event of a serious breach by the other party that is not remedied within thirty days of written notice."
+          },
+          {
+            "h": "Reversibility"
+          },
+          {
+            "ul": [
+              "At the end of the contract, the Customer has {exportWindowDays} days to export its data.",
+              "After that period, Customer Data is deleted from production systems within {deletionDays} days, and from backups after {backupRetentionDays} days, unless the law requires it to be kept.",
+              "On request, {brand} confirms in writing that the data has been deleted."
+            ]
+          }
         ]
       },
       {
         "id": "changes",
         "title": "14. Changes to these Terms",
         "blocks": [
-          { "p": "{brand} may amend these Terms, particularly to reflect changes to the service or the law. The Customer is informed of any material change at least thirty days before it takes effect. If the Customer does not accept it, it may terminate the contract before that date without penalty." }
+          {
+            "p": "{brand} may amend these Terms, particularly to reflect changes to the service or the law. The Customer is informed of any material change at least thirty days before it takes effect. If the Customer does not accept it, it may terminate the contract before that date without penalty."
+          }
         ]
       },
       {
         "id": "law",
         "title": "15. Governing law and disputes",
         "blocks": [
-          { "p": "These Terms are governed by Tunisian law, including the Code of Obligations and Contracts and Organic Law No. 2004-63 on the protection of personal data." },
-          { "p": "In the event of a dispute, the parties will first seek an amicable solution. If no agreement is reached within thirty days, the dispute will be brought before the competent Tunisian courts." }
+          {
+            "p": "These Terms are governed by Tunisian law, including the Code of Obligations and Contracts and Organic Law No. 2004-63 on the protection of personal data."
+          },
+          {
+            "p": "In the event of a dispute, the parties will first seek an amicable solution. If no agreement is reached within thirty days, the dispute will be brought before the competent Tunisian courts."
+          }
         ]
       },
       {
         "id": "contact",
         "title": "16. Publisher and contact",
         "blocks": [
-          { "ul": [
-            "Publisher: {legalEntity}",
-            "Unique identifier (RNE): {registrationNumber}",
-            "Registered office: {registeredAddress}",
-            "Contact: {contactEmail}",
-            "Personal data: {privacyEmail}"
-          ] }
+          {
+            "ul": [
+              "Publisher: {legalEntity}",
+              "Unique identifier (RNE): {registrationNumber}",
+              "Registered office: {registeredAddress}",
+              "Contact: {contactEmail}",
+              "Personal data: {privacyEmail}"
+            ]
+          }
         ]
       }
     ]
@@ -444,73 +624,131 @@
         "id": "what",
         "title": "1. What is a cookie?",
         "blocks": [
-          { "p": "A cookie is a small text file stored by your browser when you visit a website. It lets the site recognize your browser from one page to the next, for example to keep you signed in or remember a preference. Similar technologies, such as the browser's session storage, work in a comparable way." }
+          {
+            "p": "A cookie is a small text file stored by your browser when you visit a website. It lets the site recognize your browser from one page to the next, for example to keep you signed in or remember a preference. Similar technologies, such as the browser's session storage, work in a comparable way."
+          }
         ]
       },
       {
         "id": "approach",
         "title": "2. Our approach",
         "blocks": [
-          { "p": "{brand} is a professional tool used by establishments that care for children. We have therefore chosen not to use any tracking cookies: our website and application contain no advertising, no social media pixels and no analytics tools." },
-          { "p": "Strictly necessary cookies do not require consent, because the service cannot work without them. The language preference cookie is only set with your consent." }
+          {
+            "p": "{brand} is a professional tool used by establishments that care for children. We have therefore chosen not to use any tracking cookies: our website and application contain no advertising, no social media pixels and no analytics tools."
+          },
+          {
+            "p": "Strictly necessary cookies do not require consent, because the service cannot work without them. The language preference cookie is only set with your consent."
+          }
         ]
       },
       {
         "id": "list",
         "title": "3. The cookies we use",
         "blocks": [
-          { "h": "Strictly necessary" },
-          { "table": {
-            "head": ["Name", "Purpose", "Duration"],
-            "rows": [
-              ["refresh_token", "Keeps your session in the application secure. It cannot be read by browser scripts (HttpOnly) and is only sent to the authentication service.", "7 days, renewed on each use; deleted on sign-out"],
-              ["ecolnaspace_auth", "Signals that a session is open so you are taken straight to your dashboard. It contains no personal data.", "7 days, renewed on each use; deleted on sign-out"],
-              ["ecolnaspace_consent", "Remembers your cookie choices so we do not ask you on every visit.", "6 months"]
-            ]
-          } },
-          { "h": "Preferences (with your consent)" },
-          { "table": {
-            "head": ["Name", "Purpose", "Duration"],
-            "rows": [
-              ["ecolnaspace_locale", "Remembers the language you chose (French, English or Arabic) so the site opens in that language on your next visit.", "12 months"]
-            ]
-          } },
-          { "h": "Analytics and advertising" },
-          { "p": "None. If we ever decide to use an analytics tool, it would only be enabled after your explicit consent, and this page would be updated beforehand." }
+          {
+            "h": "Strictly necessary"
+          },
+          {
+            "table": {
+              "head": [
+                "Name",
+                "Purpose",
+                "Duration"
+              ],
+              "rows": [
+                [
+                  "refresh_token",
+                  "Keeps your session in the application secure. It cannot be read by browser scripts (HttpOnly) and is only sent to the authentication service.",
+                  "7 days, renewed on each use; deleted on sign-out"
+                ],
+                [
+                  "ecolnaspace_auth",
+                  "Signals that a session is open so you are taken straight to your dashboard. It contains no personal data.",
+                  "7 days, renewed on each use; deleted on sign-out"
+                ],
+                [
+                  "ecolnaspace_consent",
+                  "Remembers your cookie choices so we do not ask you on every visit.",
+                  "6 months"
+                ]
+              ]
+            }
+          },
+          {
+            "h": "Preferences (with your consent)"
+          },
+          {
+            "table": {
+              "head": [
+                "Name",
+                "Purpose",
+                "Duration"
+              ],
+              "rows": [
+                [
+                  "ecolnaspace_locale",
+                  "Remembers the language you chose (French, English or Arabic) so the site opens in that language on your next visit.",
+                  "12 months"
+                ]
+              ]
+            }
+          },
+          {
+            "h": "Analytics and advertising"
+          },
+          {
+            "p": "None. If we ever decide to use an analytics tool, it would only be enabled after your explicit consent, and this page would be updated beforehand."
+          }
         ]
       },
       {
         "id": "storage",
         "title": "4. Other data stored in your browser",
         "blocks": [
-          { "p": "While you are signed in to the application, two technical items are kept in the browser's session storage. They are cleared automatically when you close the tab:" },
-          { "ul": [
-            "the short-lived access token that authenticates your requests (valid for 15 minutes);",
-            "a temporary flag ensuring your sign-out is completed even if the network drops."
-          ] }
+          {
+            "p": "While you are signed in to the application, two technical items are kept in the browser's session storage. They are cleared automatically when you close the tab:"
+          },
+          {
+            "ul": [
+              "the short-lived access token that authenticates your requests (valid for 15 minutes);",
+              "a temporary flag ensuring your sign-out is completed even if the network drops."
+            ]
+          }
         ]
       },
       {
         "id": "manage",
         "title": "5. Managing your preferences",
         "blocks": [
-          { "p": "On your first visit, a banner lets you accept or decline the preference cookie, equally easily. You can change that choice at any time with the \"Manage cookies\" link at the bottom of every page. If you decline, the language cookie is deleted and the language is simply suggested from your browser settings." },
-          { "p": "You can also delete or block cookies in your browser settings:" },
-          { "ul": [
-            "**Chrome**: Settings › Privacy and security › Third-party cookies and site data;",
-            "**Firefox**: Settings › Privacy & Security › Cookies and Site Data;",
-            "**Safari**: Settings › Privacy › Manage Website Data;",
-            "**Edge**: Settings › Cookies and site permissions."
-          ] },
-          { "note": "Blocking strictly necessary cookies prevents you from signing in to the application: you will still be able to browse the public website, but not access your account." }
+          {
+            "p": "On your first visit, a banner lets you accept or decline the preference cookie, equally easily. You can change that choice at any time with the \"Manage cookies\" link at the bottom of every page. If you decline, the language cookie is deleted and the language is simply suggested from your browser settings."
+          },
+          {
+            "p": "You can also delete or block cookies in your browser settings:"
+          },
+          {
+            "ul": [
+              "**Chrome**: Settings › Privacy and security › Third-party cookies and site data;",
+              "**Firefox**: Settings › Privacy & Security › Cookies and Site Data;",
+              "**Safari**: Settings › Privacy › Manage Website Data;",
+              "**Edge**: Settings › Cookies and site permissions."
+            ]
+          },
+          {
+            "note": "Blocking strictly necessary cookies prevents you from signing in to the application: you will still be able to browse the public website, but not access your account."
+          }
         ]
       },
       {
         "id": "changes",
         "title": "6. Updates and contact",
         "blocks": [
-          { "p": "We update this page whenever the list of cookies changes. If a new type of optional cookie were ever introduced, we would ask for your consent again." },
-          { "p": "For any question: {privacyEmail}. To learn more about how your data is processed, see our [privacy policy](/privacy)." }
+          {
+            "p": "We update this page whenever the list of cookies changes. If a new type of optional cookie were ever introduced, we would ask for your consent again."
+          },
+          {
+            "p": "For any question: {privacyEmail}. To learn more about how your data is processed, see our [privacy policy](/privacy)."
+          }
         ]
       }
     ]

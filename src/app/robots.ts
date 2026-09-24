@@ -12,7 +12,6 @@ const PRIVATE_SEGMENTS = [
   "academic",
   "finance",
   "communication",
-  "daycare",
   "documents",
   "organization",
   "settings",

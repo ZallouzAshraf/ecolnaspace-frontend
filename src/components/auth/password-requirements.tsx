@@ -28,7 +28,7 @@ export function PasswordRequirements({
   const score = items.filter((item) => item.ok).length;
 
   return (
-    <div className="space-y-2">
+    <div className="space-y-1.5">
       <div aria-hidden className="grid grid-cols-3 gap-1.5">
         {[0, 1, 2].map((i) => (
           <span
@@ -43,12 +43,12 @@ export function PasswordRequirements({
           />
         ))}
       </div>
-      <ul className="flex flex-wrap gap-1.5" aria-label={labels.title}>
+      <ul className="flex flex-wrap gap-1" aria-label={labels.title}>
         {items.map((item) => (
           <li
             key={item.key}
             className={cn(
-              "inline-flex items-center gap-1 rounded-full border px-2 py-1 text-[11px] leading-none transition-colors",
+              "inline-flex items-center gap-1 rounded-full border px-1.5 py-0.5 text-[10px] leading-none transition-colors sm:px-2 sm:py-1 sm:text-[11px]",
               item.ok
                 ? "border-emerald-500/25 bg-emerald-500/10 text-emerald-700 dark:text-emerald-400"
                 : "border-border bg-muted/30 text-muted-foreground",

@@ -31,9 +31,9 @@ export function PasswordField({
   const [visible, setVisible] = useState(false);
 
   return (
-    <div className="flex flex-col gap-1.5">
+    <div className="flex flex-col gap-1">
       {label ? (
-        <Label htmlFor={fieldId} className="text-[13px]">
+        <Label htmlFor={fieldId} className="text-xs">
           {label}
         </Label>
       ) : null}

@@ -36,8 +36,7 @@ import { Controller, useForm, useWatch } from "react-hook-form";
 import { z } from "zod";
 
 const organizationTypes = [
-  "NURSERY",
-  "KINDERGARTEN",
+  "GARDERIE",
   "PRIMARY_SCHOOL",
   "MIDDLE_SCHOOL",
   "HIGH_SCHOOL",
@@ -139,28 +138,29 @@ export function RegisterForm() {
   }
 
   return (
-    <div>
+    <div className="py-3.5">
       <AuthHeading
+        compact
         icon={Building2}
         title={t("registerTitle")}
         subtitle={t("registerSubtitle")}
       />
 
       <form
-        className="mt-7 flex flex-col gap-4"
+        className="mt-3 flex flex-col gap-2"
         onSubmit={form.handleSubmit(onSubmit)}
         noValidate
       >
         {formError && <AuthAlert tone="error">{formError}</AuthAlert>}
 
-        <div className="grid grid-cols-1 gap-4 sm:grid-cols-[1.2fr_0.8fr]">
-          <div className="flex flex-col gap-1.5">
-            <Label htmlFor="organizationName" className="text-[13px]">
+        <div className="grid grid-cols-1 gap-2 sm:grid-cols-[1.2fr_0.8fr]">
+          <div className="flex flex-col gap-1">
+            <Label htmlFor="organizationName" className="text-xs">
               {t("organizationName")}
             </Label>
             <Input
               id="organizationName"
-              
+              className="h-9"
               autoComplete="organization"
               aria-invalid={Boolean(form.formState.errors.organizationName)}
               {...nameRegister}
@@ -176,37 +176,44 @@ export function RegisterForm() {
             )}
           </div>
 
-          <div className="flex flex-col gap-1.5">
-            <Label className="text-[13px]">{t("organizationType")}</Label>
+          <div className="flex flex-col gap-1">
+            <Label className="text-xs">{t("organizationType")}</Label>
             <Controller
               control={form.control}
               name="organizationType"
               render={({ field }) => (
-                <Select value={field.value} onValueChange={field.onChange}>
-                  <SelectTrigger className="w-full">
-                    <SelectValue />
-                  </SelectTrigger>
-                  <SelectContent>
-                    {typeOptions.map((opt) => (
-                      <SelectItem key={opt.value} value={opt.value}>
-                        {opt.label}
-                      </SelectItem>
-                    ))}
-                  </SelectContent>
-                </Select>
+                <>
+                  <Select value={field.value} onValueChange={field.onChange}>
+                    <SelectTrigger size="sm" className="h-9 w-full">
+                      <SelectValue />
+                    </SelectTrigger>
+                    <SelectContent>
+                      {typeOptions.map((opt) => (
+                        <SelectItem key={opt.value} value={opt.value}>
+                          {opt.label}
+                        </SelectItem>
+                      ))}
+                    </SelectContent>
+                  </Select>
+                  {field.value === "GARDERIE" && (
+                    <p className="text-[11px] leading-snug text-muted-foreground">
+                      {t("orgTypeHints.GARDERIE")}
+                    </p>
+                  )}
+                </>
               )}
             />
           </div>
         </div>
 
-        <div className="grid grid-cols-2 gap-4">
-          <div className="flex flex-col gap-1.5">
-            <Label htmlFor="adminFirstName" className="text-[13px]">
+        <div className="grid grid-cols-2 gap-2">
+          <div className="flex flex-col gap-1">
+            <Label htmlFor="adminFirstName" className="text-xs">
               {t("firstName")}
             </Label>
             <Input
               id="adminFirstName"
-              
+              className="h-9"
               autoComplete="given-name"
               {...form.register("adminFirstName")}
             />
@@ -216,13 +223,13 @@ export function RegisterForm() {
               </p>
             )}
           </div>
-          <div className="flex flex-col gap-1.5">
-            <Label htmlFor="adminLastName" className="text-[13px]">
+          <div className="flex flex-col gap-1">
+            <Label htmlFor="adminLastName" className="text-xs">
               {t("lastName")}
             </Label>
             <Input
               id="adminLastName"
-              
+              className="h-9"
               autoComplete="family-name"
               {...form.register("adminLastName")}
             />
@@ -234,50 +241,54 @@ export function RegisterForm() {
           </div>
         </div>
 
-        <div className="flex flex-col gap-1.5">
-          <Label htmlFor="adminEmail" className="text-[13px]">
-            {t("email")}
-          </Label>
-          <Input
-            id="adminEmail"
-            type="email"
-            
-            autoComplete="email"
-            {...form.register("adminEmail")}
-          />
-          {form.formState.errors.adminEmail && (
-            <p className="text-xs text-destructive" role="alert">
-              {t("errors.email")}
-            </p>
-          )}
-        </div>
+        <div className="grid grid-cols-1 gap-2 sm:grid-cols-2">
+          <div className="flex flex-col gap-1">
+            <Label htmlFor="adminEmail" className="text-xs">
+              {t("email")}
+            </Label>
+            <Input
+              id="adminEmail"
+              type="email"
+              className="h-9"
+              autoComplete="email"
+              {...form.register("adminEmail")}
+            />
+            {form.formState.errors.adminEmail && (
+              <p className="text-xs text-destructive" role="alert">
+                {t("errors.email")}
+              </p>
+            )}
+          </div>
 
-        <div className="flex flex-col gap-2">
-          <PasswordField
-            id="adminPassword"
-            label={t("password")}
-            autoComplete="new-password"
-            showLabel={t("showPassword")}
-            hideLabel={t("hidePassword")}
-            describedBy="password-rules"
-            error={
-              form.formState.errors.adminPassword
-                ? t("errors.passwordWeak")
-                : undefined
-            }
-            {...form.register("adminPassword")}
-          />
-          <div id="password-rules">
-            <PasswordRequirements
-              password={password}
-              labels={{
-                title: t("passwordRules.title"),
-                minLength: t("passwordRules.minLength"),
-                hasLetter: t("passwordRules.hasLetter"),
-                hasNumber: t("passwordRules.hasNumber"),
-              }}
+          <div className="flex flex-col gap-1">
+            <PasswordField
+              id="adminPassword"
+              label={t("password")}
+              className="h-9"
+              autoComplete="new-password"
+              showLabel={t("showPassword")}
+              hideLabel={t("hidePassword")}
+              describedBy="password-rules"
+              error={
+                form.formState.errors.adminPassword
+                  ? t("errors.passwordWeak")
+                  : undefined
+              }
+              {...form.register("adminPassword")}
             />
           </div>
+        </div>
+
+        <div id="password-rules">
+          <PasswordRequirements
+            password={password}
+            labels={{
+              title: t("passwordRules.title"),
+              minLength: t("passwordRules.minLength"),
+              hasLetter: t("passwordRules.hasLetter"),
+              hasNumber: t("passwordRules.hasNumber"),
+            }}
+          />
         </div>
 
         <Controller
@@ -285,8 +296,7 @@ export function RegisterForm() {
           name="acceptTerms"
           render={({ field, fieldState }) => (
             <div className="flex flex-col gap-1">
-              <label className="flex cursor-pointer items-start gap-2.5 rounded-xl border border-slate-200/80 bg-slate-50/70 px-3 py-2.5 text-[13px] leading-snug transition-colors hover:border-slate-300">
-
+              <label className="flex cursor-pointer items-start gap-2 text-[12px] leading-snug">
                 <Checkbox
                   checked={field.value}
                   onCheckedChange={(v) => field.onChange(v === true)}
@@ -322,9 +332,9 @@ export function RegisterForm() {
         </AuthSubmit>
       </form>
 
-      <AuthDivider />
+      <AuthDivider className="my-3" />
 
-      <p className="text-center text-[13px] text-slate-500">
+      <p className="text-center text-[12px] text-slate-500 sm:text-[13px]">
         {t("haveAccount")}{" "}
         <Link href="/login" className={authLinkClass}>
           {t("signIn")}

@@ -38,9 +38,9 @@ export function AuthShell({ children }: AuthShellProps) {
   }
 
   return (
-    <div className="grid min-h-svh bg-[#fbfbfe] lg:h-svh lg:grid-cols-[1.02fr_0.98fr] lg:overflow-hidden lg:p-3">
+    <div className="grid h-dvh max-h-dvh overflow-hidden bg-[#fbfbfe] lg:grid-cols-[1.02fr_0.98fr] lg:p-3">
       {/* Brand panel */}
-      <aside className="relative isolate hidden overflow-hidden rounded-[1.75rem] bg-[#070a1a] text-slate-100 lg:flex lg:flex-col lg:justify-between lg:overflow-y-auto lg:px-10 lg:py-8 xl:px-14 xl:py-10">
+      <aside className="relative isolate hidden overflow-hidden rounded-[1.75rem] bg-[#070a1a] text-slate-100 lg:flex lg:flex-col lg:justify-between lg:px-10 lg:pb-6 lg:pt-8 xl:px-14 xl:pb-7 xl:pt-10">
         <div aria-hidden className="pointer-events-none absolute inset-0 -z-10">
           <div className="absolute -top-48 -start-32 h-[36rem] w-[48rem] motion-safe:animate-[aurora_22s_ease-in-out_infinite]">
             <div className="absolute inset-0 rounded-full bg-[conic-gradient(from_120deg,rgba(99,91,255,0.55),rgba(56,189,248,0.35),rgba(236,72,153,0.25),rgba(99,91,255,0.55))] blur-[100px]" />
@@ -57,12 +57,12 @@ export function AuthShell({ children }: AuthShellProps) {
           <BrandMark label={tCommon("appName")} tone="dark" />
         </Link>
 
-        <div className="relative my-8 flex flex-1 flex-col justify-center gap-10">
+        <div className="relative mt-6 mb-3 flex flex-1 flex-col justify-center gap-8">
           <div className="max-w-md motion-safe:animate-[fade-up_0.9s_cubic-bezier(0.22,1,0.36,1)_both]">
-            <h2 className="text-balance text-[2rem] font-semibold leading-[1.1] tracking-[-0.03em] text-white xl:text-[2.4rem]">
+            <h2 className="text-balance text-[1.55rem] font-semibold leading-[1.15] tracking-[-0.03em] text-white xl:text-[1.85rem]">
               {t("brandPanel.headline")}
             </h2>
-            <p className="mt-4 max-w-sm text-[0.95rem] leading-relaxed text-slate-400">
+            <p className="mt-3 max-w-sm text-[0.9rem] leading-relaxed text-slate-400">
               {t("brandPanel.body")}
             </p>
           </div>
@@ -95,13 +95,13 @@ export function AuthShell({ children }: AuthShellProps) {
       </aside>
 
       {/* Form side */}
-      <div className="relative isolate flex flex-col px-4 py-4 sm:px-8 lg:overflow-y-auto lg:px-10 lg:py-5 xl:px-14">
+      <div className="relative isolate flex min-h-0 flex-col overflow-hidden px-4 py-3 sm:px-8 lg:px-10 lg:py-4 xl:px-14">
         <div aria-hidden className="pointer-events-none absolute inset-0 -z-10 overflow-hidden">
           <div className="absolute -top-32 start-1/2 h-[26rem] w-[40rem] -translate-x-1/2 rounded-full bg-[radial-gradient(ellipse_at_center,rgba(99,91,255,0.14),transparent_65%)] rtl:translate-x-1/2" />
           <div className="absolute inset-0 [background-image:radial-gradient(rgba(15,23,42,0.07)_1px,transparent_1px)] [background-size:22px_22px] [mask-image:radial-gradient(ellipse_60%_45%_at_50%_0%,black,transparent_75%)]" />
         </div>
 
-        <div className="flex items-center justify-between gap-3">
+        <div className="relative z-10 flex shrink-0 items-center justify-between gap-3">
           <Link
             href="/"
             className="rounded-lg outline-none focus-visible:ring-3 focus-visible:ring-ring/50 lg:hidden"
@@ -142,8 +142,8 @@ export function AuthShell({ children }: AuthShellProps) {
           </div>
         </div>
 
-        <div className="mx-auto flex w-full max-w-[440px] flex-1 flex-col justify-center py-8 lg:py-6">
-          <div className="auth-card relative rounded-[1.75rem] border border-white/80 bg-white/75 p-6 shadow-[0_40px_80px_-40px_rgba(30,27,75,0.35),0_1px_2px_rgba(15,23,42,0.04),inset_0_1px_0_rgba(255,255,255,0.9)] ring-1 ring-slate-900/5 backdrop-blur-xl motion-safe:animate-[fade-up_0.7s_cubic-bezier(0.22,1,0.36,1)_both] sm:p-8">
+        <div className="mx-auto flex min-h-0 w-full max-w-[440px] flex-1 flex-col justify-center overflow-hidden py-1 sm:py-2">
+          <div className="auth-card relative max-h-full overflow-hidden rounded-[1.5rem] border border-white/80 bg-white/75 p-4 shadow-[0_40px_80px_-40px_rgba(30,27,75,0.35),0_1px_2px_rgba(15,23,42,0.04),inset_0_1px_0_rgba(255,255,255,0.9)] ring-1 ring-slate-900/5 backdrop-blur-xl motion-safe:animate-[fade-up_0.7s_cubic-bezier(0.22,1,0.36,1)_both] sm:rounded-[1.75rem] sm:p-5">
             <div
               aria-hidden
               className="absolute inset-x-10 -top-px h-px bg-linear-to-r from-transparent via-primary/50 to-transparent"
@@ -152,7 +152,7 @@ export function AuthShell({ children }: AuthShellProps) {
           </div>
         </div>
 
-        <p className="text-center text-[11px] text-slate-400">
+        <p className="shrink-0 py-1 text-center text-[11px] text-slate-400">
           © {new Date().getFullYear()} {tCommon("appName")}
         </p>
       </div>

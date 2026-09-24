@@ -47,11 +47,6 @@
     "messages": "Messages",
     "notifications": "Notifications",
     "children": "Children",
-    "daycare": "Daycare",
-    "meals": "Meals",
-    "naps": "Naps",
-    "activities": "Activities",
-    "pickups": "Pickups",
     "billing": "Billing",
     "collapseSidebar": "Collapse sidebar",
     "expandSidebar": "Expand sidebar",
@@ -164,13 +159,15 @@
       "acceptTerms": "Please accept the terms to continue."
     },
     "orgTypes": {
-      "NURSERY": "Nursery",
-      "KINDERGARTEN": "Kindergarten",
+      "GARDERIE": "Multi-level school (Garderie)",
       "PRIMARY_SCHOOL": "Primary school",
       "MIDDLE_SCHOOL": "Middle school",
       "HIGH_SCHOOL": "High school",
       "TUTORING_CENTER": "Tutoring center",
       "TRAINING_CENTER": "Training center"
+    },
+    "orgTypeHints": {
+      "GARDERIE": "A school that covers all levels (primary through secondary) — the same modules as every other school type."
     }
   },
   "dashboard": {
@@ -306,7 +303,7 @@
     "pickupsEmptyTitle": "No authorized pickup persons",
     "pickupsEmptyDescription": "Add trusted adults who can pick up this student.",
     "pickupAddTitle": "Add pickup person",
-    "pickupAddSubtitle": "Authorized adults for daycare / school pickup.",
+    "pickupAddSubtitle": "People authorized to pick up this student.",
     "pickupAdd": "Add person",
     "pickupActive": "Active",
     "pickupInactive": "Inactive",
@@ -1040,133 +1037,6 @@
       "markRead": "Mark as read"
     }
   },
-  "meals": {
-    "title": "Meals",
-    "subtitle": "Log daycare meals by date.",
-    "add": "Log meal",
-    "emptyTitle": "No meals logged",
-    "emptyDescription": "Record meals for this date.",
-    "createTitle": "Log meal",
-    "createSubtitle": "Select a student and meal type.",
-    "filters": {
-      "date": "Date"
-    },
-    "columns": {
-      "student": "Student",
-      "mealType": "Meal",
-      "consumed": "Consumed",
-      "notes": "Notes"
-    },
-    "fields": {
-      "student": "Student",
-      "studentPlaceholder": "Select a student",
-      "mealType": "Meal type",
-      "consumed": "Consumed",
-      "notes": "Notes"
-    },
-    "mealTypes": {
-      "BREAKFAST": "Breakfast",
-      "LUNCH": "Lunch",
-      "SNACK": "Snack",
-      "DINNER": "Dinner"
-    },
-    "errors": {
-      "student": "Please select a student."
-    },
-    "toasts": {
-      "created": "Meal logged."
-    }
-  },
-  "naps": {
-    "title": "Naps",
-    "subtitle": "Track nap times for daycare students.",
-    "add": "Log nap",
-    "emptyTitle": "No naps logged",
-    "emptyDescription": "Record nap sessions for this date.",
-    "createTitle": "Log nap",
-    "createSubtitle": "Set start and optional end time.",
-    "filters": {
-      "date": "Date"
-    },
-    "columns": {
-      "student": "Student",
-      "startedAt": "Started",
-      "endedAt": "Ended",
-      "notes": "Notes"
-    },
-    "fields": {
-      "student": "Student",
-      "studentPlaceholder": "Select a student",
-      "startedAt": "Started at",
-      "endedAt": "Ended at",
-      "notes": "Notes"
-    },
-    "errors": {
-      "required": "Student and start time are required."
-    },
-    "toasts": {
-      "created": "Nap logged."
-    }
-  },
-  "activities": {
-    "title": "Activities",
-    "subtitle": "Record daycare activities and participants.",
-    "add": "Log activity",
-    "emptyTitle": "No activities",
-    "emptyDescription": "Log an activity for this date.",
-    "createTitle": "Log activity",
-    "createSubtitle": "Name the activity and select students.",
-    "filters": {
-      "date": "Date"
-    },
-    "columns": {
-      "title": "Activity",
-      "students": "Students",
-      "notes": "Notes"
-    },
-    "fields": {
-      "title": "Title",
-      "students": "Students",
-      "notes": "Notes"
-    },
-    "errors": {
-      "required": "Title and at least one student are required."
-    },
-    "toasts": {
-      "created": "Activity logged."
-    }
-  },
-  "pickups": {
-    "title": "Pickups",
-    "subtitle": "Log who picked up each child.",
-    "add": "Log pickup",
-    "emptyTitle": "No pickups",
-    "emptyDescription": "Record pickups for this date.",
-    "createTitle": "Log pickup",
-    "createSubtitle": "Enter the person who picked up the student.",
-    "filters": {
-      "date": "Date"
-    },
-    "columns": {
-      "student": "Student",
-      "person": "Pickup person",
-      "verified": "Verified",
-      "arrivedAt": "Arrived"
-    },
-    "fields": {
-      "student": "Student",
-      "studentPlaceholder": "Select a student",
-      "person": "Pickup person name",
-      "verified": "Verified",
-      "notes": "Notes"
-    },
-    "errors": {
-      "required": "Student and pickup person are required."
-    },
-    "toasts": {
-      "created": "Pickup logged."
-    }
-  },
   "staff": {
     "title": "Staff",
     "subtitle": "Manage non-teaching staff members.",
@@ -1250,14 +1120,14 @@
       "headline": "One platform to <accent>run your school calmly</accent>",
       "badge": "The platform for private schools",
       "builtFor": "Built for",
-      "subhead": "Replace scattered spreadsheets, chats, and paper. Track students, attendance, grades, and payments — built for nurseries, schools, and tutoring centers.",
+      "subhead": "Replace spreadsheets, chat threads, and paper. Track students, attendance, grades, and payments — built for primary schools, middle schools, high schools, multi-level garderies, and tutoring centers.",
       "ctaPrimary": "Create your organization",
       "ctaSecondary": "Talk to an advisor",
       "note": "No credit card required to get started.",
       "highlights": {
         "multiCampus": "Multiple campuses under one organization",
-        "roleAccess": "Distinct access for admins, teachers, and parents",
-        "daycare": "Daycare logs for meals, naps, and pickups"
+        "roleAccess": "Distinct access for leadership, teachers, and parents",
+        "allLevels": "Multi-level garderie: primary through secondary, same modules"
       }
     },
     "preview": {
@@ -1280,7 +1150,7 @@
     "problem": {
       "eyebrow": "The gap",
       "headline": "Most schools still run on five disconnected tools",
-      "body": "Attendance in one place, grades in another, payments by message, pickups by phone. It works — until it does not. EcolnaSpace brings those routines into one shared workspace.",
+      "body": "Attendance here, grades elsewhere, payments by message. It works — until it doesn't. EcolnaSpace brings these routines into one shared space.",
       "before": "Before",
       "after": "After",
       "flowLabel": "Fragmented day-to-day",
@@ -1439,51 +1309,52 @@
           "active": "Access active"
         }
       },
-      "daycare": {
-        "headline": "Daycare routines that parents feel",
-        "body": "Meals, naps, activities, and verified pickups — so the daily care story is recorded, not reconstructed from memory.",
-        "caption": "Daycare logs designed for nurseries and early childhood centers.",
+      "attendance": {
+        "headline": "Attendance that is clear every morning",
+        "body": "Record present, late, and absent by class — with optional check-in/check-out when you need it. The same tools for every establishment type.",
+        "caption": "Attendance shared across your whole team.",
         "points": {
-          "one": "Meals and naps tracked through the day",
-          "two": "Verified, auditable pickups",
-          "three": "A clear daily story for families"
+          "one": "Daily roll call by class",
+          "two": "Optional check-in / check-out",
+          "three": "Visibility for leadership and families"
         },
         "mock": {
-          "title": "Daily log",
-          "date": "Wednesday, Sep 23",
-          "meals": "Meals",
-          "naps": "Naps",
-          "pickups": "Pickups",
-          "lunch": "Lunch",
-          "consumed": "Eaten",
-          "napDone": "1:10 – 2:40 PM",
-          "verified": "Verified",
-          "childA": "Lina M.",
-          "childB": "Adam R.",
-          "childC": "Nora S."
+          "title": "Today's attendance",
+          "date": "Wed 24 Sep",
+          "present": "Present",
+          "late": "Late",
+          "absent": "Absent",
+          "studentA": "Lina M.",
+          "studentB": "Adam R.",
+          "studentC": "Nora S.",
+          "className": "Year 6A"
         }
       }
     },
     "audience": {
       "eyebrow": "Who it's for",
-      "headline": "Built for private educational establishments",
-      "subhead": "From early childhood to secondary and tutoring — one product family, shared foundations.",
+      "headline": "Built for private schools",
+      "subhead": "Five establishment types, one platform — the same school modules everywhere.",
       "items": {
-        "nursery": {
-          "title": "Nurseries",
-          "body": "Meals, naps, activities, and pickups — the day documented for families."
+        "primary": {
+          "title": "Primary schools",
+          "body": "Primary classes, attendance, grades, and family communication."
         },
-        "school": {
-          "title": "Primary & middle schools",
-          "body": "Enrollment, attendance, grades, and parent messaging in one thread."
+        "middle": {
+          "title": "Middle schools",
+          "body": "Enrollments, schedules, exams, and day-to-day academic follow-up."
         },
         "high": {
           "title": "High schools",
           "body": "Academic tracking, billing, and team coordination without scattered tools."
         },
+        "garderie": {
+          "title": "Multi-level schools (Garderie)",
+          "body": "One establishment covering primary through secondary — with exactly the same modules as other schools."
+        },
         "tutoring": {
           "title": "Tutoring centers",
-          "body": "Groups, schedules, and payments so you stay focused on teaching."
+          "body": "Groups, scheduling, and payments so you stay focused on support."
         }
       }
     },
@@ -1522,8 +1393,8 @@
       "email": "Talk to an advisor"
     },
     "meta": {
-      "title": "EcolnaSpace — School operations in one platform",
-      "description": "Replace spreadsheets, messaging apps, and paper with one platform for students, attendance, grades, payments, and daycare routines."
+      "title": "EcolnaSpace — Run your school on one platform",
+      "description": "Replace spreadsheets, messaging, and paper with a platform for students, attendance, grades, and payments — including multi-level schools."
     }
   },
   "memberships": {
@@ -1635,7 +1506,7 @@
   },
   "marketing": {
     "footer": {
-      "blurb": "The management platform for private nurseries, schools and training centers: students, attendance, grades, billing and family communication, all in one place.",
+      "blurb": "The management platform for private schools, multi-level garderies, and training centers: students, attendance, grades, billing, and family communication — in one place.",
       "trust": "Hosted in Tunisia · Data isolated per establishment · Role-based access",
       "country": "Tunisia",
       "language": "Language",
@@ -1700,7 +1571,7 @@
       "hero": {
         "eyebrow": "Pricing",
         "title": "You only pay for what your establishment actually needs",
-        "lead": "A neighborhood nursery and a multi-campus school group don't have the same needs. That's why our pricing depends on the size of your establishment, the number of sites, the modules you enable and the support you want — not on a one-size-fits-all grid.",
+        "lead": "A neighborhood school and a multi-campus group don't have the same needs. Pricing depends on size, sites, enabled modules, and support — not a one-size-fits-all grid.",
         "ctaPrimary": "Request a quote",
         "ctaSecondary": "Create my organization",
         "note": "Free organization setup, no credit card required."
@@ -1713,7 +1584,7 @@
           "size": {
             "title": "Establishment size",
             "body": "The number of enrolled students or children comes first: it reflects how much the platform is actually used.",
-            "example": "From a nursery with a few dozen children to a network of several hundred students."
+            "example": "From a school with a few dozen students to a network of several hundred."
           },
           "campuses": {
             "title": "Number of campuses",
@@ -1722,8 +1593,8 @@
           },
           "modules": {
             "title": "Enabled modules",
-            "body": "You only enable the modules you need: core management, early years, academic tracking.",
-            "example": "A nursery doesn't need report cards; a high school doesn't need nap tracking."
+            "body": "You only enable the modules you need: core management and academic tracking.",
+            "example": "A tutoring center may skip report cards; a high school will enable exams and grades."
           },
           "support": {
             "title": "Level of support",
@@ -1752,20 +1623,8 @@
             ],
             "fit": "The foundation of every EcolnaSpace organization."
           },
-          "earlyYears": {
-            "badge": "Nurseries and kindergartens",
-            "title": "Early years",
-            "body": "Young children's daily routines, recorded and shared with families.",
-            "features": [
-              "Meals and amounts eaten",
-              "Naps and rest times",
-              "Daily activities",
-              "Verified pick-ups and authorized people"
-            ],
-            "fit": "Ideal for nurseries, kindergartens and preschool sections."
-          },
           "academic": {
-            "badge": "Schools and centers",
+            "badge": "Schools and multi-level establishments",
             "title": "Academic tracking",
             "body": "Academic follow-up, right where teachers already work.",
             "features": [
@@ -1774,7 +1633,7 @@
               "Consolidated grades",
               "Report cards per school year"
             ],
-            "fit": "Designed for primary, middle and high schools, tutoring and training centers."
+            "fit": "Built for primary, middle, high school, multi-level garderie, tutoring, and training."
           }
         }
       },
@@ -1850,7 +1709,7 @@
           },
           "changePlan": {
             "q": "Can I change my plan later?",
-            "a": "Yes. Modules are switched on and off per organization: you can add a campus, or enable academic tracking or the early-years module as you grow. Your advisor then adjusts your offer."
+            "a": "Yes. Modules are switched on and off per organization: you can add a campus or enable academic tracking as you grow. Your advisor then adjusts your plan."
           },
           "commitment": {
             "q": "Is there a minimum commitment?",
@@ -1876,7 +1735,7 @@
     "contact": {
       "meta": {
         "title": "Contact — EcolnaSpace | Let's talk about your establishment",
-        "description": "Request a demo or a quote for your nursery, school or training center. An EcolnaSpace advisor will reply to you personally."
+        "description": "Request a demo or a quote for your school, multi-level garderie, or training center. An EcolnaSpace advisor will reply personally."
       },
       "hero": {
         "eyebrow": "Contact",
@@ -1938,8 +1797,7 @@
         "message": "Your message",
         "messagePlaceholder": "Number of students, number of campuses, modules you're interested in, questions…",
         "types": {
-          "NURSERY": "Nursery",
-          "KINDERGARTEN": "Kindergarten",
+          "GARDERIE": "Multi-level school (Garderie)",
           "PRIMARY_SCHOOL": "Primary school",
           "MIDDLE_SCHOOL": "Middle school",
           "HIGH_SCHOOL": "High school",

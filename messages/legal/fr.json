@@ -20,7 +20,7 @@
         "id": "introduction",
         "title": "1. Introduction et champ d'application",
         "blocks": [
-          { "p": "{brand} est une plateforme en ligne de gestion destinée aux établissements éducatifs privés : crèches, jardins d'enfants, écoles primaires, collèges, lycées, centres de soutien scolaire et centres de formation. Elle permet de gérer les inscriptions, les présences, le suivi scolaire, la facturation, la communication avec les familles et, pour la petite enfance, le quotidien des enfants." },
+          { "p": "{brand} est une plateforme en ligne de gestion destinée aux établissements éducatifs privés : écoles primaires, collèges, lycées, garderies multi-niveaux, centres de soutien scolaire et centres de formation. Elle permet de gérer les inscriptions, les présences, le suivi scolaire, la facturation et la communication avec les familles." },
           { "p": "La présente politique s'applique :" },
           { "ul": [
             "au site public de {brand} (pages de présentation, tarifs, contact et pages juridiques) ;",
@@ -58,7 +58,7 @@
             "coordonnées facultatives et contact d'urgence ;",
             "scolarité : campus, classe, inscriptions, années scolaires, présences et retards ;",
             "suivi pédagogique : devoirs, examens, notes et bulletins ;",
-            "petite enfance : repas, siestes, activités et récupérations de l'enfant ;",
+            "personnes autorisées à récupérer un élève mineur ;",
             "santé : uniquement des indicateurs médicaux synthétiques et une note sur les allergies, lorsque l'établissement les renseigne ;",
             "statut du consentement à l'image ; les photos ne sont traitées que si l'établissement les téléverse en tant que documents ;",
             "documents rattachés à l'élève par l'établissement, ainsi que les factures et paiements associés."
@@ -283,7 +283,7 @@
         "id": "service",
         "title": "3. Description du service",
         "blocks": [
-          { "p": "{brand} est un logiciel de gestion d'établissement éducatif proposé en ligne. Selon les modules activés, il permet notamment de gérer les élèves et les inscriptions, les campus et les classes, les présences, les devoirs, examens, notes et bulletins, le quotidien de la petite enfance, la facturation aux familles, les documents et la communication avec les familles." },
+          { "p": "{brand} est un logiciel de gestion d'établissement éducatif proposé en ligne. Selon les modules activés, il permet notamment de gérer les élèves et les inscriptions, les campus et les classes, les présences, les devoirs, examens, notes et bulletins, la facturation aux familles, les documents et la communication avec les familles." },
           { "p": "{brand} est un outil au service de l'établissement. Il ne se substitue pas à ses obligations légales et réglementaires envers ses élèves, leurs familles et les autorités, notamment en matière d'enseignement, de sécurité des enfants, de comptabilité ou de protection des données. Les décisions pédagogiques, administratives et financières restent celles de l'établissement." }
         ]
       },

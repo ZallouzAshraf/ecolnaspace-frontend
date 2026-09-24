@@ -2,8 +2,8 @@
 
 import { BrandMark } from "@/components/landing/brand-mark";
 import {
+  AttendanceMock,
   CampusesMock,
-  DaycareMock,
   RolesMock,
 } from "@/components/landing/deep-mocks";
 import { HeroVisual } from "@/components/landing/hero-visual";
@@ -20,12 +20,13 @@ import { Link } from "@/i18n/navigation";
 import { cn } from "@/lib/utils";
 import {
   ArrowRight,
-  Baby,
   BookOpen,
   Building2,
   Check,
+  ClipboardCheck,
   Fingerprint,
   GraduationCap,
+  Layers,
   Lock,
   MessageSquare,
   School,
@@ -84,14 +85,15 @@ const PILLARS: Array<{
 const DEEP = [
   { key: "campuses" as const, icon: Building2, reverse: false },
   { key: "roles" as const, icon: ShieldCheck, reverse: true },
-  { key: "daycare" as const, icon: Baby, reverse: false },
+  { key: "attendance" as const, icon: ClipboardCheck, reverse: false },
 ];
 
 const AUDIENCES = [
-  { key: "nursery", icon: Baby, tone: "from-pink-500 to-rose-400" },
-  { key: "school", icon: School, tone: "from-violet-500 to-indigo-500" },
-  { key: "high", icon: GraduationCap, tone: "from-sky-500 to-blue-500" },
-  { key: "tutoring", icon: BookOpen, tone: "from-emerald-500 to-teal-400" },
+  { key: "primary", icon: School, tone: "from-violet-500 to-indigo-500" },
+  { key: "middle", icon: BookOpen, tone: "from-sky-500 to-blue-500" },
+  { key: "high", icon: GraduationCap, tone: "from-emerald-500 to-teal-400" },
+  { key: "garderie", icon: Layers, tone: "from-amber-500 to-orange-400" },
+  { key: "tutoring", icon: Users, tone: "from-pink-500 to-rose-400" },
 ] as const;
 
 const TRUST = [
@@ -100,7 +102,7 @@ const TRUST = [
   { key: "privacy" as const, icon: ShieldCheck },
 ];
 
-const HERO_HIGHLIGHTS = ["multiCampus", "roleAccess", "daycare"] as const;
+const HERO_HIGHLIGHTS = ["multiCampus", "roleAccess", "allLevels"] as const;
 
 export function LandingPage() {
   const t = useTranslations("landing");
@@ -508,21 +510,18 @@ export function LandingPage() {
                           }}
                         />
                       )}
-                      {key === "daycare" && (
-                        <DaycareMock
+                      {key === "attendance" && (
+                        <AttendanceMock
                           labels={{
-                            title: t("deep.daycare.mock.title"),
-                            date: t("deep.daycare.mock.date"),
-                            meals: t("deep.daycare.mock.meals"),
-                            naps: t("deep.daycare.mock.naps"),
-                            pickups: t("deep.daycare.mock.pickups"),
-                            lunch: t("deep.daycare.mock.lunch"),
-                            consumed: t("deep.daycare.mock.consumed"),
-                            napDone: t("deep.daycare.mock.napDone"),
-                            verified: t("deep.daycare.mock.verified"),
-                            childA: t("deep.daycare.mock.childA"),
-                            childB: t("deep.daycare.mock.childB"),
-                            childC: t("deep.daycare.mock.childC"),
+                            title: t("deep.attendance.mock.title"),
+                            date: t("deep.attendance.mock.date"),
+                            present: t("deep.attendance.mock.present"),
+                            late: t("deep.attendance.mock.late"),
+                            absent: t("deep.attendance.mock.absent"),
+                            studentA: t("deep.attendance.mock.studentA"),
+                            studentB: t("deep.attendance.mock.studentB"),
+                            studentC: t("deep.attendance.mock.studentC"),
+                            className: t("deep.attendance.mock.className"),
                           }}
                         />
                       )}

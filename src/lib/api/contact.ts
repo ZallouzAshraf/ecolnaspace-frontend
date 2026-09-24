@@ -1,8 +1,7 @@
 import { apiClient } from "./client";
 
 export const ESTABLISHMENT_TYPES = [
-  "NURSERY",
-  "KINDERGARTEN",
+  "GARDERIE",
   "PRIMARY_SCHOOL",
   "MIDDLE_SCHOOL",
   "HIGH_SCHOOL",

@@ -662,54 +662,6 @@ export type AppNotification = {
   createdAt: string;
 };
 
-export type DaycareMeal = {
-  id: string;
-  organizationId: string;
-  studentId: string;
-  date: string;
-  mealType: string;
-  consumed: boolean;
-  notes: string | null;
-  createdAt: string;
-  student?: { id: string; firstName: string; lastName: string };
-};
-
-export type DaycareNap = {
-  id: string;
-  organizationId: string;
-  studentId: string;
-  date: string;
-  startedAt: string;
-  endedAt: string | null;
-  notes: string | null;
-  createdAt: string;
-  student?: { id: string; firstName: string; lastName: string };
-};
-
-export type DaycareActivity = {
-  id: string;
-  organizationId: string;
-  title: string;
-  date: string;
-  notes: string | null;
-  createdAt: string;
-  students?: Array<{ id: string; firstName: string; lastName: string }>;
-};
-
-export type DaycarePickup = {
-  id: string;
-  organizationId: string;
-  studentId: string;
-  pickupPersonName: string;
-  authorizedPickupId: string | null;
-  arrivedAt: string | null;
-  departedAt: string | null;
-  verified: boolean;
-  notes: string | null;
-  createdAt: string;
-  student?: { id: string; firstName: string; lastName: string };
-};
-
 export type StaffMember = {
   id: string;
   organizationId: string;

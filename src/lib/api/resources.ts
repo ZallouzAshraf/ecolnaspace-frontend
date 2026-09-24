@@ -19,10 +19,6 @@ import type {
   CreateScheduleInput,
   CreateStaffInput,
   CreateTeacherInput,
-  DaycareActivity,
-  DaycareMeal,
-  DaycareNap,
-  DaycarePickup,
   DocumentRecord,
   Enrollment,
   EnrollmentStatus,
@@ -692,115 +688,6 @@ export const notificationsApi = {
   markRead(id: string) {
     return apiClient<AppNotification>(`/notifications/${id}/read`, {
       method: "PATCH",
-    });
-  },
-};
-
-export const daycareApi = {
-  listMeals(params: { studentId?: string; date?: string; page?: number } = {}) {
-    return apiClient<PaginatedResult<DaycareMeal>>(
-      `/daycare/meals${toQuery({
-        studentId: params.studentId,
-        date: params.date,
-        page: params.page ?? 1,
-        pageSize: 50,
-      })}`,
-    );
-  },
-
-  createMeal(input: {
-    studentId: string;
-    date: string;
-    mealType: string;
-    consumed?: boolean;
-    notes?: string;
-  }) {
-    return apiClient<DaycareMeal>("/daycare/meals", {
-      method: "POST",
-      body: input,
-    });
-  },
-
-  listNaps(params: { studentId?: string; date?: string; page?: number } = {}) {
-    return apiClient<PaginatedResult<DaycareNap>>(
-      `/daycare/naps${toQuery({
-        studentId: params.studentId,
-        date: params.date,
-        page: params.page ?? 1,
-        pageSize: 50,
-      })}`,
-    );
-  },
-
-  createNap(input: {
-    studentId: string;
-    date: string;
-    startedAt: string;
-    endedAt?: string;
-    notes?: string;
-  }) {
-    return apiClient<DaycareNap>("/daycare/naps", {
-      method: "POST",
-      body: input,
-    });
-  },
-
-  listActivities(
-    params: { studentId?: string; date?: string; page?: number } = {},
-  ) {
-    return apiClient<PaginatedResult<DaycareActivity>>(
-      `/daycare/activities${toQuery({
-        studentId: params.studentId,
-        date: params.date,
-        page: params.page ?? 1,
-        pageSize: 50,
-      })}`,
-    );
-  },
-
-  createActivity(input: {
-    title: string;
-    date: string;
-    notes?: string;
-    studentIds: string[];
-  }) {
-    return apiClient<DaycareActivity>("/daycare/activities", {
-      method: "POST",
-      body: input,
-    });
-  },
-
-  listPickups(
-    params: {
-      studentId?: string;
-      from?: string;
-      to?: string;
-      page?: number;
-    } = {},
-  ) {
-    return apiClient<PaginatedResult<DaycarePickup>>(
-      `/daycare/pickups${toQuery({
-        studentId: params.studentId,
-        from: params.from,
-        to: params.to,
-        page: params.page ?? 1,
-        pageSize: 50,
-      })}`,
-    );
-  },
-
-  createPickup(input: {
-    studentId: string;
-    pickupPersonName: string;
-    authorizedPickupId?: string;
-    arrivedAt?: string;
-    departedAt?: string;
-    verified?: boolean;
-    notes?: string;
-  }) {
-    return apiClient<DaycarePickup>("/daycare/pickups", {
-      method: "POST",
-      body: input,
     });
   },
 };

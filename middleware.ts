@@ -71,7 +71,6 @@ export default function middleware(request: NextRequest) {
         path.startsWith("/academic") ||
         path.startsWith("/finance") ||
         path.startsWith("/communication") ||
-        path.startsWith("/daycare") ||
         path.startsWith("/documents") ||
         path.startsWith("/organization") ||
         path.startsWith("/settings"));
