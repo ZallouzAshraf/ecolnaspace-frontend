@@ -98,7 +98,7 @@ export function AppSidebar({
       data-app-chrome
       className={cn(
         "flex h-full min-h-0 flex-col border-e border-sidebar-border bg-sidebar text-sidebar-foreground transition-[width] duration-200",
-        collapsed ? "w-[72px]" : "w-60",
+        collapsed ? "w-18" : "w-60",
       )}
     >
       <div

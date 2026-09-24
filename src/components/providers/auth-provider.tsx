@@ -68,10 +68,13 @@ export function AuthProvider({ children }: { children: ReactNode }) {
     [sessionQuery.data],
   );
 
+  const isSuperAdmin = sessionQuery.data?.isSuperAdmin ?? false;
+  const hasTenantContext = Boolean(membership) || isSuperAdmin;
+
   const orgQuery = useQuery({
     queryKey: organizationQueryKey,
     queryFn: () => organizationsApi.me(),
-    enabled: Boolean(membership) && !isLoggingOut,
+    enabled: hasTenantContext && !isLoggingOut,
     retry: false,
     staleTime: 60_000,
   });
@@ -101,7 +104,15 @@ export function AuthProvider({ children }: { children: ReactNode }) {
   const value = useMemo<AuthContextValue>(() => {
     const me = sessionQuery.data ?? null;
     const isAuthenticated = Boolean(me);
-    const permissions = membership?.permissions ?? [];
+    const permissions =
+      membership?.permissions ??
+      (me?.isSuperAdmin
+        ? Array.from(
+            new Set(
+              (me.memberships ?? []).flatMap((entry) => entry.permissions),
+            ),
+          )
+        : []);
 
     return {
       me,

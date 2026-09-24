@@ -58,7 +58,11 @@ export function AppShell({
       </div>
 
       <Sheet open={mobileOpen} onOpenChange={setMobileOpen}>
-        <SheetContent side={rtl ? "right" : "left"} className="h-full w-60 p-0">
+        <SheetContent
+          side={rtl ? "right" : "left"}
+          showCloseButton={false}
+          className="h-full w-60 max-w-60 gap-0 p-0 data-[side=left]:w-60 data-[side=right]:w-60 sm:max-w-60"
+        >
           <SheetHeader className="sr-only">
             <SheetTitle>{t("appName")}</SheetTitle>
           </SheetHeader>
