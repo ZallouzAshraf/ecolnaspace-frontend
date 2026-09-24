@@ -76,7 +76,7 @@ export function ResetPasswordForm() {
       router.replace("/login?reset=1");
     } catch (error) {
       const status = error instanceof ApiError ? error.statusCode : undefined;
-      if (status === 400 || status === 404) {
+      if (status === 400 || status === 401 || status === 404) {
         setFormError(t("resetInvalidToken"));
       } else {
         setFormError(

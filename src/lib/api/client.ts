@@ -19,6 +19,8 @@ export type ApiRequestOptions = {
 
 let refreshPromise: Promise<string | null> | null = null;
 
+const REFRESH_LOCK = "ecolna-auth-refresh";
+
 function getLocaleHint(explicit?: string): string | undefined {
   if (explicit) return explicit;
   if (typeof document !== "undefined") {
@@ -45,25 +47,37 @@ async function parseError(response: Response): Promise<ApiError> {
   }
 }
 
+async function refreshOnce(): Promise<string | null> {
+  const response = await fetch(`${DEFAULT_API_BASE}/auth/refresh`, {
+    method: "POST",
+    credentials: "include",
+    headers: { "Content-Type": "application/json" },
+    body: JSON.stringify({}),
+  });
+
+  if (!response.ok) {
+    clearSession();
+    return null;
+  }
+
+  const data = (await response.json()) as RefreshResponse;
+  setAccessToken(data.accessToken);
+  return data.accessToken;
+}
+
 export async function refreshAccessToken(): Promise<string | null> {
   if (!refreshPromise) {
-    refreshPromise = (async () => {
-      const response = await fetch(`${DEFAULT_API_BASE}/auth/refresh`, {
-        method: "POST",
-        credentials: "include",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({}),
-      });
-
-      if (!response.ok) {
-        clearSession();
-        return null;
+    const run = async (): Promise<string | null> => {
+      if (typeof navigator !== "undefined" && navigator.locks?.request) {
+        const locked = await navigator.locks.request(REFRESH_LOCK, () =>
+          refreshOnce(),
+        );
+        return await locked;
       }
+      return refreshOnce();
+    };
 
-      const data = (await response.json()) as RefreshResponse;
-      setAccessToken(data.accessToken);
-      return data.accessToken;
-    })().finally(() => {
+    refreshPromise = run().finally(() => {
       refreshPromise = null;
     });
   }
@@ -71,15 +85,30 @@ export async function refreshAccessToken(): Promise<string | null> {
   return refreshPromise;
 }
 
+const LOCALES = ["fr", "en", "ar"] as const;
+
+/** Locale-stripped app path for next-intl navigation (never `/fr/dashboard`). */
+export function localeStrippedPath(pathname: string): string {
+  const segments = pathname.split("/").filter(Boolean);
+  const first = segments[0];
+  if (first && (LOCALES as readonly string[]).includes(first)) {
+    const rest = segments.slice(1).join("/");
+    return rest ? `/${rest}` : "/";
+  }
+  return pathname.startsWith("/") ? pathname : `/${pathname}`;
+}
+
 function redirectToLogin(): void {
   if (typeof window === "undefined") return;
   const localeSegment = window.location.pathname.split("/")[1] || "fr";
   const returnTo = encodeURIComponent(
-    window.location.pathname + window.location.search,
+    localeStrippedPath(window.location.pathname) + window.location.search,
   );
   // Full navigation clears client state after session loss.
   // eslint-disable-next-line @next/next/no-location-assign-relative-destination -- intentional hard redirect
-  window.location.assign(`/${localeSegment}/login?next=${returnTo}`);
+  window.location.assign(
+    `/${localeSegment}/login?next=${returnTo}&reason=session`,
+  );
 }
 
 export async function apiClient<T>(

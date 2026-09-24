@@ -34,6 +34,10 @@ import { isRtlLocale } from "@/i18n/routing";
 import { ApiError } from "@/lib/api/types";
 import type { CreatePaymentInput, Invoice } from "@/lib/api/types";
 import { invoicesApi } from "@/lib/api/resources";
+import {
+  clearPaymentIdempotencyKey,
+  paymentIdempotencyKey,
+} from "@/lib/finance/payment-idempotency";
 import { formatPersonName } from "@/lib/format";
 import { cn } from "@/lib/utils";
 import { useMutation, useQueries, useQueryClient } from "@tanstack/react-query";
@@ -98,9 +102,11 @@ export function PaymentsPage() {
     }: {
       id: string;
       input: CreatePaymentInput;
-    }) => invoicesApi.addPayment(id, input, crypto.randomUUID()),
-    onSuccess: async () => {
+    }) =>
+      invoicesApi.addPayment(id, input, paymentIdempotencyKey(id, input)),
+    onSuccess: async (_data, variables) => {
       toast.success(t("toasts.recorded"));
+      clearPaymentIdempotencyKey(variables.id, variables.input);
       setPaying(null);
       setAmount("");
       setMethod("CASH");
@@ -117,7 +123,7 @@ export function PaymentsPage() {
   function openPay(invoice: Invoice) {
     const remaining = Math.max(
       0,
-      Number(invoice.total) - Number(invoice.amountPaid),
+      Number(invoice.balanceDue),
     );
     setPaying(invoice);
     setAmount(remaining > 0 ? remaining.toFixed(2) : "");
@@ -160,6 +166,7 @@ export function PaymentsPage() {
         </div>
       ) : isError ? (
         <ErrorState
+          error={firstError}
           message={
             firstError instanceof ApiError ? firstError.message : undefined
           }
@@ -189,7 +196,7 @@ export function PaymentsPage() {
               {rows.map((invoice) => {
                 const remaining = Math.max(
                   0,
-                  Number(invoice.total) - Number(invoice.amountPaid),
+                  Number(invoice.balanceDue),
                 );
                 return (
                   <TableRow key={invoice.id}>

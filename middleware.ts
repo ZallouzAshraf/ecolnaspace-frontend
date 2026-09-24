@@ -58,7 +58,7 @@ export default function middleware(request: NextRequest) {
     if (isAppPath) {
       const url = request.nextUrl.clone();
       url.pathname = `/${locale}/login`;
-      url.searchParams.set("next", request.nextUrl.pathname);
+      url.searchParams.set("next", `${path}${request.nextUrl.search}`);
       return NextResponse.redirect(url);
     }
   }

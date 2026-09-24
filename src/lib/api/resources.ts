@@ -34,6 +34,7 @@ import type {
   Homework,
   HomeworkInput,
   Invoice,
+  InvoicePayment,
   LinkGuardianInput,
   ListDocumentsParams,
   ListMembershipsParams,
@@ -593,14 +594,14 @@ export const invoicesApi = {
   create(input: CreateInvoiceInput) {
     return apiClient<Invoice>("/invoices", {
       method: "POST",
-      body: input,
+      body: toInvoiceWriteBody(input),
     });
   },
 
   update(id: string, input: Partial<CreateInvoiceInput>) {
     return apiClient<Invoice>(`/invoices/${id}`, {
       method: "PATCH",
-      body: input,
+      body: toInvoiceWriteBody(input),
     });
   },
 
@@ -609,21 +610,38 @@ export const invoicesApi = {
   },
 
   addPayment(id: string, input: CreatePaymentInput, idempotencyKey: string) {
-    return apiClient<InvoicePaymentLike>(`/invoices/${id}/payments`, {
-      method: "POST",
-      body: { ...input, amount: String(input.amount) },
-      headers: { "Idempotency-Key": idempotencyKey },
-    });
+    return apiClient<{ payment: InvoicePayment; invoice: Invoice }>(
+      `/invoices/${id}/payments`,
+      {
+        method: "POST",
+        body: {
+          ...input,
+          amount: decimalString(input.amount),
+        },
+        headers: { "Idempotency-Key": idempotencyKey },
+      },
+    );
   },
 };
 
-type InvoicePaymentLike = {
-  id: string;
-  amount: string | number;
-  method: string;
-  status: string;
-  paidAt: string;
-};
+function decimalString(value: string | number): string {
+  return typeof value === "number" ? value.toFixed(2) : value;
+}
+
+function toInvoiceWriteBody(input: Partial<CreateInvoiceInput>) {
+  if (!input.items) return input;
+  return {
+    ...input,
+    items: input.items.map((item) => ({
+      description: item.description,
+      quantity: decimalString(item.quantity),
+      unitPrice: decimalString(item.unitPrice),
+      ...(item.taxRate === undefined
+        ? {}
+        : { taxRate: decimalString(item.taxRate) }),
+    })),
+  };
+}
 
 export const announcementsApi = {
   list() {

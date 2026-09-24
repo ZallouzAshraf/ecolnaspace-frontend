@@ -1,3 +1,4 @@
+import { locales } from "@/i18n/routing";
 import { z } from "zod";
 
 export const PASSWORD_MIN = 8;
@@ -37,6 +38,14 @@ export function safeInternalPath(
   if (!next) return fallback;
   if (!next.startsWith("/") || next.startsWith("//")) return fallback;
   if (next.includes("://")) return fallback;
+
+  const segments = next.split("/");
+  const maybeLocale = segments[1];
+  if (maybeLocale && (locales as readonly string[]).includes(maybeLocale)) {
+    const rest = segments.slice(2).join("/");
+    return rest ? `/${rest}` : fallback;
+  }
+
   return next;
 }
 

@@ -34,6 +34,10 @@ import { isRtlLocale } from "@/i18n/routing";
 import { ApiError } from "@/lib/api/types";
 import type { CreatePaymentInput, InvoiceStatus } from "@/lib/api/types";
 import { invoicesApi } from "@/lib/api/resources";
+import {
+  clearPaymentIdempotencyKey,
+  paymentIdempotencyKey,
+} from "@/lib/finance/payment-idempotency";
 import { formatDate, formatPersonName } from "@/lib/format";
 import { cn } from "@/lib/utils";
 import { useMutation, useQuery, useQueryClient } from "@tanstack/react-query";
@@ -107,8 +111,13 @@ export function InvoiceDetailPage({ invoiceId }: InvoiceDetailPageProps) {
 
   const payMutation = useMutation({
     mutationFn: (input: CreatePaymentInput) =>
-      invoicesApi.addPayment(invoiceId, input, crypto.randomUUID()),
-    onSuccess: async () => {
+      invoicesApi.addPayment(
+        invoiceId,
+        input,
+        paymentIdempotencyKey(invoiceId, input),
+      ),
+    onSuccess: async (_data, input) => {
+      clearPaymentIdempotencyKey(invoiceId, input);
       toast.success(t("toasts.paymentAdded"));
       setPayOpen(false);
       setAmount("");
@@ -135,6 +144,7 @@ export function InvoiceDetailPage({ invoiceId }: InvoiceDetailPageProps) {
   if (detailQuery.isError) {
     return (
       <ErrorState
+        error={detailQuery.error}
         message={
           detailQuery.error instanceof ApiError
             ? detailQuery.error.message
@@ -150,8 +160,7 @@ export function InvoiceDetailPage({ invoiceId }: InvoiceDetailPageProps) {
     return <EmptyState title={t("notFound")} />;
   }
 
-  const remaining =
-    Number(invoice.total) - Number(invoice.amountPaid);
+  const remaining = Number(invoice.balanceDue);
 
   function openPay() {
     setAmount(remaining > 0 ? remaining.toFixed(2) : "");
@@ -231,7 +240,7 @@ export function InvoiceDetailPage({ invoiceId }: InvoiceDetailPageProps) {
         <div className="rounded-xl border border-border bg-card p-4 shadow-sm">
           <p className="text-xs text-muted-foreground">{t("columns.total")}</p>
           <p className="mt-1 text-lg font-semibold tabular-nums">
-            {formatMoney(invoice.total, invoice.currency)}
+            {formatMoney(invoice.totalAmount, invoice.currency)}
           </p>
         </div>
         <div className="rounded-xl border border-border bg-card p-4 shadow-sm">
@@ -281,8 +290,7 @@ export function InvoiceDetailPage({ invoiceId }: InvoiceDetailPageProps) {
                     </TableCell>
                     <TableCell className="text-end tabular-nums">
                       {formatMoney(
-                        item.lineTotal ??
-                          Number(item.quantity) * Number(item.unitPrice),
+                        item.lineTotal ?? 0,
                         invoice.currency,
                       )}
                     </TableCell>

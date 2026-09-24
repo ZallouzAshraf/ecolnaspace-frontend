@@ -22,6 +22,10 @@ export type RegisterInput = {
   adminLastName: string;
 };
 
+const LOGOUT_PENDING_KEY = "ecolna.logout.pending";
+
+const verifyEmailInflight = new Map<string, Promise<{ message: string }>>();
+
 export const authApi = {
   login(input: LoginInput) {
     return apiClient<LoginResponse>("/auth/login", {
@@ -53,6 +57,13 @@ export const authApi = {
         public: true,
         skipRefresh: true,
       });
+      if (typeof sessionStorage !== "undefined") {
+        sessionStorage.removeItem(LOGOUT_PENDING_KEY);
+      }
+    } catch {
+      if (typeof sessionStorage !== "undefined") {
+        sessionStorage.setItem(LOGOUT_PENDING_KEY, "1");
+      }
     } finally {
       clearSession();
     }
@@ -64,6 +75,25 @@ export const authApi = {
 
   /** Bootstrap: refresh if needed, then load profile. */
   async bootstrap(): Promise<MeResponse> {
+    if (
+      typeof sessionStorage !== "undefined" &&
+      sessionStorage.getItem(LOGOUT_PENDING_KEY) === "1"
+    ) {
+      try {
+        await apiClient<{ message: string }>("/auth/logout", {
+          method: "POST",
+          body: {},
+          public: true,
+          skipRefresh: true,
+        });
+        sessionStorage.removeItem(LOGOUT_PENDING_KEY);
+      } catch {
+        // Keep the flag so a later load retries logout instead of refreshing.
+      }
+      clearSession();
+      throw new Error("UNAUTHENTICATED");
+    }
+
     if (!getAccessToken()) {
       const token = await refreshAccessToken();
       if (!token) {
@@ -91,10 +121,15 @@ export const authApi = {
   },
 
   verifyEmail(token: string) {
-    return apiClient<{ message: string }>("/auth/verify-email", {
+    const existing = verifyEmailInflight.get(token);
+    if (existing) return existing;
+
+    const request = apiClient<{ message: string }>("/auth/verify-email", {
       method: "POST",
       body: { token },
       public: true,
     });
+    verifyEmailInflight.set(token, request);
+    return request;
   },
 };

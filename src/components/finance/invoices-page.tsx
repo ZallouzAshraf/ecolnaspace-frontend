@@ -222,6 +222,7 @@ export function InvoicesPage() {
         </div>
       ) : listQuery.isError ? (
         <ErrorState
+          error={listQuery.error}
           message={
             listQuery.error instanceof ApiError
               ? listQuery.error.message
@@ -290,7 +291,7 @@ export function InvoicesPage() {
                       </Badge>
                     </TableCell>
                     <TableCell className="text-end tabular-nums">
-                      {formatMoney(invoice.total, invoice.currency)}
+                      {formatMoney(invoice.totalAmount, invoice.currency)}
                     </TableCell>
                     <TableCell className="text-end">
                       <Button

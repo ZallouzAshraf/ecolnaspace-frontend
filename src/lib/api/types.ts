@@ -576,10 +576,13 @@ export type Invoice = {
   status: InvoiceStatus;
   currency: string;
   subtotal: string | number;
-  taxTotal: string | number;
-  total: string | number;
+  taxAmount: string | number;
+  totalAmount: string | number;
+  /** Server-computed remaining balance. Do not recompute from line items. */
+  balanceDue: string | number;
   amountPaid: string | number;
   dueDate: string | null;
+  issuedAt?: string | null;
   notes: string | null;
   version: number;
   createdAt: string;

@@ -13,6 +13,8 @@
     "previous": "Précédent",
     "noResults": "Aucun résultat",
     "errorGeneric": "Une erreur est survenue. Veuillez réessayer.",
+    "forbidden": "Vous n'avez pas accès à ceci.",
+    "networkError": "Impossible de joindre le serveur. Vérifiez votre connexion et réessayez.",
     "yes": "Oui",
     "no": "Non"
   },
