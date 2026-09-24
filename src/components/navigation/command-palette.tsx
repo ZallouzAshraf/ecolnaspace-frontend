@@ -16,14 +16,22 @@ import {
 } from "@/components/navigation/nav-config";
 import { useAuth } from "@/components/providers/auth-provider";
 import { useRouter } from "@/i18n/navigation";
-import { GraduationCap, UserPlus, Building2 } from "lucide-react";
+import { Building2, GraduationCap, UserPlus } from "lucide-react";
 import { useTranslations } from "next-intl";
-import { useEffect, useMemo, useState } from "react";
+import { useEffect, useMemo, useState, type ComponentType } from "react";
 
 type CommandPaletteProps = {
   open?: boolean;
   onOpenChange?: (open: boolean) => void;
 };
+
+function ItemIcon({ icon: Icon }: { icon: ComponentType<{ className?: string }> }) {
+  return (
+    <span className="flex size-9 shrink-0 items-center justify-center rounded-2xl bg-slate-50 text-slate-500 group-data-selected/command-item:bg-white group-data-selected/command-item:text-slate-600">
+      <Icon className="size-4" />
+    </span>
+  );
+}
 
 export function CommandPalette({
   open: controlledOpen,
@@ -78,11 +86,11 @@ export function CommandPalette({
             return (
               <CommandItem
                 key={item.href}
-                value={`${item.key} ${item.href}`}
+                value={`${item.key} ${item.href} ${t(`nav.${item.key}`)}`}
                 onSelect={() => go(item.href)}
               >
-                <Icon className="size-4" />
-                {t(`nav.${item.key}`)}
+                <ItemIcon icon={Icon} />
+                <span className="truncate">{t(`nav.${item.key}`)}</span>
               </CommandItem>
             );
           })}
@@ -90,25 +98,25 @@ export function CommandPalette({
         <CommandSeparator />
         <CommandGroup heading={t("command.actions")}>
           <CommandItem
-            value="add student"
+            value={`add student ${t("command.addStudent")}`}
             onSelect={() => go("/students")}
           >
-            <GraduationCap className="size-4" />
-            {t("command.addStudent")}
+            <ItemIcon icon={GraduationCap} />
+            <span className="truncate">{t("command.addStudent")}</span>
           </CommandItem>
           <CommandItem
-            value="invite teacher"
+            value={`invite teacher ${t("command.inviteTeacher")}`}
             onSelect={() => go("/teachers")}
           >
-            <UserPlus className="size-4" />
-            {t("command.inviteTeacher")}
+            <ItemIcon icon={UserPlus} />
+            <span className="truncate">{t("command.inviteTeacher")}</span>
           </CommandItem>
           <CommandItem
-            value="create campus"
+            value={`create campus ${t("command.createCampus")}`}
             onSelect={() => go("/organization/campuses")}
           >
-            <Building2 className="size-4" />
-            {t("command.createCampus")}
+            <ItemIcon icon={Building2} />
+            <span className="truncate">{t("command.createCampus")}</span>
           </CommandItem>
         </CommandGroup>
       </CommandList>
