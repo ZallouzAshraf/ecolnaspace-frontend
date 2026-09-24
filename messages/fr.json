@@ -1,6 +1,7 @@
 {
   "common": {
     "appName": "EcolnaSpace",
+    "superAdmin": "Super Admin",
     "loading": "Chargement…",
     "save": "Enregistrer",
     "cancel": "Annuler",
@@ -50,7 +51,9 @@
     "billing": "Facturation",
     "collapseSidebar": "Réduire le menu",
     "expandSidebar": "Agrandir le menu",
-    "openMenu": "Ouvrir le menu"
+    "openMenu": "Ouvrir le menu",
+    "profile": "Profil",
+    "accountMenu": "Menu du compte"
   },
   "auth": {
     "loginTitle": "Connexion",

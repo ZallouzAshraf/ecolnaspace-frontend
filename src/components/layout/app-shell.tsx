@@ -43,7 +43,7 @@ export function AppShell({
 
   return (
     <div className="flex h-svh overflow-hidden bg-background">
-      <div className="hidden lg:flex">
+      <div className="hidden h-full min-h-0 lg:flex">
         <AppSidebar
           collapsed={collapsed}
           onCollapsedChange={setCollapsed}
@@ -51,11 +51,14 @@ export function AppShell({
           isSuperAdmin={isSuperAdmin}
           organizationName={organizationName}
           organizationLogo={organizationLogo}
+          userName={userName}
+          userEmail={userEmail}
+          onLogout={onLogout}
         />
       </div>
 
       <Sheet open={mobileOpen} onOpenChange={setMobileOpen}>
-        <SheetContent side={rtl ? "right" : "left"} className="w-60 p-0">
+        <SheetContent side={rtl ? "right" : "left"} className="h-full w-60 p-0">
           <SheetHeader className="sr-only">
             <SheetTitle>{t("appName")}</SheetTitle>
           </SheetHeader>
@@ -66,6 +69,9 @@ export function AppShell({
             isSuperAdmin={isSuperAdmin}
             organizationName={organizationName}
             organizationLogo={organizationLogo}
+            userName={userName}
+            userEmail={userEmail}
+            onLogout={onLogout}
           />
         </SheetContent>
       </Sheet>
@@ -73,9 +79,6 @@ export function AppShell({
       <div className="flex min-w-0 flex-1 flex-col">
         <AppTopBar
           onOpenMobileNav={() => setMobileOpen(true)}
-          userEmail={userEmail}
-          userName={userName}
-          onLogout={onLogout}
           onOpenCommandPalette={onOpenCommandPalette}
         />
         <main className="flex-1 overflow-y-auto">

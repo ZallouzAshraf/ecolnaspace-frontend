@@ -16,17 +16,11 @@ import { useLocale, useTranslations } from "next-intl";
 
 type AppTopBarProps = {
   onOpenMobileNav: () => void;
-  userEmail?: string;
-  userName?: string;
-  onLogout?: () => Promise<void>;
   onOpenCommandPalette?: () => void;
 };
 
 export function AppTopBar({
   onOpenMobileNav,
-  userEmail,
-  userName,
-  onLogout,
   onOpenCommandPalette,
 }: AppTopBarProps) {
   const t = useTranslations();
@@ -36,12 +30,6 @@ export function AppTopBar({
 
   function switchLocale(next: AppLocale) {
     router.replace(pathname, { locale: next });
-  }
-
-  async function handleLogout() {
-    if (onLogout) {
-      await onLogout();
-    }
   }
 
   return (
@@ -60,68 +48,49 @@ export function AppTopBar({
         <Menu className="size-4" />
       </Button>
 
-      <Button
-        type="button"
-        variant="outline"
-        size="sm"
-        className="hidden max-w-xs flex-1 justify-start gap-2 text-muted-foreground sm:inline-flex md:max-w-sm"
-        onClick={onOpenCommandPalette}
-      >
-        <Search className="size-3.5" />
-        <span className="truncate">{t("common.search")}</span>
-        <kbd className="ms-auto hidden rounded border border-border bg-muted px-1.5 font-mono text-[10px] text-muted-foreground md:inline">
-          ⌘K
-        </kbd>
-      </Button>
+      <div className="flex-1" />
 
-      <div className="flex-1 sm:hidden" />
+      <div className="flex items-center gap-2 sm:gap-3">
+        <Button
+          type="button"
+          variant="outline"
+          size="sm"
+          className="hidden w-56 justify-start gap-2 text-muted-foreground sm:inline-flex md:w-64"
+          onClick={onOpenCommandPalette}
+        >
+          <Search className="size-3.5" />
+          <span className="truncate">{t("common.search")}</span>
+          <kbd className="ms-auto hidden rounded border border-border bg-muted px-1.5 font-mono text-[10px] text-muted-foreground md:inline">
+            ⌘K
+          </kbd>
+        </Button>
 
-      <DropdownMenu>
-        <DropdownMenuTrigger asChild>
-          <Button variant="outline" size="sm">
-            {t(`locale.${locale}`)}
-          </Button>
-        </DropdownMenuTrigger>
-        <DropdownMenuContent align="end">
-          <DropdownMenuLabel>{t("locale.label")}</DropdownMenuLabel>
-          <DropdownMenuSeparator />
-          {locales.map((code) => (
-            <DropdownMenuItem key={code} onSelect={() => switchLocale(code)}>
-              {t(`locale.${code}`)}
-            </DropdownMenuItem>
-          ))}
-        </DropdownMenuContent>
-      </DropdownMenu>
+        <DropdownMenu>
+          <DropdownMenuTrigger asChild>
+            <Button variant="outline" size="sm">
+              {t(`locale.${locale}`)}
+            </Button>
+          </DropdownMenuTrigger>
+          <DropdownMenuContent align="end">
+            <DropdownMenuLabel>{t("locale.label")}</DropdownMenuLabel>
+            <DropdownMenuSeparator />
+            {locales.map((code) => (
+              <DropdownMenuItem key={code} onSelect={() => switchLocale(code)}>
+                {t(`locale.${code}`)}
+              </DropdownMenuItem>
+            ))}
+          </DropdownMenuContent>
+        </DropdownMenu>
 
-      <Button
-        type="button"
-        variant="ghost"
-        size="icon"
-        aria-label={t("nav.notifications")}
-      >
-        <Bell className="size-4" />
-      </Button>
-
-      <DropdownMenu>
-        <DropdownMenuTrigger asChild>
-          <Button variant="outline" size="sm" className="max-w-[180px]">
-            <span className="truncate">{userName ?? userEmail ?? "…"}</span>
-          </Button>
-        </DropdownMenuTrigger>
-        <DropdownMenuContent align="end">
-          {userEmail && (
-            <>
-              <DropdownMenuLabel className="font-normal text-muted-foreground">
-                {userEmail}
-              </DropdownMenuLabel>
-              <DropdownMenuSeparator />
-            </>
-          )}
-          <DropdownMenuItem onSelect={() => void handleLogout()}>
-            {t("auth.logout")}
-          </DropdownMenuItem>
-        </DropdownMenuContent>
-      </DropdownMenu>
+        <Button
+          type="button"
+          variant="ghost"
+          size="icon"
+          aria-label={t("nav.notifications")}
+        >
+          <Bell className="size-4" />
+        </Button>
+      </div>
     </header>
   );
 }

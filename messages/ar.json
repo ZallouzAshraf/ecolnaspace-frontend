@@ -1,6 +1,7 @@
 {
   "common": {
     "appName": "EcolnaSpace",
+    "superAdmin": "مشرف عام",
     "loading": "جاري التحميل…",
     "save": "حفظ",
     "cancel": "إلغاء",
@@ -50,7 +51,9 @@
     "billing": "الفوترة",
     "collapseSidebar": "طي الشريط الجانبي",
     "expandSidebar": "توسيع الشريط الجانبي",
-    "openMenu": "فتح القائمة"
+    "openMenu": "فتح القائمة",
+    "profile": "الملف الشخصي",
+    "accountMenu": "قائمة الحساب"
   },
   "auth": {
     "loginTitle": "تسجيل الدخول",

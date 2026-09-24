@@ -1,6 +1,7 @@
 {
   "common": {
     "appName": "EcolnaSpace",
+    "superAdmin": "Super Admin",
     "loading": "Loading…",
     "save": "Save",
     "cancel": "Cancel",
@@ -50,7 +51,9 @@
     "billing": "Billing",
     "collapseSidebar": "Collapse sidebar",
     "expandSidebar": "Expand sidebar",
-    "openMenu": "Open menu"
+    "openMenu": "Open menu",
+    "profile": "Profile",
+    "accountMenu": "Account menu"
   },
   "auth": {
     "loginTitle": "Sign in",
