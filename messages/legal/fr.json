@@ -1,0 +1,518 @@
+{
+  "privacy": {
+    "metaTitle": "Politique de confidentialité — EcolnaSpace",
+    "metaDescription": "Comment EcolnaSpace protège les données des établissements, des familles et des élèves, conformément à la loi organique tunisienne n° 2004-63 sur la protection des données personnelles.",
+    "eyebrow": "Confidentialité",
+    "title": "Politique de confidentialité",
+    "lead": "Cette politique explique quelles données sont traitées sur EcolnaSpace, pour quelles raisons, qui en est responsable et comment chacun peut exercer ses droits. Elle s'appuie sur la loi organique tunisienne n° 2004-63 du 27 juillet 2004 portant sur la protection des données à caractère personnel.",
+    "summary": {
+      "title": "L'essentiel en quelques points",
+      "items": [
+        "L'établissement scolaire est responsable des données de ses élèves, parents et personnels. {brand} les traite pour son compte, en qualité de sous-traitant, et uniquement selon ses instructions.",
+        "Nous ne vendons aucune donnée, n'affichons aucune publicité et n'utilisons aucune donnée d'élève à des fins commerciales.",
+        "Les données sont hébergées en Tunisie et isolées par établissement : aucun client ne peut accéder aux données d'un autre.",
+        "Les informations de santé des élèves sont limitées au strict nécessaire et visibles uniquement par les rôles expressément autorisés.",
+        "Chacun peut exercer ses droits d'accès, de rectification et d'opposition ; une réclamation peut être adressée à l'Instance nationale de protection des données personnelles (INPDP)."
+      ]
+    },
+    "sections": [
+      {
+        "id": "introduction",
+        "title": "1. Introduction et champ d'application",
+        "blocks": [
+          { "p": "{brand} est une plateforme en ligne de gestion destinée aux établissements éducatifs privés : crèches, jardins d'enfants, écoles primaires, collèges, lycées, centres de soutien scolaire et centres de formation. Elle permet de gérer les inscriptions, les présences, le suivi scolaire, la facturation, la communication avec les familles et, pour la petite enfance, le quotidien des enfants." },
+          { "p": "La présente politique s'applique :" },
+          { "ul": [
+            "au site public de {brand} (pages de présentation, tarifs, contact et pages juridiques) ;",
+            "à l'application {appHost}, utilisée par les établissements clients, leurs personnels, les parents et, le cas échéant, les élèves ;",
+            "aux échanges que vous avez avec notre équipe (demandes de contact, de démonstration ou de devis)."
+          ] },
+          { "p": "Le service est édité par {legalEntity}, immatriculée sous l'identifiant {registrationNumber}, dont le siège est situé {registeredAddress} (ci-après « {brand} », « nous »)." }
+        ]
+      },
+      {
+        "id": "data-collected",
+        "title": "2. Les données que nous traitons",
+        "blocks": [
+          { "p": "Nous ne traitons que les données nécessaires au fonctionnement du service. La plupart d'entre elles sont saisies par l'établissement lui-même ; certaines le sont par les parents ou les personnels depuis leur compte." },
+          { "h": "Établissement et campus" },
+          { "ul": [
+            "nom, type d'établissement, coordonnées (adresse, téléphone, e-mail, site web), langue et fuseau horaire ;",
+            "liste des campus et paramètres de l'organisation, dont les modules activés."
+          ] },
+          { "h": "Direction, enseignants et personnels" },
+          { "ul": [
+            "nom, prénom, adresse e-mail, téléphone (facultatif), rôle et campus de rattachement ;",
+            "informations professionnelles saisies par l'établissement : fonction, service, matricule, courte présentation ;",
+            "données de connexion : mot de passe (conservé uniquement sous forme chiffrée irréversible), date de dernière connexion, tentatives de connexion échouées, adresse IP et navigateur associés aux sessions."
+          ] },
+          { "h": "Parents et tuteurs" },
+          { "ul": [
+            "nom, prénom, adresse e-mail et téléphone ;",
+            "lien avec l'enfant : lien de parenté, contact principal ou d'urgence, autorisation à venir chercher l'enfant ;",
+            "messages échangés avec l'établissement et notifications reçues."
+          ] },
+          { "h": "Élèves et enfants" },
+          { "ul": [
+            "identité : nom, prénom, prénom d'usage, date de naissance, genre (facultatif) ;",
+            "coordonnées facultatives et contact d'urgence ;",
+            "scolarité : campus, classe, inscriptions, années scolaires, présences et retards ;",
+            "suivi pédagogique : devoirs, examens, notes et bulletins ;",
+            "petite enfance : repas, siestes, activités et récupérations de l'enfant ;",
+            "santé : uniquement des indicateurs médicaux synthétiques et une note sur les allergies, lorsque l'établissement les renseigne ;",
+            "statut du consentement à l'image ; les photos ne sont traitées que si l'établissement les téléverse en tant que documents ;",
+            "documents rattachés à l'élève par l'établissement, ainsi que les factures et paiements associés."
+          ] },
+          { "h": "Personnes autorisées à récupérer un enfant" },
+          { "ul": [
+            "nom, lien avec l'enfant, téléphone et, si l'établissement le demande, la référence d'une pièce d'identité."
+          ] },
+          { "h": "Visiteurs du site public" },
+          { "ul": [
+            "informations transmises par le formulaire de contact : nom, e-mail, établissement, type d'établissement, téléphone (facultatif) et message ;",
+            "journaux techniques du serveur (adresse IP, date, page demandée), nécessaires à la sécurité ;",
+            "cookies strictement nécessaires et, avec votre accord, un cookie de préférence de langue (voir la [politique cookies](/cookies))."
+          ] }
+        ]
+      },
+      {
+        "id": "roles",
+        "title": "3. Responsable du traitement et sous-traitant",
+        "blocks": [
+          { "p": "La loi organique n° 2004-63 distingue le responsable du traitement, qui détermine pourquoi et comment les données sont traitées, et le sous-traitant, qui les traite pour son compte." },
+          { "ul": [
+            "Pour les données des élèves, des parents et des personnels d'un établissement, **l'établissement est le responsable du traitement**. C'est lui qui décide des informations à enregistrer, des personnes qui y ont accès et de leur durée de conservation.",
+            "Pour ces mêmes données, {brand} agit en qualité de **sous-traitant** : nous les hébergeons et les traitons uniquement pour fournir le service, selon les instructions de l'établissement, et jamais pour notre propre compte.",
+            "{brand} est en revanche responsable du traitement pour les données qu'elle traite pour elle-même : comptes des administrateurs clients pour la gestion de la relation commerciale, demandes de contact, facturation de ses clients et sécurité de la plateforme."
+          ] },
+          { "note": "Si vous êtes parent ou membre du personnel, adressez en priorité vos questions sur vos données à votre établissement : il est le mieux placé pour y répondre. Nous l'aiderons à traiter votre demande." },
+          { "p": "Les formalités préalables auprès de l'INPDP (déclaration ou demande d'autorisation, selon la nature des données) incombent à chaque responsable du traitement : à l'établissement pour les données de sa communauté scolaire, et à {brand} pour les traitements qu'elle réalise pour son propre compte." }
+        ]
+      },
+      {
+        "id": "legal-basis",
+        "title": "4. Fondements du traitement",
+        "blocks": [
+          { "p": "Conformément à la loi organique n° 2004-63, les données sont traitées sur l'un des fondements suivants :" },
+          { "ul": [
+            "**le consentement** de la personne concernée ou, pour un enfant, de son représentant légal, recueilli par l'établissement lorsque la loi l'exige ;",
+            "**l'exécution du contrat** conclu entre l'établissement et {brand}, et du lien d'inscription entre l'établissement et les familles ;",
+            "**le respect d'obligations légales**, par exemple la conservation des pièces comptables ;",
+            "**l'intérêt légitime** de l'établissement ou de {brand}, lorsqu'il ne porte pas atteinte aux droits des personnes : sécurité du service, prévention des abus, amélioration de la plateforme."
+          ] },
+          { "p": "Certaines catégories de données, comme les informations de santé, bénéficient d'une protection renforcée par la loi. Leur enregistrement relève de la décision et de la responsabilité de l'établissement, qui s'assure d'en respecter les conditions." }
+        ]
+      },
+      {
+        "id": "use",
+        "title": "5. Utilisation des données",
+        "blocks": [
+          { "p": "Les données sont utilisées exclusivement pour :" },
+          { "ul": [
+            "fournir les fonctionnalités de la plateforme à l'établissement et à ses utilisateurs ;",
+            "envoyer les notifications et e-mails liés au service : invitations, activation de compte, réinitialisation du mot de passe, annonces et messages de l'établissement ;",
+            "gérer la facturation entre l'établissement et les familles, ainsi que la relation commerciale entre {brand} et ses clients ;",
+            "assurer la sécurité : authentification, prévention des accès frauduleux, journalisation des actions sensibles ;",
+            "répondre aux demandes de contact, de démonstration et de devis."
+          ] },
+          { "note": "Nous ne vendons, ne louons et n'échangeons aucune donnée personnelle. Nous n'affichons aucune publicité et n'utilisons jamais les données des élèves ou des familles pour du profilage commercial ou publicitaire." }
+        ]
+      },
+      {
+        "id": "sharing",
+        "title": "6. Partage des données",
+        "blocks": [
+          { "p": "Au sein d'un établissement, l'accès aux données dépend du rôle de chacun : la direction voit l'ensemble de l'organisation, un administrateur de campus son campus, un enseignant ses classes, un parent uniquement les informations concernant ses propres enfants." },
+          { "p": "En dehors de l'établissement, les données ne sont communiquées qu'aux prestataires techniques strictement nécessaires au fonctionnement du service, liés par des engagements de confidentialité et de sécurité :" },
+          { "ul": [
+            "**Hébergement** des serveurs et de la base de données, en Tunisie : {hostingProvider} ;",
+            "**Envoi des e-mails** transactionnels (invitations, réinitialisations, notifications) : {emailProvider}."
+          ] },
+          { "p": "{brand} n'intègre aucun prestataire de paiement : les règlements des familles sont effectués auprès de l'établissement, qui les enregistre sur la plateforme. Aucun outil de mesure d'audience ni de publicité n'est utilisé." },
+          { "p": "Les données peuvent enfin être communiquées aux autorités publiques lorsque la loi tunisienne l'exige, dans les seules limites de cette obligation." }
+        ]
+      },
+      {
+        "id": "children",
+        "title": "7. Données des enfants et des élèves",
+        "blocks": [
+          { "p": "Une grande partie des données traitées sur {brand} concerne des mineurs. Nous leur appliquons des règles spécifiques, en plus des principes généraux de cette politique." },
+          { "h": "Consentement du représentant légal" },
+          { "p": "La loi organique n° 2004-63 soumet le traitement des données relatives à un enfant au consentement de son représentant légal et, dans les conditions qu'elle prévoit, à l'autorisation du juge de la famille. En tant que responsable du traitement, l'établissement recueille ce consentement, généralement lors de l'inscription, et en conserve la preuve. La plateforme permet notamment d'enregistrer le consentement à l'image de chaque élève." },
+          { "h": "Minimisation" },
+          { "ul": [
+            "Les champs relatifs à la santé se limitent à des indicateurs synthétiques et à une note sur les allergies : ils n'ont pas vocation à contenir un dossier médical.",
+            "La plupart des champs d'un dossier élève sont facultatifs : l'établissement n'enregistre que ce qui est utile à l'accueil de l'enfant.",
+            "Les informations sur les personnes autorisées à récupérer un enfant servent uniquement à vérifier leur identité au moment de la récupération."
+          ] },
+          { "h": "Accès restreint" },
+          { "ul": [
+            "Les informations médicales ne sont visibles que par les rôles disposant d'une autorisation spécifique.",
+            "Un parent n'accède qu'aux données de ses propres enfants et peut en demander l'export.",
+            "Les exports et les effacements de données d'élèves sont enregistrés dans un journal d'audit."
+          ] },
+          { "h": "Après le départ d'un élève" },
+          { "p": "Lorsqu'un élève quitte l'établissement, son dossier peut être archivé. L'établissement décide de sa durée de conservation, dans le respect de ses obligations légales. Sur demande de l'établissement, les données personnelles de l'élève peuvent être anonymisées : son identité, ses coordonnées, ses informations de santé et ses documents sont alors effacés, tandis que les pièces financières sont conservées sous forme anonymisée pour répondre aux obligations comptables." }
+        ]
+      },
+      {
+        "id": "security",
+        "title": "8. Sécurité des données",
+        "blocks": [
+          { "p": "Nous mettons en œuvre des mesures techniques et organisationnelles adaptées à la sensibilité des données traitées, notamment :" },
+          { "ul": [
+            "**isolation par établissement** : chaque requête est limitée à l'organisation de l'utilisateur, afin qu'aucun client ne puisse accéder aux données d'un autre ;",
+            "**contrôle d'accès par rôle et par campus**, avec des autorisations spécifiques pour les données sensibles ;",
+            "**comptes invités à activer** : un compte créé par l'établissement doit être activé par son titulaire avant toute connexion ;",
+            "**protection des mots de passe** par un algorithme de hachage robuste : ils ne sont jamais stockés en clair ;",
+            "**sessions sécurisées** : jetons d'accès de courte durée et cookie de session inaccessible aux scripts du navigateur ;",
+            "**protection contre les attaques** : verrouillage temporaire après plusieurs tentatives de connexion échouées et limitation du nombre de requêtes ;",
+            "**chiffrement des échanges** entre votre navigateur et nos serveurs (HTTPS) ;",
+            "**journal d'audit** des actions sensibles, comme les exports et effacements de données."
+          ] },
+          { "p": "Aucun système n'étant infaillible, nous nous engageons, en cas de violation de données susceptible d'affecter un établissement, à l'en informer dans les meilleurs délais afin qu'il puisse prendre les mesures nécessaires et, le cas échéant, informer les personnes concernées et les autorités." }
+        ]
+      },
+      {
+        "id": "transfers",
+        "title": "9. Hébergement et transferts hors de Tunisie",
+        "blocks": [
+          { "p": "Les serveurs et la base de données de {brand} sont hébergés en Tunisie." },
+          { "p": "La loi organique n° 2004-63 encadre strictement les transferts de données personnelles vers l'étranger. Si un prestataire technique situé hors de Tunisie devait intervenir, par exemple pour l'envoi d'e-mails, ce transfert serait limité au strict nécessaire et réalisé dans le respect des conditions prévues par la loi, notamment l'autorisation préalable de l'INPDP lorsqu'elle est requise. Cette politique serait alors mise à jour pour en informer les établissements." }
+        ]
+      },
+      {
+        "id": "retention",
+        "title": "10. Durées de conservation",
+        "blocks": [
+          { "p": "Les données ne sont conservées que le temps nécessaire aux finalités pour lesquelles elles sont traitées :" },
+          { "ul": [
+            "**Données de l'établissement** (élèves, familles, personnels, scolarité) : pendant toute la durée du contrat, selon les règles de conservation fixées par l'établissement.",
+            "**Fin de contrat** : l'établissement dispose de {exportWindowDays} jours pour exporter ses données ; elles sont ensuite supprimées de nos systèmes de production dans un délai de {deletionDays} jours, puis des sauvegardes au terme de {backupRetentionDays} jours.",
+            "**Pièces financières** (factures et paiements) : pendant la durée imposée par les obligations comptables et fiscales applicables, le cas échéant sous forme anonymisée.",
+            "**Sessions** : les jetons de connexion expirent automatiquement après 7 jours d'inactivité et sont révoqués à la déconnexion.",
+            "**Journaux de sécurité et d'audit** : pendant la durée nécessaire à la sécurité du service et à la preuve des actions réalisées.",
+            "**Demandes de contact** sans suite commerciale : {contactRetentionMonths} mois à compter du dernier échange."
+          ] }
+        ]
+      },
+      {
+        "id": "rights",
+        "title": "11. Vos droits",
+        "blocks": [
+          { "p": "La loi organique n° 2004-63 vous reconnaît notamment les droits suivants sur vos données :" },
+          { "ul": [
+            "**droit d'accès** : savoir si des données vous concernant sont traitées et en obtenir la communication ;",
+            "**droit de rectification** : faire corriger, compléter, mettre à jour ou supprimer des données inexactes, incomplètes ou équivoques ;",
+            "**droit d'opposition** : vous opposer au traitement de vos données pour des raisons légitimes, sauf lorsque le traitement est imposé par la loi ou nécessaire à l'exécution d'un contrat ;",
+            "**droit de retirer votre consentement** lorsque le traitement repose sur celui-ci."
+          ] },
+          { "p": "Les parents ou représentants légaux exercent ces droits au nom de leur enfant mineur. En complément, la plateforme permet d'exporter les données d'un élève et, à la demande de l'établissement, de les anonymiser." },
+          { "h": "Comment exercer vos droits" },
+          { "ul": [
+            "Pour les données gérées par votre établissement (élèves, parents, personnels), adressez-vous d'abord à l'établissement, responsable du traitement.",
+            "Pour les données traitées par {brand} pour son propre compte, ou si vous ne parvenez pas à joindre votre établissement, écrivez-nous à {privacyEmail}."
+          ] },
+          { "p": "Nous répondons dans les délais prévus par la loi. Une justification d'identité pourra être demandée afin de protéger vos données contre toute demande frauduleuse." },
+          { "p": "Si vous estimez que vos droits ne sont pas respectés, vous pouvez introduire une réclamation auprès de l'Instance nationale de protection des données personnelles (INPDP), autorité tunisienne de contrôle en la matière." }
+        ]
+      },
+      {
+        "id": "cookies",
+        "title": "12. Cookies",
+        "blocks": [
+          { "p": "{brand} utilise uniquement des cookies strictement nécessaires et, avec votre accord, un cookie qui mémorise votre langue. Aucun cookie publicitaire ni de mesure d'audience n'est déposé. Le détail figure dans notre [politique cookies](/cookies)." }
+        ]
+      },
+      {
+        "id": "changes",
+        "title": "13. Modifications de cette politique",
+        "blocks": [
+          { "p": "Nous pouvons faire évoluer cette politique, notamment pour refléter une nouvelle fonctionnalité, un nouveau prestataire ou une évolution de la loi. La date de dernière mise à jour figure en haut de la page. En cas de modification importante, les administrateurs des établissements clients en sont informés par e-mail ou dans l'application avant son entrée en vigueur." }
+        ]
+      },
+      {
+        "id": "contact",
+        "title": "14. Nous contacter",
+        "blocks": [
+          { "p": "Pour toute question relative à cette politique ou à la protection de vos données : {privacyEmail}." },
+          { "p": "Pour toute autre demande : {contactEmail} ou notre [page contact](/contact)." }
+        ]
+      }
+    ]
+  },
+  "terms": {
+    "metaTitle": "Conditions générales d'utilisation — EcolnaSpace",
+    "metaDescription": "Les conditions qui encadrent l'utilisation d'EcolnaSpace par les établissements éducatifs et leurs utilisateurs : service, responsabilités, données, facturation et résiliation.",
+    "eyebrow": "Conditions",
+    "title": "Conditions générales d'utilisation",
+    "lead": "Ces conditions définissent les règles d'utilisation d'EcolnaSpace par les établissements clients et par les personnes qui accèdent à la plateforme sous leur responsabilité : personnels, parents et élèves.",
+    "summary": {
+      "title": "L'essentiel en quelques points",
+      "items": [
+        "Le contrat est conclu avec l'établissement ; ses personnels, les parents et les élèves utilisent la plateforme dans le cadre de son compte.",
+        "Les données de l'établissement lui appartiennent. {brand} les traite pour son compte et ne les utilise jamais à d'autres fins.",
+        "Les conditions commerciales sont fixées dans un devis écrit ; aucun frais n'est facturé sans avoir été annoncé.",
+        "En fin de contrat, l'établissement peut exporter ses données avant leur suppression.",
+        "Ces conditions sont régies par le droit tunisien."
+      ]
+    },
+    "sections": [
+      {
+        "id": "acceptance",
+        "title": "1. Objet et acceptation",
+        "blocks": [
+          { "p": "Les présentes conditions générales d'utilisation (les « Conditions ») régissent l'accès au service {brand} et son utilisation. Elles sont conclues entre {legalEntity} (« {brand} ») et l'établissement qui crée une organisation sur la plateforme (le « Client »)." },
+          { "p": "La personne qui crée l'organisation déclare disposer du pouvoir d'engager l'établissement. En créant l'organisation, puis en utilisant le service, le Client accepte les présentes Conditions. Lorsqu'un devis ou un contrat particulier a été signé, ses stipulations prévalent sur les présentes Conditions en cas de contradiction." },
+          { "p": "Les personnels, parents et élèves invités par le Client (les « Utilisateurs ») utilisent le service sous la responsabilité du Client et s'engagent à respecter les règles d'utilisation décrites ci-dessous." }
+        ]
+      },
+      {
+        "id": "definitions",
+        "title": "2. Définitions",
+        "blocks": [
+          { "ul": [
+            "**Service** : la plateforme {brand} accessible en ligne, ses fonctionnalités et ses mises à jour.",
+            "**Organisation** : l'espace du Client sur la plateforme, regroupant un ou plusieurs campus.",
+            "**Utilisateur** : toute personne disposant d'un compte rattaché à l'Organisation (direction, enseignant, personnel, comptable, parent, élève).",
+            "**Données du Client** : toutes les informations saisies ou téléversées dans l'Organisation par le Client ou ses Utilisateurs, notamment les données personnelles des élèves, des familles et des personnels."
+          ] }
+        ]
+      },
+      {
+        "id": "service",
+        "title": "3. Description du service",
+        "blocks": [
+          { "p": "{brand} est un logiciel de gestion d'établissement éducatif proposé en ligne. Selon les modules activés, il permet notamment de gérer les élèves et les inscriptions, les campus et les classes, les présences, les devoirs, examens, notes et bulletins, le quotidien de la petite enfance, la facturation aux familles, les documents et la communication avec les familles." },
+          { "p": "{brand} est un outil au service de l'établissement. Il ne se substitue pas à ses obligations légales et réglementaires envers ses élèves, leurs familles et les autorités, notamment en matière d'enseignement, de sécurité des enfants, de comptabilité ou de protection des données. Les décisions pédagogiques, administratives et financières restent celles de l'établissement." }
+        ]
+      },
+      {
+        "id": "accounts",
+        "title": "4. Comptes et accès",
+        "blocks": [
+          { "ul": [
+            "Le Client fournit des informations exactes lors de la création de l'Organisation et les tient à jour.",
+            "Le Client crée les comptes de ses Utilisateurs, leur attribue un rôle et, le cas échéant, un campus. Il est responsable des accès qu'il accorde et les retire lorsqu'une personne quitte l'établissement.",
+            "Chaque compte est personnel. Les identifiants ne doivent pas être partagés ; chaque Utilisateur protège son mot de passe et signale sans délai toute utilisation non autorisée.",
+            "Un compte créé par le Client doit être activé par son titulaire avant la première connexion.",
+            "{brand} peut suspendre un compte en cas de risque avéré pour la sécurité du service ou des données, en informant le Client dans les meilleurs délais."
+          ] }
+        ]
+      },
+      {
+        "id": "client-obligations",
+        "title": "5. Obligations du Client en matière de données",
+        "blocks": [
+          { "p": "En qualité de responsable du traitement des Données du Client, l'établissement s'engage notamment à :" },
+          { "ul": [
+            "n'enregistrer que des données nécessaires à ses activités et disposer d'un fondement légal pour chacune d'elles ;",
+            "recueillir, lorsque la loi l'exige, le consentement des représentants légaux pour le traitement des données de leurs enfants, y compris pour l'utilisation de l'image ;",
+            "accomplir les formalités qui lui incombent auprès de l'Instance nationale de protection des données personnelles (INPDP) ;",
+            "informer les familles et les personnels du traitement de leurs données et répondre à leurs demandes d'exercice de droits, avec l'assistance de {brand} si nécessaire."
+          ] }
+        ]
+      },
+      {
+        "id": "acceptable-use",
+        "title": "6. Utilisation acceptable",
+        "blocks": [
+          { "p": "Il est interdit, pour le Client comme pour les Utilisateurs :" },
+          { "ul": [
+            "d'accéder ou de tenter d'accéder aux données d'une autre organisation, ou à des données auxquelles son rôle ne donne pas accès ;",
+            "d'utiliser les données des élèves ou des familles à des fins étrangères à la vie de l'établissement, notamment commerciales ou publicitaires ;",
+            "de téléverser des contenus illicites, diffamatoires, portant atteinte à la vie privée ou aux droits d'un tiers, ou contenant des logiciels malveillants ;",
+            "de perturber le fonctionnement du service, d'en contourner les mesures de sécurité, de le surcharger volontairement ou d'en extraire les données de manière automatisée sans autorisation ;",
+            "de revendre, de sous-licencier ou de mettre le service à disposition de tiers extérieurs à l'établissement sans l'accord écrit de {brand}."
+          ] },
+          { "p": "En cas de manquement grave, {brand} peut suspendre les accès concernés, après en avoir informé le Client sauf urgence liée à la sécurité." }
+        ]
+      },
+      {
+        "id": "billing",
+        "title": "7. Conditions commerciales et facturation",
+        "blocks": [
+          { "p": "La création d'une Organisation est gratuite et ne nécessite aucun moyen de paiement. L'utilisation du service dans le cadre d'une offre commerciale fait l'objet d'un devis écrit, établi selon la taille de l'établissement, le nombre de campus, les modules activés et le niveau d'accompagnement choisi." },
+          { "ul": [
+            "Le devis accepté précise le prix, la périodicité de facturation, la durée d'engagement éventuelle et les modalités de paiement.",
+            "Aucun frais, notamment de mise en place ou d'accompagnement, n'est facturé sans avoir été préalablement indiqué dans le devis.",
+            "En cas de retard de paiement, {brand} adresse une relance au Client. Si la situation n'est pas régularisée dans le délai indiqué, l'accès au service peut être suspendu après préavis. La suspension n'entraîne pas la suppression des Données du Client.",
+            "Toute évolution de l'offre (ajout d'un campus ou d'un module, par exemple) donne lieu à une mise à jour du devis, acceptée par le Client."
+          ] }
+        ]
+      },
+      {
+        "id": "data-ownership",
+        "title": "8. Propriété et protection des données",
+        "blocks": [
+          { "p": "Le Client reste seul propriétaire des Données du Client. {brand} ne revendique aucun droit sur celles-ci et ne les utilise que pour fournir le service, selon les instructions du Client, en qualité de sous-traitant au sens de la loi organique n° 2004-63." },
+          { "p": "{brand} s'engage à mettre en œuvre des mesures de sécurité adaptées, à garantir la confidentialité des données auprès de son personnel et de ses prestataires, et à assister le Client dans le respect de ses obligations. Les modalités détaillées figurent dans notre [politique de confidentialité](/privacy)." }
+        ]
+      },
+      {
+        "id": "availability",
+        "title": "9. Disponibilité, maintenance et assistance",
+        "blocks": [
+          { "p": "{brand} met tout en œuvre pour assurer l'accessibilité du service en continu. Le service peut toutefois être interrompu ponctuellement pour des opérations de maintenance, de mise à jour ou en cas d'incident. Les maintenances planifiées sont, dans la mesure du possible, réalisées en dehors des horaires scolaires et annoncées à l'avance." },
+          { "p": "Sauf engagement de niveau de service spécifique prévu au devis, {brand} est tenue d'une obligation de moyens quant à la disponibilité du service. L'assistance est accessible par e-mail à {contactEmail}." }
+        ]
+      },
+      {
+        "id": "ip",
+        "title": "10. Propriété intellectuelle",
+        "blocks": [
+          { "p": "La plateforme, son code, son interface, sa marque et ses contenus sont la propriété exclusive de {brand}. Le Client bénéficie, pendant la durée du contrat, d'un droit d'utilisation personnel, non exclusif et non transférable du service, pour les besoins de son établissement." },
+          { "p": "Les contenus et Données du Client restent la propriété du Client. Celui-ci accorde à {brand} le seul droit de les héberger, de les reproduire et de les traiter dans la mesure nécessaire à la fourniture du service." }
+        ]
+      },
+      {
+        "id": "confidentiality",
+        "title": "11. Confidentialité",
+        "blocks": [
+          { "p": "Chaque partie s'engage à garder confidentielles les informations non publiques de l'autre partie dont elle a connaissance à l'occasion du contrat, et à ne les utiliser que pour son exécution. Cette obligation se poursuit après la fin du contrat." }
+        ]
+      },
+      {
+        "id": "liability",
+        "title": "12. Responsabilité",
+        "blocks": [
+          { "p": "{brand} est responsable de la bonne exécution du service conformément aux présentes Conditions. Sa responsabilité ne saurait être engagée en cas de mauvaise utilisation du service par le Client ou ses Utilisateurs, de données inexactes saisies par ceux-ci, de décisions prises par l'établissement sur la base des informations enregistrées, ou d'événement de force majeure." },
+          { "p": "Dans les limites permises par la loi, la responsabilité de {brand} au titre du contrat est limitée aux dommages directs et prévisibles, et plafonnée au montant payé par le Client au cours des douze mois précédant le fait générateur. Cette limitation ne s'applique pas en cas de faute lourde ou intentionnelle, ni aux manquements de {brand} à ses obligations de sécurité et de confidentialité des données personnelles." }
+        ]
+      },
+      {
+        "id": "termination",
+        "title": "13. Durée, résiliation et restitution des données",
+        "blocks": [
+          { "p": "Le contrat est conclu pour la durée prévue au devis. À défaut, il peut être résilié par chacune des parties à tout moment, par écrit, avec effet à la fin de la période de facturation en cours." },
+          { "p": "Chaque partie peut également résilier le contrat en cas de manquement grave de l'autre partie, non corrigé dans un délai de trente jours après une mise en demeure écrite." },
+          { "h": "Réversibilité" },
+          { "ul": [
+            "À la fin du contrat, le Client dispose de {exportWindowDays} jours pour exporter ses données.",
+            "À l'issue de cette période, les Données du Client sont supprimées des systèmes de production dans un délai de {deletionDays} jours, puis des sauvegardes au terme de {backupRetentionDays} jours, sauf obligation légale de conservation.",
+            "Sur demande, {brand} confirme par écrit la suppression effective des données."
+          ] }
+        ]
+      },
+      {
+        "id": "changes",
+        "title": "14. Modification des Conditions",
+        "blocks": [
+          { "p": "{brand} peut modifier les présentes Conditions, notamment pour tenir compte de l'évolution du service ou de la loi. Le Client est informé de toute modification substantielle au moins trente jours avant son entrée en vigueur. S'il la refuse, il peut résilier le contrat avant cette date, sans pénalité." }
+        ]
+      },
+      {
+        "id": "law",
+        "title": "15. Droit applicable et litiges",
+        "blocks": [
+          { "p": "Les présentes Conditions sont régies par le droit tunisien, notamment le Code des obligations et des contrats et la loi organique n° 2004-63 relative à la protection des données personnelles." },
+          { "p": "En cas de différend, les parties s'efforcent de trouver une solution amiable. À défaut d'accord dans un délai de trente jours, le litige est porté devant les juridictions tunisiennes compétentes." }
+        ]
+      },
+      {
+        "id": "contact",
+        "title": "16. Éditeur et contact",
+        "blocks": [
+          { "ul": [
+            "Éditeur : {legalEntity}",
+            "Identifiant unique (RNE) : {registrationNumber}",
+            "Siège : {registeredAddress}",
+            "Contact : {contactEmail}",
+            "Données personnelles : {privacyEmail}"
+          ] }
+        ]
+      }
+    ]
+  },
+  "cookies": {
+    "metaTitle": "Politique cookies — EcolnaSpace",
+    "metaDescription": "Les cookies utilisés par EcolnaSpace, leur finalité et leur durée. Aucun cookie publicitaire ni de mesure d'audience : uniquement le nécessaire, et votre langue si vous l'acceptez.",
+    "eyebrow": "Cookies",
+    "title": "Politique cookies",
+    "lead": "Nous utilisons le moins de cookies possible. Cette page les liste tous, explique à quoi ils servent et comment gérer vos choix.",
+    "summary": {
+      "title": "L'essentiel en quelques points",
+      "items": [
+        "Uniquement des cookies nécessaires au fonctionnement du site et de l'application.",
+        "Un cookie facultatif pour mémoriser votre langue, déposé seulement avec votre accord.",
+        "Aucun cookie publicitaire, aucun pixel de réseau social, aucun outil de mesure d'audience.",
+        "Vous pouvez modifier votre choix à tout moment depuis le lien « Gérer mes cookies » en bas de page."
+      ]
+    },
+    "sections": [
+      {
+        "id": "what",
+        "title": "1. Qu'est-ce qu'un cookie ?",
+        "blocks": [
+          { "p": "Un cookie est un petit fichier texte enregistré par votre navigateur lorsque vous consultez un site. Il permet au site de reconnaître votre navigateur d'une page à l'autre, par exemple pour maintenir votre connexion ou mémoriser une préférence. Des technologies voisines, comme le stockage de session du navigateur, fonctionnent de manière comparable." }
+        ]
+      },
+      {
+        "id": "approach",
+        "title": "2. Notre approche",
+        "blocks": [
+          { "p": "{brand} est un outil professionnel utilisé par des établissements accueillant des enfants. Nous avons donc choisi de n'utiliser aucun cookie de suivi : notre site et notre application ne contiennent ni publicité, ni pixel de réseau social, ni outil de mesure d'audience." },
+          { "p": "Les cookies strictement nécessaires sont exemptés de consentement, car le service ne peut pas fonctionner sans eux. Le cookie de préférence de langue n'est déposé qu'avec votre accord." }
+        ]
+      },
+      {
+        "id": "list",
+        "title": "3. Les cookies que nous utilisons",
+        "blocks": [
+          { "h": "Strictement nécessaires" },
+          { "table": {
+            "head": ["Nom", "Finalité", "Durée"],
+            "rows": [
+              ["refresh_token", "Maintient votre session sécurisée dans l'application. Inaccessible aux scripts du navigateur (HttpOnly) et envoyé uniquement au service d'authentification.", "7 jours, renouvelé à chaque utilisation ; supprimé à la déconnexion"],
+              ["ecolnaspace_auth", "Indique qu'une session est ouverte, afin de vous orienter directement vers votre tableau de bord. Ne contient aucune donnée personnelle.", "7 jours, renouvelé à chaque utilisation ; supprimé à la déconnexion"],
+              ["ecolnaspace_consent", "Mémorise vos choix en matière de cookies pour ne pas vous les redemander à chaque visite.", "6 mois"]
+            ]
+          } },
+          { "h": "Préférences (avec votre accord)" },
+          { "table": {
+            "head": ["Nom", "Finalité", "Durée"],
+            "rows": [
+              ["ecolnaspace_locale", "Mémorise la langue que vous avez choisie (français, anglais ou arabe) pour vous accueillir dans cette langue lors de votre prochaine visite.", "12 mois"]
+            ]
+          } },
+          { "h": "Mesure d'audience et publicité" },
+          { "p": "Aucun. Si nous décidions un jour d'utiliser un outil de mesure d'audience, il ne serait activé qu'après votre accord explicite, et cette page serait mise à jour au préalable." }
+        ]
+      },
+      {
+        "id": "storage",
+        "title": "4. Autres données stockées dans votre navigateur",
+        "blocks": [
+          { "p": "Lorsque vous êtes connecté à l'application, deux informations techniques sont conservées dans le stockage de session du navigateur. Elles sont effacées automatiquement à la fermeture de l'onglet :" },
+          { "ul": [
+            "le jeton d'accès de courte durée qui authentifie vos requêtes (valable 15 minutes) ;",
+            "un indicateur temporaire garantissant que votre déconnexion est bien prise en compte si le réseau est interrompu."
+          ] }
+        ]
+      },
+      {
+        "id": "manage",
+        "title": "5. Gérer vos préférences",
+        "blocks": [
+          { "p": "Lors de votre première visite, un bandeau vous permet d'accepter ou de refuser le cookie de préférence, avec la même facilité. Vous pouvez modifier ce choix à tout moment grâce au lien « Gérer mes cookies » en bas de chaque page. Si vous refusez, le cookie de langue est supprimé et la langue vous est simplement proposée selon les réglages de votre navigateur." },
+          { "p": "Vous pouvez également supprimer ou bloquer les cookies depuis les réglages de votre navigateur :" },
+          { "ul": [
+            "**Chrome** : Paramètres › Confidentialité et sécurité › Cookies tiers et données des sites ;",
+            "**Firefox** : Paramètres › Vie privée et sécurité › Cookies et données de sites ;",
+            "**Safari** : Réglages › Confidentialité › Gérer les données de sites web ;",
+            "**Edge** : Paramètres › Cookies et autorisations de site."
+          ] },
+          { "note": "Le blocage des cookies strictement nécessaires empêche la connexion à l'application : vous pourrez consulter le site public, mais pas accéder à votre espace." }
+        ]
+      },
+      {
+        "id": "changes",
+        "title": "6. Évolutions et contact",
+        "blocks": [
+          { "p": "Nous mettons cette page à jour dès que la liste des cookies évolue. Si un nouveau type de cookie facultatif venait à être introduit, votre accord vous serait de nouveau demandé." },
+          { "p": "Pour toute question : {privacyEmail}. Pour en savoir plus sur le traitement de vos données, consultez notre [politique de confidentialité](/privacy)." }
+        ]
+      }
+    ]
+  }
+}

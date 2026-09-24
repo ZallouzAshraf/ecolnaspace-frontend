@@ -4,6 +4,7 @@ import { BrandMark } from "@/components/landing/brand-mark";
 import { Button } from "@/components/ui/button";
 import { Link, usePathname, useRouter } from "@/i18n/navigation";
 import { locales, type AppLocale } from "@/i18n/routing";
+import { rememberLocale } from "@/lib/consent";
 import { cn } from "@/lib/utils";
 import { ArrowRight, Menu, X } from "lucide-react";
 import { useLocale, useTranslations } from "next-intl";
@@ -36,13 +37,29 @@ export function LandingNav() {
   }, [pathname]);
 
   function switchLocale(next: AppLocale) {
+    rememberLocale(next);
     router.replace(pathname, { locale: next });
   }
 
   const links = [
-    { href: "#product" as const, label: t("nav.product") },
-    { href: "#pricing" as const, label: t("nav.pricing") },
-    { href: "#contact" as const, label: t("nav.contact") },
+    {
+      key: "product",
+      href: { pathname: "/", hash: "product" } as const,
+      label: t("nav.product"),
+      active: false,
+    },
+    {
+      key: "pricing",
+      href: "/pricing" as const,
+      label: t("nav.pricing"),
+      active: pathname === "/pricing",
+    },
+    {
+      key: "contact",
+      href: "/contact" as const,
+      label: t("nav.contact"),
+      active: pathname === "/contact",
+    },
   ];
 
   return (
@@ -64,13 +81,17 @@ export function LandingNav() {
           aria-label={t("nav.primary")}
         >
           {links.map((link) => (
-            <a
-              key={link.href}
+            <Link
+              key={link.key}
               href={link.href}
-              className="rounded-lg px-3 py-1.5 text-sm font-medium text-muted-foreground transition-colors hover:bg-slate-900/[0.04] hover:text-foreground"
+              aria-current={link.active ? "page" : undefined}
+              className={cn(
+                "rounded-lg px-3 py-1.5 text-sm font-medium transition-colors hover:bg-slate-900/[0.04] hover:text-foreground",
+                link.active ? "text-foreground" : "text-muted-foreground",
+              )}
             >
               {link.label}
-            </a>
+            </Link>
           ))}
         </nav>
 
@@ -136,14 +157,15 @@ export function LandingNav() {
         >
           <nav className="flex flex-col gap-1" aria-label={t("nav.primary")}>
             {links.map((link) => (
-              <a
-                key={link.href}
+              <Link
+                key={link.key}
                 href={link.href}
+                aria-current={link.active ? "page" : undefined}
                 className="rounded-lg px-2 py-2 text-sm font-medium text-foreground hover:bg-muted"
                 onClick={() => setOpen(false)}
               >
                 {link.label}
-              </a>
+              </Link>
             ))}
           </nav>
           <div className="mt-3 flex flex-wrap items-center gap-2 border-t border-border/70 pt-3">

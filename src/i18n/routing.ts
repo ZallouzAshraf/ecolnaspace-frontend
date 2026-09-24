@@ -7,6 +7,9 @@ export const routing = defineRouting({
   locales,
   defaultLocale: "fr",
   localePrefix: "always",
+  // The language cookie is a preference cookie: it is written by our own
+  // consent-aware helper (see lib/consent.ts), never implicitly.
+  localeCookie: false,
 });
 
 export function isRtlLocale(locale: string): boolean {

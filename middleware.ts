@@ -1,6 +1,7 @@
 import createMiddleware from "next-intl/middleware";
 import { NextResponse, type NextRequest } from "next/server";
 import { SESSION_HINT_COOKIE } from "./src/lib/auth/constants";
+import { isAppLocale, LOCALE_COOKIE } from "./src/lib/consent";
 import { routing } from "./src/i18n/routing";
 
 const handleI18n = createMiddleware(routing);
@@ -12,6 +13,19 @@ const AUTH_PATHS = new Set([
   "/reset-password",
   "/verify-email",
 ]);
+
+const PUBLIC_MARKETING_PATHS = new Set([
+  "/pricing",
+  "/contact",
+  "/privacy",
+  "/terms",
+  "/cookies",
+]);
+
+function hasLocalePrefix(pathname: string): boolean {
+  const first = pathname.split("/").filter(Boolean)[0];
+  return isAppLocale(first);
+}
 
 function stripLocale(pathname: string): { locale: string; path: string } {
   const segments = pathname.split("/").filter(Boolean);
@@ -27,6 +41,14 @@ function stripLocale(pathname: string): { locale: string; path: string } {
 }
 
 export default function middleware(request: NextRequest) {
+  // Only set when the visitor accepted preference cookies.
+  const rememberedLocale = request.cookies.get(LOCALE_COOKIE)?.value;
+  if (!hasLocalePrefix(request.nextUrl.pathname) && isAppLocale(rememberedLocale)) {
+    const url = request.nextUrl.clone();
+    url.pathname = `/${rememberedLocale}${request.nextUrl.pathname === "/" ? "" : request.nextUrl.pathname}`;
+    return NextResponse.redirect(url);
+  }
+
   const { locale, path } = stripLocale(request.nextUrl.pathname);
   const hasSessionHint =
     request.cookies.get(SESSION_HINT_COOKIE)?.value === "1";
@@ -34,8 +56,7 @@ export default function middleware(request: NextRequest) {
 
   // Soft gate only — real auth is enforced client-side + API.
   if (!isAuthPath && path !== "/" && !hasSessionHint) {
-    const isPublicMarketing =
-      path === "/privacy" || path === "/terms";
+    const isPublicMarketing = PUBLIC_MARKETING_PATHS.has(path);
 
     // Allow public root + marketing/legal through i18n; app pages need session hint
     const isAppPath =

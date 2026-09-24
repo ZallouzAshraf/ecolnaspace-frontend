@@ -7,10 +7,14 @@ import {
   RolesMock,
 } from "@/components/landing/deep-mocks";
 import { HeroVisual } from "@/components/landing/hero-visual";
-import { LandingNav } from "@/components/landing/landing-nav";
 import { ProblemCompare } from "@/components/landing/problem-compare";
 import { Reveal } from "@/components/landing/reveal";
 import { TiltCard } from "@/components/landing/tilt-card";
+import {
+  Eyebrow,
+  PrimaryCta,
+  SectionHeading,
+} from "@/components/marketing/primitives";
 import { Button } from "@/components/ui/button";
 import { Link } from "@/i18n/navigation";
 import { cn } from "@/lib/utils";
@@ -23,7 +27,6 @@ import {
   Fingerprint,
   GraduationCap,
   Lock,
-  Mail,
   MessageSquare,
   School,
   ShieldCheck,
@@ -33,7 +36,6 @@ import {
   type LucideIcon,
 } from "lucide-react";
 import { useTranslations } from "next-intl";
-import type { ReactNode } from "react";
 
 type PillarKey = "students" | "academic" | "billing" | "comms";
 
@@ -106,10 +108,7 @@ export function LandingPage() {
   const appName = tCommon("appName");
 
   return (
-    <div className="min-h-svh overflow-x-clip bg-[#fbfbfe] text-foreground">
-      <LandingNav />
-
-      <main>
+    <>
         {/* Hero */}
         <section className="relative isolate overflow-hidden pt-28 sm:pt-32">
           <div aria-hidden className="pointer-events-none absolute inset-0 -z-10">
@@ -159,7 +158,7 @@ export function LandingPage() {
                   variant="outline"
                   className="h-12 rounded-full border-slate-200 bg-white/70 px-6 text-[0.95rem] shadow-sm backdrop-blur-md hover:bg-white"
                 >
-                  <a href="#contact">{t("hero.ctaSecondary")}</a>
+                  <Link href="/contact">{t("hero.ctaSecondary")}</Link>
                 </Button>
               </div>
               <p className="mt-4 flex items-center gap-2 text-sm text-slate-500">
@@ -653,6 +652,16 @@ export function LandingPage() {
                     <p className="mt-5 max-w-lg text-pretty text-base leading-relaxed text-slate-600 sm:text-lg">
                       {t("pricing.body")}
                     </p>
+                    <Link
+                      href="/pricing"
+                      className="group mt-7 inline-flex items-center gap-1.5 text-sm font-semibold text-primary"
+                    >
+                      {t("pricing.details")}
+                      <ArrowRight
+                        className="size-4 transition-transform duration-300 group-hover:translate-x-0.5 rtl:rotate-180 rtl:group-hover:-translate-x-0.5"
+                        aria-hidden
+                      />
+                    </Link>
                   </div>
                   <div className="flex flex-col justify-center gap-7 border-t border-slate-200/80 bg-linear-to-br from-slate-50 to-indigo-50/60 p-8 sm:p-12 lg:border-s lg:border-t-0 lg:p-14">
                     <ul className="space-y-4">
@@ -678,9 +687,7 @@ export function LandingPage() {
                         variant="outline"
                         className="h-12 rounded-full border-slate-200 bg-white px-6 text-[0.95rem]"
                       >
-                        <a href="mailto:contact@ecolnaspace.com">
-                          {t("pricing.ctaSecondary")}
-                        </a>
+                        <Link href="/contact">{t("pricing.ctaSecondary")}</Link>
                       </Button>
                     </div>
                   </div>
@@ -727,181 +734,17 @@ export function LandingPage() {
                     variant="outline"
                     className="h-12 rounded-full border-white/20 bg-white/5 px-6 text-[0.95rem] text-white backdrop-blur hover:bg-white/10 hover:text-white"
                   >
-                    <a href="mailto:contact@ecolnaspace.com">
-                      <Mail className="size-4" aria-hidden />
+                    <Link href="/contact">
+                      <MessageSquare className="size-4" aria-hidden />
                       {t("final.email")}
-                    </a>
+                    </Link>
                   </Button>
                 </div>
               </div>
             </div>
           </Reveal>
         </section>
-      </main>
-
-      <footer className="relative overflow-hidden bg-[#fbfbfe]">
-        <div className="mx-auto grid max-w-6xl gap-12 px-4 pt-16 pb-10 sm:px-6 md:grid-cols-[1.6fr_1fr_1fr] lg:px-8">
-          <div>
-            <BrandMark label={appName} />
-            <p className="mt-4 max-w-sm text-sm leading-relaxed text-slate-500">
-              {t("footer.blurb")}
-            </p>
-          </div>
-          <FooterColumn title={t("footer.product")}>
-            <FooterLink href="#product">{t("nav.product")}</FooterLink>
-            <FooterLink href="#pricing">{t("nav.pricing")}</FooterLink>
-            <li>
-              <Link href="/register" className="transition-colors hover:text-slate-950">
-                {t("nav.cta")}
-              </Link>
-            </li>
-          </FooterColumn>
-          <FooterColumn title={t("footer.legal")}>
-            <li>
-              <Link href="/privacy" className="transition-colors hover:text-slate-950">
-                {t("footer.privacy")}
-              </Link>
-            </li>
-            <li>
-              <Link href="/terms" className="transition-colors hover:text-slate-950">
-                {t("footer.terms")}
-              </Link>
-            </li>
-            <FooterLink href="mailto:contact@ecolnaspace.com">
-              contact@ecolnaspace.com
-            </FooterLink>
-          </FooterColumn>
-        </div>
-        <div className="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
-          <div className="flex flex-col gap-2 border-t border-slate-200/80 py-6 text-xs text-slate-500 sm:flex-row sm:items-center sm:justify-between">
-            <p>
-              © {new Date().getFullYear()} {appName}. {t("footer.rights")}
-            </p>
-            <p className="flex items-center gap-1.5">
-              <span className="size-1.5 rounded-full bg-emerald-500" />
-              app.ecolnaspace.com
-            </p>
-          </div>
-        </div>
-        <p
-          aria-hidden
-          dir="ltr"
-          className="pointer-events-none -mb-[0.22em] select-none text-center text-[clamp(4rem,17vw,15rem)] leading-none font-semibold tracking-[-0.06em] text-transparent [background-clip:text] [-webkit-background-clip:text] bg-linear-to-b from-slate-200 to-slate-50"
-        >
-          {appName}
-        </p>
-      </footer>
-    </div>
-  );
-}
-
-function Eyebrow({
-  children,
-  className,
-  dark,
-}: {
-  children: ReactNode;
-  className?: string;
-  dark?: boolean;
-}) {
-  return (
-    <p
-      className={cn(
-        "inline-flex items-center gap-2 rounded-full border px-3 py-1 text-[11px] font-semibold uppercase tracking-[0.16em]",
-        dark
-          ? "border-white/15 bg-white/5 text-indigo-200"
-          : "border-primary/15 bg-primary/[0.06] text-primary",
-        className,
-      )}
-    >
-      <span
-        className={cn(
-          "size-1.5 rounded-full",
-          dark ? "bg-sky-300" : "bg-linear-to-br from-primary to-sky-400",
-        )}
-      />
-      {children}
-    </p>
-  );
-}
-
-function SectionHeading({
-  eyebrow,
-  title,
-  body,
-}: {
-  eyebrow: string;
-  title: string;
-  body: string;
-}) {
-  return (
-    <Reveal className="mx-auto max-w-2xl text-center">
-      <Eyebrow>{eyebrow}</Eyebrow>
-      <h2 className="mt-5 text-balance text-3xl font-semibold tracking-[-0.025em] text-slate-950 sm:text-[2.75rem] sm:leading-[1.1]">
-        {title}
-      </h2>
-      <p className="mt-5 text-pretty text-base leading-relaxed text-slate-600 sm:text-lg">
-        {body}
-      </p>
-    </Reveal>
-  );
-}
-
-function PrimaryCta({
-  href,
-  children,
-  className,
-}: {
-  href: "/register";
-  children: ReactNode;
-  className?: string;
-}) {
-  return (
-    <Button
-      asChild
-      size="lg"
-      className={cn(
-        "group relative h-12 overflow-hidden rounded-full bg-linear-to-b from-[#7a73ff] to-primary px-6 text-[0.95rem] shadow-[0_12px_28px_-10px_rgba(99,91,255,0.8),inset_0_1px_0_rgba(255,255,255,0.3)] transition-[transform,box-shadow] duration-300 ease-[cubic-bezier(0.22,1,0.36,1)] hover:-translate-y-0.5 hover:shadow-[0_18px_36px_-12px_rgba(99,91,255,0.9),inset_0_1px_0_rgba(255,255,255,0.3)]",
-        className,
-      )}
-    >
-      <Link href={href}>
-        <span
-          aria-hidden
-          className="absolute inset-0 -translate-x-full bg-linear-to-r from-transparent via-white/25 to-transparent transition-transform duration-700 group-hover:translate-x-full"
-        />
-        <span className="relative">{children}</span>
-        <ArrowRight
-          className="relative size-4 transition-transform duration-300 group-hover:translate-x-0.5 rtl:rotate-180 rtl:group-hover:-translate-x-0.5"
-          aria-hidden
-        />
-      </Link>
-    </Button>
-  );
-}
-
-function FooterColumn({
-  title,
-  children,
-}: {
-  title: string;
-  children: ReactNode;
-}) {
-  return (
-    <div>
-      <p className="text-sm font-semibold text-slate-950">{title}</p>
-      <ul className="mt-4 space-y-3 text-sm text-slate-500">{children}</ul>
-    </div>
-  );
-}
-
-function FooterLink({ href, children }: { href: string; children: ReactNode }) {
-  return (
-    <li>
-      <a href={href} className="transition-colors hover:text-slate-950">
-        {children}
-      </a>
-    </li>
+    </>
   );
 }
 

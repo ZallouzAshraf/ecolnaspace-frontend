@@ -1252,7 +1252,7 @@
       "builtFor": "Conçu pour",
       "subhead": "Remplacez les tableurs, les fils de discussion et le papier. Suivez les élèves, les présences, les notes et les paiements — pensé pour les crèches, écoles et centres de soutien.",
       "ctaPrimary": "Créer mon organisation",
-      "ctaSecondary": "Nous écrire",
+      "ctaSecondary": "Parler à un conseiller",
       "note": "Aucune carte bancaire requise pour démarrer.",
       "highlights": {
         "multiCampus": "Plusieurs campus sous une même organisation",
@@ -1512,21 +1512,14 @@
         "support": "Accompagnement humain"
       },
       "ctaPrimary": "Commencer gratuitement",
-      "ctaSecondary": "Demander un devis"
+      "ctaSecondary": "Demander un devis",
+      "details": "Voir ce qui détermine le tarif"
     },
     "final": {
       "headline": "Réunissez le quotidien de votre établissement dans un espace calme",
       "body": "Créez votre organisation en quelques minutes, invitez votre équipe, et activez les accès quand vous êtes prêts.",
       "cta": "Créer mon organisation",
-      "email": "Ou nous écrire"
-    },
-    "footer": {
-      "blurb": "SaaS multi-tenant pour établissements éducatifs privés — crèches, écoles et centres de soutien.",
-      "product": "Produit",
-      "legal": "Légal",
-      "privacy": "Politique de confidentialité",
-      "terms": "Conditions d'utilisation",
-      "rights": "Tous droits réservés."
+      "email": "Parler à un conseiller"
     },
     "meta": {
       "title": "EcolnaSpace — La gestion de votre établissement en une plateforme",
@@ -1638,10 +1631,374 @@
     }
   },
   "legal": {
-    "privacyTitle": "Politique de confidentialité",
-    "privacyBody": "Cette page résume la manière dont EcolnaSpace traite les données des organisations et des élèves. Un texte juridique complet sera publié avant la mise en production. Pour toute demande relative à la vie privée : contact@ecolnaspace.com.",
-    "termsTitle": "Conditions d'utilisation",
-    "termsBody": "En créant une organisation sur EcolnaSpace, vous vous engagez à utiliser le service conformément à la loi et à protéger les accès de votre personnel. Les conditions complètes seront publiées avant la mise en production.",
     "back": "Retour à l'accueil"
+  },
+  "marketing": {
+    "footer": {
+      "blurb": "La plateforme de gestion des crèches, écoles et centres de formation privés : élèves, présences, notes, facturation et communication avec les familles, au même endroit.",
+      "trust": "Hébergé en Tunisie · Données isolées par établissement · Accès selon les rôles",
+      "country": "Tunisie",
+      "language": "Langue",
+      "navLabel": "Liens du pied de page",
+      "columns": {
+        "product": "Produit",
+        "resources": "Ressources",
+        "legal": "Légal"
+      },
+      "links": {
+        "features": "Fonctionnalités",
+        "pricing": "Tarifs",
+        "getStarted": "Créer mon organisation",
+        "contact": "Contact",
+        "demo": "Demander une démonstration",
+        "quote": "Demander un devis",
+        "privacy": "Politique de confidentialité",
+        "terms": "Conditions générales d'utilisation",
+        "cookies": "Politique cookies",
+        "cookieSettings": "Gérer mes cookies"
+      },
+      "registration": "RNE : {number}",
+      "rights": "Tous droits réservés."
+    },
+    "cookieBanner": {
+      "regionLabel": "Préférences cookies",
+      "title": "Vos données, vos choix",
+      "body": "Nous n'utilisons que les cookies nécessaires au fonctionnement du site et, si vous l'acceptez, un cookie qui mémorise votre langue. Aucun cookie publicitaire ni de mesure d'audience.",
+      "policyLink": "En savoir plus",
+      "reject": "Refuser",
+      "accept": "Accepter",
+      "manage": "Personnaliser mes choix",
+      "save": "Enregistrer mes choix",
+      "dialogTitle": "Paramètres des cookies",
+      "dialogBody": "Choisissez les cookies que vous autorisez. Vous pouvez modifier votre choix à tout moment grâce au lien « Gérer mes cookies » en bas de page.",
+      "alwaysOn": "Toujours actifs",
+      "notUsed": "Non utilisés",
+      "categories": {
+        "necessary": {
+          "title": "Strictement nécessaires",
+          "body": "Connexion sécurisée à l'application et mémorisation de votre choix en matière de cookies. Sans eux, le service ne peut pas fonctionner."
+        },
+        "preferences": {
+          "title": "Préférences",
+          "body": "Mémorise la langue choisie (français, anglais ou arabe) pour vos prochaines visites."
+        },
+        "analytics": {
+          "title": "Mesure d'audience",
+          "body": "Nous n'utilisons aucun outil de mesure d'audience. Si cela devait changer, votre accord vous serait demandé au préalable."
+        },
+        "marketing": {
+          "title": "Publicité",
+          "body": "Aucun cookie ni pixel publicitaire n'est utilisé, ni sur ce site ni dans l'application."
+        }
+      }
+    },
+    "pricing": {
+      "meta": {
+        "title": "Tarifs — EcolnaSpace | Une offre adaptée à votre établissement",
+        "description": "Ce qui détermine le tarif d'EcolnaSpace : taille de l'établissement, nombre de campus, modules et accompagnement. Création d'organisation gratuite, devis personnalisé."
+      },
+      "hero": {
+        "eyebrow": "Tarifs",
+        "title": "Vous ne payez que ce dont votre établissement a réellement besoin",
+        "lead": "Une crèche de quartier et un groupe scolaire de plusieurs campus n'ont pas les mêmes besoins. Notre tarif dépend donc de la taille de votre établissement, du nombre de sites, des modules activés et de l'accompagnement souhaité — pas d'une grille unique.",
+        "ctaPrimary": "Demander un devis",
+        "ctaSecondary": "Créer mon organisation",
+        "note": "Création d'organisation gratuite, sans carte bancaire."
+      },
+      "factors": {
+        "eyebrow": "Ce qui détermine le tarif",
+        "title": "Quatre critères, en toute transparence",
+        "body": "Ni frais cachés, ni fonctionnalités bloquées derrière des paliers arbitraires. Voici exactement ce que nos conseillers prennent en compte pour établir votre devis.",
+        "items": {
+          "size": {
+            "title": "La taille de l'établissement",
+            "body": "Le nombre d'élèves ou d'enfants inscrits est le premier critère : il reflète l'usage réel de la plateforme.",
+            "example": "D'une crèche de quelques dizaines d'enfants à un réseau de plusieurs centaines d'élèves."
+          },
+          "campuses": {
+            "title": "Le nombre de campus",
+            "body": "Chaque site est géré dans la même organisation, avec ses propres accès et une vision consolidée pour la direction.",
+            "example": "Un seul site, ou plusieurs campus réunis sous une même direction."
+          },
+          "modules": {
+            "title": "Les modules activés",
+            "body": "Vous n'activez que les modules utiles : socle de gestion, petite enfance, suivi scolaire.",
+            "example": "Une crèche n'a pas besoin de bulletins ; un lycée n'a pas besoin du suivi des siestes."
+          },
+          "support": {
+            "title": "Le niveau d'accompagnement",
+            "body": "Prise en main, import de vos données existantes, formation des équipes : l'accompagnement est dimensionné selon vos besoins.",
+            "example": "Démarrage en autonomie ou accompagnement complet de votre équipe."
+          }
+        }
+      },
+      "modules": {
+        "eyebrow": "Modules",
+        "title": "Composez la plateforme qui vous correspond",
+        "body": "Tous les établissements partent du même socle. Les modules spécialisés s'ajoutent selon votre activité, et s'activent ou se désactivent à tout moment.",
+        "items": {
+          "core": {
+            "badge": "Inclus pour tous",
+            "title": "Socle de gestion",
+            "body": "L'essentiel pour piloter votre établissement au quotidien.",
+            "features": [
+              "Dossiers élèves, inscriptions et classes",
+              "Plusieurs campus dans une même organisation",
+              "Présences quotidiennes",
+              "Factures et suivi des paiements",
+              "Annonces, messages et notifications aux familles",
+              "Documents rattachés aux élèves",
+              "Accès distincts : direction, enseignants, personnel, parents"
+            ],
+            "fit": "La base de chaque organisation EcolnaSpace."
+          },
+          "earlyYears": {
+            "badge": "Crèches et jardins d'enfants",
+            "title": "Petite enfance",
+            "body": "Le quotidien des tout-petits, documenté et partagé avec les familles.",
+            "features": [
+              "Repas et quantités consommées",
+              "Siestes et temps de repos",
+              "Activités de la journée",
+              "Récupérations vérifiées et personnes autorisées"
+            ],
+            "fit": "Idéal pour les crèches, jardins d'enfants et sections maternelles."
+          },
+          "academic": {
+            "badge": "Écoles, collèges, lycées et centres",
+            "title": "Suivi scolaire",
+            "body": "Le suivi pédagogique, là où les enseignants travaillent déjà.",
+            "features": [
+              "Années scolaires, matières et emplois du temps",
+              "Devoirs et examens",
+              "Notes consolidées",
+              "Bulletins par année scolaire"
+            ],
+            "fit": "Pensé pour le primaire, le collège, le lycée, le soutien scolaire et la formation."
+          }
+        }
+      },
+      "included": {
+        "eyebrow": "Toujours inclus",
+        "title": "Ce que chaque établissement reçoit, quelle que soit l'offre",
+        "body": "Certains engagements ne se négocient pas. Ils font partie de chaque organisation EcolnaSpace, dès le premier jour.",
+        "items": {
+          "languages": {
+            "title": "Français, anglais et arabe",
+            "body": "Une interface complète dans les trois langues, avec une mise en page de droite à gauche pour l'arabe."
+          },
+          "isolation": {
+            "title": "Données isolées par établissement",
+            "body": "Les données de votre organisation ne sont jamais mélangées à celles d'un autre client."
+          },
+          "roles": {
+            "title": "Accès selon les rôles",
+            "body": "Chaque profil ne voit que ce qui le concerne ; les informations médicales sont réservées aux rôles autorisés."
+          },
+          "hosting": {
+            "title": "Hébergement en Tunisie",
+            "body": "Vos données sont hébergées sur des serveurs situés en Tunisie."
+          },
+          "updates": {
+            "title": "Mises à jour continues",
+            "body": "Les améliorations de la plateforme sont déployées pour tous, sans surcoût ni migration."
+          },
+          "support": {
+            "title": "Un interlocuteur humain",
+            "body": "Une équipe joignable par e-mail pour répondre à vos questions et vous accompagner."
+          }
+        }
+      },
+      "start": {
+        "title": "Commencez sans attendre",
+        "body": "La création de votre organisation est gratuite et ne demande aucune carte bancaire. Explorez la plateforme à votre rythme, puis échangez avec un conseiller pour définir l'offre adaptée.",
+        "cta": "Créer mon organisation"
+      },
+      "process": {
+        "eyebrow": "Comment ça se passe",
+        "title": "Un devis clair, en trois étapes",
+        "steps": {
+          "one": {
+            "title": "Vous décrivez votre établissement",
+            "body": "Via le formulaire de contact : type d'établissement, nombre d'élèves, campus et besoins principaux."
+          },
+          "two": {
+            "title": "Nous échangeons avec vous",
+            "body": "Un conseiller revient vers vous pour préciser vos besoins et, si vous le souhaitez, vous présenter la plateforme."
+          },
+          "three": {
+            "title": "Vous recevez une proposition écrite",
+            "body": "Un devis détaillé, module par module, sans frais cachés, que vous pouvez étudier en toute sérénité."
+          }
+        }
+      },
+      "faq": {
+        "eyebrow": "Questions fréquentes",
+        "title": "Vos questions sur les tarifs",
+        "items": {
+          "calculation": {
+            "q": "Comment est calculé le tarif ?",
+            "a": "Le tarif repose sur quatre critères : le nombre d'élèves inscrits, le nombre de campus, les modules activés et le niveau d'accompagnement souhaité. Votre devis détaille chacun de ces éléments, pour que vous sachiez précisément ce que vous payez."
+          },
+          "setupFees": {
+            "q": "Y a-t-il des frais de mise en place ?",
+            "a": "La création de votre organisation est gratuite. Si vous souhaitez un accompagnement spécifique — import de vos données existantes, formation de vos équipes —, son coût éventuel est indiqué clairement dans le devis, avant tout engagement. Rien ne vous est facturé sans avoir été annoncé."
+          },
+          "tryFirst": {
+            "q": "Puis-je essayer la plateforme avant de m'engager ?",
+            "a": "Oui. Vous pouvez créer votre organisation gratuitement, sans carte bancaire, et découvrir l'interface avec votre équipe. Les conditions commerciales sont ensuite définies avec un conseiller, selon votre configuration."
+          },
+          "changePlan": {
+            "q": "Puis-je changer de formule plus tard ?",
+            "a": "Oui. Les modules s'activent et se désactivent par organisation : vous pouvez ajouter un campus, activer le suivi scolaire ou le module petite enfance au fil de votre développement. Votre conseiller ajuste alors votre offre."
+          },
+          "commitment": {
+            "q": "Y a-t-il un engagement minimum ?",
+            "a": "La durée d'engagement dépend de votre configuration et figure explicitement dans votre devis. Nos conseillers vous présentent les options possibles lors de votre échange, pour que vous décidiez en connaissance de cause."
+          },
+          "dataOnExit": {
+            "q": "Que deviennent nos données si nous arrêtons ?",
+            "a": "Vos données vous appartiennent. En fin de contrat, vous disposez d'une période pour les exporter, après quoi elles sont supprimées selon les modalités décrites dans nos <link>conditions générales d'utilisation</link>."
+          },
+          "quoteDelay": {
+            "q": "Combien de temps faut-il pour obtenir un devis ?",
+            "a": "Nous répondons à chaque demande dans les meilleurs délais, généralement sous quelques jours ouvrés. Plus votre demande est précise (nombre d'élèves, campus, modules souhaités), plus notre proposition le sera aussi."
+          }
+        }
+      },
+      "final": {
+        "title": "Parlons de votre établissement",
+        "body": "Décrivez-nous votre établissement en quelques lignes : nous vous proposerons une offre adaptée, sans engagement.",
+        "ctaPrimary": "Demander un devis",
+        "ctaSecondary": "Créer mon organisation"
+      }
+    },
+    "contact": {
+      "meta": {
+        "title": "Contact — EcolnaSpace | Parlons de votre établissement",
+        "description": "Demandez une démonstration ou un devis pour votre crèche, école ou centre de formation. Un conseiller EcolnaSpace vous répond personnellement."
+      },
+      "hero": {
+        "eyebrow": "Contact",
+        "title": {
+          "general": "Parlons de votre établissement",
+          "demo": "Découvrez EcolnaSpace appliqué à votre établissement",
+          "quote": "Recevez une proposition adaptée à votre établissement"
+        },
+        "lead": "Une question, un projet, une démonstration ? Laissez-nous quelques informations : un membre de notre équipe vous répond personnellement."
+      },
+      "formTitle": {
+        "general": "Envoyez-nous un message",
+        "demo": "Demander une démonstration",
+        "quote": "Demander un devis"
+      },
+      "formSubtitle": "Tous les champs sont obligatoires, sauf mention contraire.",
+      "direct": {
+        "title": "Nous joindre directement",
+        "email": "Contact commercial et général",
+        "privacy": "Données personnelles",
+        "phone": "Téléphone",
+        "location": "Implantation",
+        "country": "Tunisie",
+        "response": "Délai de réponse",
+        "responseValue": "Dans les meilleurs délais, généralement sous quelques jours ouvrés."
+      },
+      "next": {
+        "title": "Ce qui se passe ensuite",
+        "steps": {
+          "one": {
+            "title": "Nous lisons votre message",
+            "body": "Votre demande est transmise directement à notre équipe, pas à un robot."
+          },
+          "two": {
+            "title": "Un conseiller vous recontacte",
+            "body": "Par e-mail, ou par téléphone si vous nous avez laissé un numéro, pour bien comprendre vos besoins."
+          },
+          "three": {
+            "title": "Démonstration et proposition",
+            "body": "Une présentation adaptée à votre établissement, puis une proposition écrite si vous le souhaitez."
+          }
+        }
+      },
+      "selfServe": {
+        "title": "Vous préférez découvrir par vous-même ?",
+        "body": "Créez votre organisation gratuitement, sans carte bancaire, ou consultez ce qui détermine nos tarifs.",
+        "register": "Créer mon organisation",
+        "pricing": "Voir les tarifs"
+      },
+      "form": {
+        "fullName": "Nom complet",
+        "email": "E-mail professionnel",
+        "organizationName": "Nom de l'établissement",
+        "establishmentType": "Type d'établissement",
+        "establishmentPlaceholder": "Sélectionnez un type",
+        "phone": "Téléphone",
+        "optional": "facultatif",
+        "phoneHint": "Pour être rappelé plus rapidement, si vous le souhaitez.",
+        "message": "Votre message",
+        "messagePlaceholder": "Nombre d'élèves, nombre de campus, modules qui vous intéressent, questions…",
+        "types": {
+          "NURSERY": "Crèche",
+          "KINDERGARTEN": "Jardin d'enfants",
+          "PRIMARY_SCHOOL": "École primaire",
+          "MIDDLE_SCHOOL": "Collège",
+          "HIGH_SCHOOL": "Lycée",
+          "TUTORING_CENTER": "Centre de soutien scolaire",
+          "TRAINING_CENTER": "Centre de formation"
+        },
+        "prefill": {
+          "demo": "Bonjour, nous souhaiterions une démonstration d'EcolnaSpace pour notre établissement.",
+          "quote": "Bonjour, nous souhaiterions recevoir un devis pour notre établissement."
+        },
+        "privacyNotice": "Vos informations servent uniquement à répondre à votre demande. Consultez notre <link>politique de confidentialité</link>.",
+        "submit": "Envoyer ma demande",
+        "sending": "Envoi en cours…",
+        "success": {
+          "title": "Merci, votre demande a bien été envoyée",
+          "body": "Un membre de notre équipe vous répondra dans les meilleurs délais à l'adresse indiquée. Pensez à vérifier vos courriers indésirables.",
+          "again": "Envoyer une autre demande"
+        },
+        "errors": {
+          "fullName": "Indiquez votre nom complet (au moins 2 caractères).",
+          "fullNameLong": "Le nom ne doit pas dépasser 120 caractères.",
+          "email": "Saisissez une adresse e-mail valide, par exemple nom@etablissement.tn.",
+          "organizationName": "Indiquez le nom de votre établissement.",
+          "organizationNameLong": "Le nom de l'établissement ne doit pas dépasser 160 caractères.",
+          "establishmentType": "Choisissez le type d'établissement dans la liste.",
+          "phone": "Saisissez un numéro valide : chiffres, espaces et signe + uniquement.",
+          "messageShort": "Décrivez votre demande en au moins 10 caractères.",
+          "messageLong": "Votre message ne doit pas dépasser 4 000 caractères.",
+          "rateLimited": "Vous avez envoyé plusieurs demandes en peu de temps. Merci de réessayer dans une heure.",
+          "invalid": "Certaines informations n'ont pas pu être validées. Vérifiez les champs et réessayez.",
+          "network": "L'envoi n'a pas abouti. Vérifiez votre connexion et réessayez, ou écrivez-nous directement à {email}."
+        }
+      }
+    },
+    "legal": {
+      "onThisPage": "Sur cette page",
+      "lastUpdated": "Dernière mise à jour : {date}",
+      "reviewPending": "Version de travail : ce document est en cours de validation par un conseil juridique. Les éléments surlignés restent à compléter.",
+      "todo": "À compléter : {item}",
+      "tokens": {
+        "legalEntity": "raison sociale",
+        "registrationNumber": "identifiant RNE",
+        "registeredAddress": "adresse du siège",
+        "hostingProvider": "nom de l'hébergeur",
+        "emailProvider": "prestataire d'envoi d'e-mails",
+        "exportWindowDays": "durée d'export",
+        "deletionDays": "délai de suppression",
+        "backupRetentionDays": "durée de conservation des sauvegardes",
+        "contactRetentionMonths": "durée de conservation"
+      },
+      "questions": {
+        "title": "Une question sur vos données ?",
+        "body": "Notre équipe répond à toute demande relative à la protection des données personnelles."
+      },
+      "related": {
+        "privacy": "Politique de confidentialité",
+        "terms": "Conditions générales d'utilisation",
+        "cookies": "Politique cookies"
+      }
+    }
   }
 }

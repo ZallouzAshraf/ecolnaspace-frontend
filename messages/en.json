@@ -1252,7 +1252,7 @@
       "builtFor": "Built for",
       "subhead": "Replace scattered spreadsheets, chats, and paper. Track students, attendance, grades, and payments — built for nurseries, schools, and tutoring centers.",
       "ctaPrimary": "Create your organization",
-      "ctaSecondary": "Talk to us",
+      "ctaSecondary": "Talk to an advisor",
       "note": "No credit card required to get started.",
       "highlights": {
         "multiCampus": "Multiple campuses under one organization",
@@ -1512,21 +1512,14 @@
         "support": "Human onboarding support"
       },
       "ctaPrimary": "Start free",
-      "ctaSecondary": "Request pricing"
+      "ctaSecondary": "Request a quote",
+      "details": "See what determines the price"
     },
     "final": {
       "headline": "Bring your school operations into one calm workspace",
       "body": "Create your organization in minutes, invite your team, and activate access when you are ready.",
       "cta": "Create your organization",
-      "email": "Or email us"
-    },
-    "footer": {
-      "blurb": "Multi-tenant SaaS for private educational establishments — nurseries, schools, and tutoring centers.",
-      "product": "Product",
-      "legal": "Legal",
-      "privacy": "Privacy policy",
-      "terms": "Terms of use",
-      "rights": "All rights reserved."
+      "email": "Talk to an advisor"
     },
     "meta": {
       "title": "EcolnaSpace — School operations in one platform",
@@ -1638,10 +1631,374 @@
     }
   },
   "legal": {
-    "privacyTitle": "Privacy policy",
-    "privacyBody": "This page summarizes how EcolnaSpace handles organization and student data. A full legal text will be published before production launch. Contact contact@ecolnaspace.com for privacy requests.",
-    "termsTitle": "Terms of use",
-    "termsBody": "By creating an organization on EcolnaSpace you agree to use the service lawfully and to protect credentials for your staff. Full terms will be published before production launch.",
     "back": "Back to home"
+  },
+  "marketing": {
+    "footer": {
+      "blurb": "The management platform for private nurseries, schools and training centers: students, attendance, grades, billing and family communication, all in one place.",
+      "trust": "Hosted in Tunisia · Data isolated per establishment · Role-based access",
+      "country": "Tunisia",
+      "language": "Language",
+      "navLabel": "Footer links",
+      "columns": {
+        "product": "Product",
+        "resources": "Resources",
+        "legal": "Legal"
+      },
+      "links": {
+        "features": "Features",
+        "pricing": "Pricing",
+        "getStarted": "Create my organization",
+        "contact": "Contact",
+        "demo": "Request a demo",
+        "quote": "Request a quote",
+        "privacy": "Privacy Policy",
+        "terms": "Terms of Service",
+        "cookies": "Cookie Policy",
+        "cookieSettings": "Manage cookies"
+      },
+      "registration": "RNE: {number}",
+      "rights": "All rights reserved."
+    },
+    "cookieBanner": {
+      "regionLabel": "Cookie preferences",
+      "title": "Your data, your choice",
+      "body": "We only use cookies required for the site to work and, if you agree, one cookie that remembers your language. No advertising or analytics cookies.",
+      "policyLink": "Learn more",
+      "reject": "Decline",
+      "accept": "Accept",
+      "manage": "Customize my choices",
+      "save": "Save my choices",
+      "dialogTitle": "Cookie settings",
+      "dialogBody": "Choose which cookies you allow. You can change your choice at any time with the \"Manage cookies\" link at the bottom of the page.",
+      "alwaysOn": "Always on",
+      "notUsed": "Not used",
+      "categories": {
+        "necessary": {
+          "title": "Strictly necessary",
+          "body": "Secure sign-in to the application and remembering your cookie choice. The service cannot work without them."
+        },
+        "preferences": {
+          "title": "Preferences",
+          "body": "Remembers the language you chose (French, English or Arabic) for your next visits."
+        },
+        "analytics": {
+          "title": "Analytics",
+          "body": "We do not use any analytics tool. If that ever changes, we will ask for your consent first."
+        },
+        "marketing": {
+          "title": "Advertising",
+          "body": "No advertising cookies or pixels are used, either on this site or in the application."
+        }
+      }
+    },
+    "pricing": {
+      "meta": {
+        "title": "Pricing — EcolnaSpace | An offer tailored to your establishment",
+        "description": "What determines EcolnaSpace pricing: establishment size, number of campuses, modules and support. Free organization setup and a tailored quote."
+      },
+      "hero": {
+        "eyebrow": "Pricing",
+        "title": "You only pay for what your establishment actually needs",
+        "lead": "A neighborhood nursery and a multi-campus school group don't have the same needs. That's why our pricing depends on the size of your establishment, the number of sites, the modules you enable and the support you want — not on a one-size-fits-all grid.",
+        "ctaPrimary": "Request a quote",
+        "ctaSecondary": "Create my organization",
+        "note": "Free organization setup, no credit card required."
+      },
+      "factors": {
+        "eyebrow": "What determines the price",
+        "title": "Four criteria, fully transparent",
+        "body": "No hidden fees and no features locked behind arbitrary tiers. Here is exactly what our advisors take into account when preparing your quote.",
+        "items": {
+          "size": {
+            "title": "Establishment size",
+            "body": "The number of enrolled students or children comes first: it reflects how much the platform is actually used.",
+            "example": "From a nursery with a few dozen children to a network of several hundred students."
+          },
+          "campuses": {
+            "title": "Number of campuses",
+            "body": "Every site is managed within the same organization, with its own access rights and a consolidated view for leadership.",
+            "example": "A single site, or several campuses under one leadership team."
+          },
+          "modules": {
+            "title": "Enabled modules",
+            "body": "You only enable the modules you need: core management, early years, academic tracking.",
+            "example": "A nursery doesn't need report cards; a high school doesn't need nap tracking."
+          },
+          "support": {
+            "title": "Level of support",
+            "body": "Onboarding, importing your existing data, training your team: support is scaled to your needs.",
+            "example": "Self-guided setup or full support for your team."
+          }
+        }
+      },
+      "modules": {
+        "eyebrow": "Modules",
+        "title": "Build the platform that fits you",
+        "body": "Every establishment starts from the same core. Specialized modules are added to match your activity, and can be switched on or off at any time.",
+        "items": {
+          "core": {
+            "badge": "Included for everyone",
+            "title": "Core management",
+            "body": "Everything you need to run your establishment day to day.",
+            "features": [
+              "Student records, enrollment and classes",
+              "Multiple campuses in one organization",
+              "Daily attendance",
+              "Invoices and payment tracking",
+              "Announcements, messages and notifications to families",
+              "Documents attached to students",
+              "Separate access for leadership, teachers, staff and parents"
+            ],
+            "fit": "The foundation of every EcolnaSpace organization."
+          },
+          "earlyYears": {
+            "badge": "Nurseries and kindergartens",
+            "title": "Early years",
+            "body": "Young children's daily routines, recorded and shared with families.",
+            "features": [
+              "Meals and amounts eaten",
+              "Naps and rest times",
+              "Daily activities",
+              "Verified pick-ups and authorized people"
+            ],
+            "fit": "Ideal for nurseries, kindergartens and preschool sections."
+          },
+          "academic": {
+            "badge": "Schools and centers",
+            "title": "Academic tracking",
+            "body": "Academic follow-up, right where teachers already work.",
+            "features": [
+              "School years, subjects and timetables",
+              "Homework and exams",
+              "Consolidated grades",
+              "Report cards per school year"
+            ],
+            "fit": "Designed for primary, middle and high schools, tutoring and training centers."
+          }
+        }
+      },
+      "included": {
+        "eyebrow": "Always included",
+        "title": "What every establishment gets, whatever the offer",
+        "body": "Some commitments are not up for negotiation. They are part of every EcolnaSpace organization from day one.",
+        "items": {
+          "languages": {
+            "title": "French, English and Arabic",
+            "body": "A complete interface in all three languages, with a right-to-left layout for Arabic."
+          },
+          "isolation": {
+            "title": "Data isolated per establishment",
+            "body": "Your organization's data is never mixed with another customer's."
+          },
+          "roles": {
+            "title": "Role-based access",
+            "body": "Each profile only sees what concerns them; medical information is limited to authorized roles."
+          },
+          "hosting": {
+            "title": "Hosted in Tunisia",
+            "body": "Your data is hosted on servers located in Tunisia."
+          },
+          "updates": {
+            "title": "Continuous updates",
+            "body": "Platform improvements roll out to everyone, at no extra cost and with no migration."
+          },
+          "support": {
+            "title": "A real person to talk to",
+            "body": "A team you can reach by email to answer your questions and help you along."
+          }
+        }
+      },
+      "start": {
+        "title": "Get started right away",
+        "body": "Creating your organization is free and requires no credit card. Explore the platform at your own pace, then talk to an advisor to define the right offer.",
+        "cta": "Create my organization"
+      },
+      "process": {
+        "eyebrow": "How it works",
+        "title": "A clear quote in three steps",
+        "steps": {
+          "one": {
+            "title": "You describe your establishment",
+            "body": "Through the contact form: type of establishment, number of students, campuses and main needs."
+          },
+          "two": {
+            "title": "We talk it through",
+            "body": "An advisor gets back to you to clarify your needs and, if you wish, walk you through the platform."
+          },
+          "three": {
+            "title": "You receive a written proposal",
+            "body": "A detailed quote, module by module, with no hidden fees, that you can review at your own pace."
+          }
+        }
+      },
+      "faq": {
+        "eyebrow": "FAQ",
+        "title": "Your pricing questions",
+        "items": {
+          "calculation": {
+            "q": "How is the price calculated?",
+            "a": "Pricing is based on four criteria: the number of enrolled students, the number of campuses, the modules enabled and the level of support you want. Your quote itemizes each of them, so you know exactly what you are paying for."
+          },
+          "setupFees": {
+            "q": "Are there any setup fees?",
+            "a": "Creating your organization is free. If you want specific support — importing your existing data or training your team — any cost is clearly stated in the quote before you commit. Nothing is ever charged without being announced first."
+          },
+          "tryFirst": {
+            "q": "Can I try the platform before committing?",
+            "a": "Yes. You can create your organization for free, with no credit card, and explore the interface with your team. Commercial terms are then agreed with an advisor, based on your setup."
+          },
+          "changePlan": {
+            "q": "Can I change my plan later?",
+            "a": "Yes. Modules are switched on and off per organization: you can add a campus, or enable academic tracking or the early-years module as you grow. Your advisor then adjusts your offer."
+          },
+          "commitment": {
+            "q": "Is there a minimum commitment?",
+            "a": "The commitment period depends on your setup and is stated explicitly in your quote. Our advisors walk you through the available options during your conversation, so you can decide with full information."
+          },
+          "dataOnExit": {
+            "q": "What happens to our data if we leave?",
+            "a": "Your data belongs to you. At the end of the contract, you have a period to export it, after which it is deleted as described in our <link>Terms of Service</link>."
+          },
+          "quoteDelay": {
+            "q": "How long does it take to get a quote?",
+            "a": "We answer every request as quickly as we can, usually within a few business days. The more precise your request (number of students, campuses, modules you want), the more precise our proposal."
+          }
+        }
+      },
+      "final": {
+        "title": "Let's talk about your establishment",
+        "body": "Tell us about your establishment in a few lines: we'll propose a tailored offer, with no obligation.",
+        "ctaPrimary": "Request a quote",
+        "ctaSecondary": "Create my organization"
+      }
+    },
+    "contact": {
+      "meta": {
+        "title": "Contact — EcolnaSpace | Let's talk about your establishment",
+        "description": "Request a demo or a quote for your nursery, school or training center. An EcolnaSpace advisor will reply to you personally."
+      },
+      "hero": {
+        "eyebrow": "Contact",
+        "title": {
+          "general": "Let's talk about your establishment",
+          "demo": "See EcolnaSpace applied to your establishment",
+          "quote": "Get a proposal tailored to your establishment"
+        },
+        "lead": "A question, a project, a demo? Leave us a few details and a member of our team will reply to you personally."
+      },
+      "formTitle": {
+        "general": "Send us a message",
+        "demo": "Request a demo",
+        "quote": "Request a quote"
+      },
+      "formSubtitle": "All fields are required unless marked otherwise.",
+      "direct": {
+        "title": "Reach us directly",
+        "email": "Sales and general enquiries",
+        "privacy": "Personal data",
+        "phone": "Phone",
+        "location": "Based in",
+        "country": "Tunisia",
+        "response": "Response time",
+        "responseValue": "As soon as possible, usually within a few business days."
+      },
+      "next": {
+        "title": "What happens next",
+        "steps": {
+          "one": {
+            "title": "We read your message",
+            "body": "Your request goes straight to our team, not to a bot."
+          },
+          "two": {
+            "title": "An advisor gets back to you",
+            "body": "By email, or by phone if you left a number, to fully understand your needs."
+          },
+          "three": {
+            "title": "Demo and proposal",
+            "body": "A walkthrough tailored to your establishment, followed by a written proposal if you wish."
+          }
+        }
+      },
+      "selfServe": {
+        "title": "Prefer to explore on your own?",
+        "body": "Create your organization for free, with no credit card, or see what determines our pricing.",
+        "register": "Create my organization",
+        "pricing": "See pricing"
+      },
+      "form": {
+        "fullName": "Full name",
+        "email": "Work email",
+        "organizationName": "Establishment name",
+        "establishmentType": "Type of establishment",
+        "establishmentPlaceholder": "Select a type",
+        "phone": "Phone",
+        "optional": "optional",
+        "phoneHint": "If you'd like us to call you back sooner.",
+        "message": "Your message",
+        "messagePlaceholder": "Number of students, number of campuses, modules you're interested in, questions…",
+        "types": {
+          "NURSERY": "Nursery",
+          "KINDERGARTEN": "Kindergarten",
+          "PRIMARY_SCHOOL": "Primary school",
+          "MIDDLE_SCHOOL": "Middle school",
+          "HIGH_SCHOOL": "High school",
+          "TUTORING_CENTER": "Tutoring center",
+          "TRAINING_CENTER": "Training center"
+        },
+        "prefill": {
+          "demo": "Hello, we would like a demo of EcolnaSpace for our establishment.",
+          "quote": "Hello, we would like to receive a quote for our establishment."
+        },
+        "privacyNotice": "Your information is only used to answer your request. See our <link>Privacy Policy</link>.",
+        "submit": "Send my request",
+        "sending": "Sending…",
+        "success": {
+          "title": "Thank you, your request has been sent",
+          "body": "A member of our team will reply as soon as possible to the email address you provided. Please check your spam folder too.",
+          "again": "Send another request"
+        },
+        "errors": {
+          "fullName": "Enter your full name (at least 2 characters).",
+          "fullNameLong": "Your name must not exceed 120 characters.",
+          "email": "Enter a valid email address, for example name@school.tn.",
+          "organizationName": "Enter the name of your establishment.",
+          "organizationNameLong": "The establishment name must not exceed 160 characters.",
+          "establishmentType": "Choose the type of establishment from the list.",
+          "phone": "Enter a valid number: digits, spaces and the + sign only.",
+          "messageShort": "Describe your request in at least 10 characters.",
+          "messageLong": "Your message must not exceed 4,000 characters.",
+          "rateLimited": "You've sent several requests in a short time. Please try again in an hour.",
+          "invalid": "Some information could not be validated. Check the fields and try again.",
+          "network": "Your request could not be sent. Check your connection and try again, or email us directly at {email}."
+        }
+      }
+    },
+    "legal": {
+      "onThisPage": "On this page",
+      "lastUpdated": "Last updated: {date}",
+      "reviewPending": "Working draft: this document is being reviewed by legal counsel. Highlighted items are still to be completed.",
+      "todo": "To complete: {item}",
+      "tokens": {
+        "legalEntity": "company name",
+        "registrationNumber": "RNE identifier",
+        "registeredAddress": "registered address",
+        "hostingProvider": "hosting provider",
+        "emailProvider": "email provider",
+        "exportWindowDays": "export period",
+        "deletionDays": "deletion period",
+        "backupRetentionDays": "backup retention period",
+        "contactRetentionMonths": "retention period"
+      },
+      "questions": {
+        "title": "A question about your data?",
+        "body": "Our team answers every request about the protection of personal data."
+      },
+      "related": {
+        "privacy": "Privacy Policy",
+        "terms": "Terms of Service",
+        "cookies": "Cookie Policy"
+      }
+    }
   }
 }
