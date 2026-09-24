@@ -18,8 +18,16 @@ export type ApiRequestOptions = {
 };
 
 let refreshPromise: Promise<string | null> | null = null;
+/** Bumped on logout so in-flight refresh cannot restore the session. */
+let refreshEpoch = 0;
 
 const REFRESH_LOCK = "ecolna-auth-refresh";
+
+/** Cancel coalesced refresh and ignore any result still in flight. */
+export function abortAuthRefresh(): void {
+  refreshEpoch += 1;
+  refreshPromise = null;
+}
 
 function getLocaleHint(explicit?: string): string | undefined {
   if (explicit) return explicit;
@@ -48,6 +56,7 @@ async function parseError(response: Response): Promise<ApiError> {
 }
 
 async function refreshOnce(): Promise<string | null> {
+  const epoch = refreshEpoch;
   const response = await fetch(`${DEFAULT_API_BASE}/auth/refresh`, {
     method: "POST",
     credentials: "include",
@@ -55,12 +64,20 @@ async function refreshOnce(): Promise<string | null> {
     body: JSON.stringify({}),
   });
 
+  if (epoch !== refreshEpoch) {
+    return null;
+  }
+
   if (!response.ok) {
     clearSession();
     return null;
   }
 
   const data = (await response.json()) as RefreshResponse;
+  if (epoch !== refreshEpoch) {
+    return null;
+  }
+
   setAccessToken(data.accessToken);
   return data.accessToken;
 }

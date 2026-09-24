@@ -42,7 +42,6 @@ export function AppTopBar({
     if (onLogout) {
       await onLogout();
     }
-    router.replace("/login");
   }
 
   return (

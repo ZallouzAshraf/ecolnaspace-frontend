@@ -1,6 +1,7 @@
 "use client";
 
 import { authApi } from "@/lib/api/auth";
+import { abortAuthRefresh } from "@/lib/api/client";
 import { organizationsApi } from "@/lib/api/resources";
 import { clearSession } from "@/lib/api/token";
 import type { MeMembership, MeResponse, OrganizationMe } from "@/lib/api/types";
@@ -17,6 +18,7 @@ import {
   useContext,
   useEffect,
   useMemo,
+  useState,
   type ReactNode,
 } from "react";
 
@@ -33,6 +35,7 @@ type AuthContextValue = {
   isSuperAdmin: boolean;
   isLoading: boolean;
   isAuthenticated: boolean;
+  isLoggingOut: boolean;
   error: Error | null;
   refresh: () => Promise<void>;
   logout: () => Promise<void>;
@@ -40,12 +43,22 @@ type AuthContextValue = {
 
 const AuthContext = createContext<AuthContextValue | null>(null);
 
+function hardRedirectToLogin(): void {
+  if (typeof window === "undefined") return;
+  const localeSegment = window.location.pathname.split("/")[1] || "fr";
+  // Full reload clears gate races and in-flight React Query observers.
+  // eslint-disable-next-line @next/next/no-location-assign-relative-destination -- intentional hard redirect
+  window.location.assign(`/${localeSegment}/login`);
+}
+
 export function AuthProvider({ children }: { children: ReactNode }) {
   const queryClient = useQueryClient();
+  const [isLoggingOut, setIsLoggingOut] = useState(false);
 
   const sessionQuery = useQuery({
     queryKey: sessionQueryKey,
     queryFn: () => authApi.bootstrap(),
+    enabled: !isLoggingOut,
     retry: false,
     staleTime: 60_000,
   });
@@ -58,7 +71,7 @@ export function AuthProvider({ children }: { children: ReactNode }) {
   const orgQuery = useQuery({
     queryKey: organizationQueryKey,
     queryFn: () => organizationsApi.me(),
-    enabled: Boolean(membership),
+    enabled: Boolean(membership) && !isLoggingOut,
     retry: false,
     staleTime: 60_000,
   });
@@ -73,9 +86,16 @@ export function AuthProvider({ children }: { children: ReactNode }) {
   }, [queryClient]);
 
   const logout = useCallback(async () => {
-    await authApi.logout();
-    applyTenantBranding(null);
-    queryClient.clear();
+    setIsLoggingOut(true);
+    abortAuthRefresh();
+    try {
+      await authApi.logout();
+    } finally {
+      applyTenantBranding(null);
+      queryClient.removeQueries({ queryKey: sessionQueryKey });
+      queryClient.removeQueries({ queryKey: organizationQueryKey });
+      hardRedirectToLogin();
+    }
   }, [queryClient]);
 
   const value = useMemo<AuthContextValue>(() => {
@@ -91,8 +111,9 @@ export function AuthProvider({ children }: { children: ReactNode }) {
       displayName: me ? membershipDisplayName(me) : "",
       permissions,
       isSuperAdmin: me?.isSuperAdmin ?? false,
-      isLoading: sessionQuery.isPending,
+      isLoading: sessionQuery.isPending && !isLoggingOut,
       isAuthenticated,
+      isLoggingOut,
       error: sessionQuery.error instanceof Error ? sessionQuery.error : null,
       refresh,
       logout,
@@ -103,6 +124,7 @@ export function AuthProvider({ children }: { children: ReactNode }) {
     sessionQuery.error,
     membership,
     orgQuery.data,
+    isLoggingOut,
     refresh,
     logout,
   ]);

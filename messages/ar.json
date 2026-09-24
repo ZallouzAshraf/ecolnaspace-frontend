@@ -58,7 +58,7 @@
     "email": "البريد الإلكتروني",
     "password": "كلمة المرور",
     "signIn": "تسجيل الدخول",
-    "signingIn": "جاري الدخول…",
+    "signingIn": "جاري تسجيل الدخول…",
     "forgotPassword": "نسيت كلمة المرور؟",
     "noAccount": "مؤسسة جديدة؟",
     "createOrganization": "إنشاء منظمة",

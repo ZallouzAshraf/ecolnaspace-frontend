@@ -58,7 +58,7 @@
     "email": "E-mail",
     "password": "Mot de passe",
     "signIn": "Se connecter",
-    "signingIn": "Connexion…",
+    "signingIn": "Connexion en cours…",
     "forgotPassword": "Mot de passe oublié ?",
     "noAccount": "Nouvel établissement ?",
     "createOrganization": "Créer une organisation",

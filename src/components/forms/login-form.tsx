@@ -66,6 +66,7 @@ export function LoginForm() {
       await queryClient.invalidateQueries({ queryKey: sessionQueryKey });
       await queryClient.invalidateQueries({ queryKey: organizationQueryKey });
       router.replace(safeInternalPath(searchParams.get("next")));
+      // Keep the button in pending state until navigation leaves this page.
     } catch (error) {
       const status = error instanceof ApiError ? error.statusCode : undefined;
       setFormError(
@@ -75,13 +76,12 @@ export function LoginForm() {
         }),
       );
       form.setValue("password", "");
-    } finally {
       setSubmitting(false);
     }
   }
 
   return (
-    <div>
+    <div className={submitting ? "pointer-events-none opacity-70" : undefined}>
       <AuthHeading
         icon={LogIn}
         title={t("loginTitle")}
@@ -115,6 +115,7 @@ export function LoginForm() {
             id="login-email"
             type="email"
             autoComplete="email"
+            disabled={submitting}
             aria-invalid={Boolean(form.formState.errors.email)}
             aria-describedby={
               form.formState.errors.email ? "login-email-error" : undefined
@@ -126,7 +127,11 @@ export function LoginForm() {
             }}
           />
           {form.formState.errors.email && (
-            <p id="login-email-error" className="text-xs text-destructive" role="alert">
+            <p
+              id="login-email-error"
+              className="text-xs text-destructive"
+              role="alert"
+            >
               {t("errors.email")}
             </p>
           )}
@@ -140,6 +145,7 @@ export function LoginForm() {
             <Link
               href="/forgot-password"
               className="text-xs font-medium text-primary underline-offset-4 hover:underline"
+              tabIndex={submitting ? -1 : undefined}
             >
               {t("forgotPassword")}
             </Link>
@@ -149,6 +155,7 @@ export function LoginForm() {
             showLabel={t("showPassword")}
             hideLabel={t("hidePassword")}
             autoComplete="current-password"
+            disabled={submitting}
             error={
               form.formState.errors.password
                 ? t("errors.passwordRequired")
@@ -167,7 +174,11 @@ export function LoginForm() {
 
       <p className="text-center text-[13px] text-slate-500">
         {t("noAccount")}{" "}
-        <Link href="/register" className={authLinkClass}>
+        <Link
+          href="/register"
+          className={authLinkClass}
+          tabIndex={submitting ? -1 : undefined}
+        >
           {t("createOrganization")}
         </Link>
       </p>
